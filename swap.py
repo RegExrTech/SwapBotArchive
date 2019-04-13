@@ -4,7 +4,7 @@ import praw
 import time
 import datetime
 
-debug = False
+debug = True
 
 f = open("config.txt", "r")
 info = f.read().splitlines()
@@ -156,7 +156,7 @@ def set_archived_comments(reddit, comments):
 def handle_comment(comment, bot_username, swap_data, sub, to_write):
 	OP = comment.parent().author  # Get the OP of the post (because one of the users in the comment chain must be the OP)
         author1 = comment.author  # Author of the top level comment
-        comment_word_list = [x.encode('utf-8').strip() for x in comment.body.lower().replace("\n", " ").replace("\r", " ").replace(".", '').replace("?", '').replace("!", '').replace("[", '').replace("]", " ").replace("(", '').replace(")", " ").replace("*", '').split(" ")]  # all words in the top level comment
+        comment_word_list = [x.encode('utf-8').strip() for x in comment.body.lower().replace("\n", " ").replace("\r", " ").replace(".", '').replace("?", '').replace("!", '').replace("[", '').replace("]", " ").replace("(", '').replace(")", " ").replace("*", '').replace("\\", "").split(" ")]  # all words in the top level comment
 	if debug:
 		print(" ".join(comment_word_list))
         desired_author2_string = get_desired_author2_name(comment_word_list, bot_username, str(author1))
@@ -205,7 +205,9 @@ def handle_no_author2(comment_word_list, comment):
 		print("\n\n" + str(time.time()) + "\n" + str(e))
 
 def find_correct_reply(comment, author1, desired_author2_string):
-	for reply in comment.replies.list():
+	replies = comment.replies
+	replies.replace_more(limit=None)
+	for reply in replies.list():
 # Commented this out for now. Sometimes people say something other than confirmed but it has the same idea behind it
 # So as long as the person replying is the person being tagged, no reason to not give them credit, really.
 #		if not 'confirm' in reply.body.lower():  # if a reply does not say confirm, skip it
