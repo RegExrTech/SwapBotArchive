@@ -4,7 +4,7 @@ import praw
 import time
 import datetime
 
-debug = True
+debug = False
 
 f = open("config.txt", "r")
 info = f.read().splitlines()
@@ -159,6 +159,13 @@ def handle_comment(comment, bot_username, swap_data, sub, to_write):
         comment_word_list = [x.encode('utf-8').strip() for x in comment.body.lower().replace("\n", " ").replace("\r", " ").replace(".", '').replace("?", '').replace("!", '').replace("[", '').replace("]", " ").replace("(", '').replace(")", " ").replace("*", '').replace("\\", "").split(" ")]  # all words in the top level comment
 	if debug:
 		print(" ".join(comment_word_list))
+# Had to comment this out because it will post a comment every time it runs.
+# If I can figure out how to get it to reply only once, this will be really useful.
+#	if any('https://wwwredditcom/user/' in s for s in comment_word_list):
+#		if not debug:
+#			comment.reply("It looks like you might have made a mistake in how you tagged your trade partner. You added their reddit user name as a link rather than as a tag. Pleae **EDIT** this comment and remove their username, then retype it (do not copy and paste their name) to look like 'u/SomeUsername' and they shoud be properly tagged. I'll do my best to track this comment anyway, but please try to fix your tag. Thanks!")
+#		else:
+#			print("    It looks like you might have made a mistake in how you tagged your trade partner. You added their reddit user name as a link rather than as a tag. Pleae **EDIT** this comment and remove their username, then retype it (do not copy and paste their name) to look like 'u/SomeUsername' and they shoud be properly tagged. I'll do my best to track this comment anyway, but please try to fix your tag. Thanks!")
         desired_author2_string = get_desired_author2_name(comment_word_list, bot_username, str(author1))
         if not desired_author2_string:
                 handle_no_author2(comment_word_list, comment)
