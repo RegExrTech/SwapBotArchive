@@ -4,7 +4,7 @@ import praw
 import time
 import datetime
 
-debug = False
+debug = True
 
 f = open("config.txt", "r")
 info = f.read().splitlines()
@@ -33,7 +33,7 @@ def get_prev_ids():
 	f = open(FNAME_comments, "r")
 	ids = f.read().splitlines()
 	f.close()
-	return ids
+	return ['ekz7q6g']
 
 # Returns the list of archived comments to check
 def get_archived_ids():
@@ -156,7 +156,7 @@ def set_archived_comments(reddit, comments):
 def handle_comment(comment, bot_username, swap_data, sub, to_write):
 	OP = comment.parent().author  # Get the OP of the post (because one of the users in the comment chain must be the OP)
         author1 = comment.author  # Author of the top level comment
-        comment_word_list = [x.encode('utf-8').strip() for x in comment.body.lower().replace(",", '').replace("\n", " ").replace("\r", " ").replace(".", '').replace("?", '').replace("!", '').replace("[", '').replace("]", " ").replace("(", '').replace(")", " ").replace("*", '').replace("\\", "").split(" ")]  # all words in the top level comment
+        comment_word_list = [x.encode('utf-8').strip() for x in comment.body.lower().replace(",", "").replace("\n", " ").replace("\r", " ").replace(".", '').replace("?", '').replace("!", '').replace("[", '').replace("]", " ").replace("(", '').replace(")", " ").replace("*", '').replace("\\", "").split(" ")]  # all words in the top level comment
 	if debug:
 		print(" ".join(comment_word_list))
 # Had to comment this out because it will post a comment every time it runs.
@@ -238,15 +238,6 @@ def inform_comment_archived(comment, to_archive):
 		print("\n\n" + str(time.time()) + "\n" + str(e))  # comment was probably deleted
 
 
-def inform_comment_deleted(comment):
-	try:
-		if not debug:
-			comment.reply("This comment has been around for more than a month and will no longer be tracked. If you wish to attempt to get trade credit for this swap again, please make a new comment and tag both this bot and your trade partner.")
-		else:
-			print("This comment has been around for more than a month and will no longer be tracked. If you wish to attempt to get trade credit for this swap again, please make a new comment and tag both this bot and your trade partner.")
-	except Exception as e:
-		print("\n\n" + str(time.time()) + "\n" + str(e))  # comment was probably deleted
-
 def inform_giving_credit(correct_reply):
 	try:
 		if not debug:
@@ -274,7 +265,8 @@ def main():
         messages = []  # Want to catch everything else for replying
 	to_write = []  # What we will eventually write out to the local file
 	to_archive = [] # For comments that are more than 3 days old (to be checked later)
-	set_active_comments_and_messages(reddit, comments, messages)
+#	set_active_comments_and_messages(reddit, comments, messages)
+#	comments.append('ekz7q6g')
 
 	# Process comments
 	if debug:
@@ -282,14 +274,16 @@ def main():
 	for comment in comments:
 		try:
 			comment.refresh()  # Don't know why this is required but it doesnt work without it so dont touch it
-		except:
+		except Exception as e:
+			print(e)
+			print(comment)
 			print("Could not 'refresh' comment: " + str(comment))
-			continue
+#			continue
 		time_made = comment.created
-		if time.time() - time_made > 3 * 24 * 60 * 60:  # if this comment is more than three days old
-			inform_comment_archived(comment, to_archive)
-		else:
-			handle_comment(comment, bot_username, swap_data, sub, to_write)
+#		if time.time() - time_made > 3 * 24 * 60 * 60:  # if this comment is more than three days old
+#			inform_comment_archived(comment, to_archive)
+#		else:
+		handle_comment(comment, bot_username, swap_data, sub, to_write)
 	if not debug:
 		dump(to_write)  # Save off any unfinished tags
 		if len(to_archive) > 0: # If we have comments to archive, dump them off
@@ -308,11 +302,8 @@ def main():
                 	except:
                         	print("Could not 'refresh' comment: " + str(comment))
 	                        continue
-			time_made = comment.created
-			if time.time() - time_made > 30 * 24 * 60 * 60:  # if this comment is more than thirty days old
-				inform_comment_deleted(comment)
-			else:
-				handle_comment(comment, bot_username, swap_data, sub, to_write)
+			print(comment.created)
+			handle_comment(comment, bot_username, swap_data, sub, to_write)
 
 		if not debug:
 			dump_archive(to_write)
