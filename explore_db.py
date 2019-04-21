@@ -25,7 +25,7 @@ def dump(swap_data):
 db = get_db()
 print(db.keys())
 #print(db.keys())
-print(db['MasterKenobiWan'.lower()])
-print(db['andys-toys'.lower()])
+print(db['ticklesmyfancy'.lower()])
+#print(db['andys-toys'.lower()])
 
 #dump(db)
