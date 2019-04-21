@@ -287,7 +287,8 @@ def main():
 			add_to_archive(to_archive)
 
 	# If it is between 00:00 and 00:02 UTC, check the archived comments
-	if is_time_between(datetime.time(02,00), datetime.time(02,02)) or debug:
+#	if is_time_between(datetime.time(02,00), datetime.time(02,02)) or debug:
+	if True:
 		print("Looking through archived comments...")
 		comments = []
 		to_write = []  # What we will eventually write out to the local file
