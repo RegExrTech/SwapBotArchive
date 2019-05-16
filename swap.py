@@ -165,7 +165,6 @@ def set_archived_comments(reddit, comments):
 	comments = list(set(comments))
 
 def handle_comment(comment, bot_username, swap_data, sub, to_write):
-	OP = comment.parent().author  # Get the OP of the post (because one of the users in the comment chain must be the OP)
         author1 = comment.author  # Author of the top level comment
         comment_word_list = [x.encode('utf-8').strip() for x in comment.body.lower().replace(",", '').replace("\n", " ").replace("\r", " ").replace(".", '').replace("?", '').replace("!", '').replace("[", '').replace("]", " ").replace("(", '').replace(")", " ").replace("*", '').replace("\\", "").split(" ")]  # all words in the top level comment
 	if debug:
@@ -187,7 +186,7 @@ def handle_comment(comment, bot_username, swap_data, sub, to_write):
 		if debug:
 			print("Author1: " + str(author1))
 			print("Author2: " + str(author2))
-                if OP in [author1, author2]:  # make sure at least one of them is the OP for the post
+                if correct_reply.is_submitter or comment.is_submitter:  # make sure at least one of them is the OP for the post
 			comment_to_check = comment
 			while comment_to_check.__class__.__name__ == "Comment":  # Ensures we actually get the id of the parent POST and not just a parent comment
 				comment_to_check = comment_to_check.parent()
