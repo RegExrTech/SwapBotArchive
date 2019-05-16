@@ -131,16 +131,24 @@ def set_active_comments_and_messages(reddit, comments, messages):
                         pass
 
         # Get comments from username mentions
-        for message in reddit.inbox.unread():
-                if not debug:
-                        message.mark_read()
-                if message.was_comment and message.subject == "username mention" and (not str(message.author).lower() == "automoderator"):
-                        try:
-                                comments.append(reddit.comment(message.id))
-                        except:  # if this fails, the user deleted their account or comment so skip it
-                                pass
-                else:
-                        messages.append(message)
+	try:
+		for message in reddit.inbox.unread():
+        	        if message.was_comment and message.subject == "username mention" and (not str(message.author).lower() == "automoderator"):
+                	        try:
+                        	        comments.append(reddit.comment(message.id))
+	                        except:  # if this fails, the user deleted their account or comment so skip it
+        	                        pass
+                	else:
+                        	messages.append(message)
+	except:
+		print("Failed to get next message from unreads. Ignoring all unread messages and will try again next time.")
+
+	if not debug:
+		for message in messages:
+			try:
+				message.mark_read()
+			except:
+				print("Unable to mark message as read. Leaving it as is.")
 
         comments = list(set(comments))  # Dedupe just in case we get duplicates from the two sources
 
@@ -197,7 +205,7 @@ def get_desired_author2_name(comment_word_list, bot_username, author_username_st
 			desired_author2_string = word
 			if desired_author2_string[0] == "/":  # Sometimes people like to add a / to the u/username
 				desired_author2_string = desired_author2_string[1:]
-			if not desired_author2_string[2:] == author_username_string:
+			if not desired_author2_string[2:] == author_username_string.lower():
  				return desired_author2_string
 	return ""
 
