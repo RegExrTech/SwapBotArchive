@@ -271,6 +271,7 @@ def main():
 	# Process comments
 	if debug:
 		print("Looking through active comments...")
+	comments = []
 	for comment in comments:
 		try:
 			comment.refresh()  # Don't know why this is required but it doesnt work without it so dont touch it
@@ -296,6 +297,7 @@ def main():
 		comments = []
 		to_write = []  # What we will eventually write out to the local file
 		set_archived_comments(reddit, comments)
+		comments = [reddit.comment('en37688')]
 		for comment in comments:
 	                try:
         	                comment.refresh()  # Don't know why this is required but it doesnt work without it so dont touch it
