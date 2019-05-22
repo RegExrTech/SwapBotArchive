@@ -15,6 +15,10 @@ client_id = info[1]
 client_secret = info[2]
 bot_username = info[3]
 bot_password = info[4]
+try:
+	flair_word = " " + info[5]
+except:
+	flair_word = " Swaps"
 FNAME_comments = 'database/active_comments-' + subreddit_name + '.txt'
 FNAME_swaps = 'database/swaps-' + subreddit_name + ".json"
 FNAME_archive = 'database/archive-' + subreddit_name + '.txt'
@@ -112,11 +116,11 @@ def update_flair(author1, author2, sub, swap_data):
 	# Loop over each author and change their flair
 	for author in [author1, author2]:
 		print("attempting to assign flair for " + author)
-		css = str(len(swap_data[author]))
+		swap_count = str(len(swap_data[author]))
 		if not debug:
-			sub.flair.set(author, css+" swaps", css)
+			sub.flair.set(author, swap_count + flair_word, swap_count)
 		else:
-			print("Assigning flair " + css + " to user " + author)
+			print("Assigning flair " + swap_count + " to user " + author)
 			print("length of swap_data: " + str(len(swap_data[author])))
 			print(swap_data[author])
 			print("==========")
@@ -138,7 +142,6 @@ def set_active_comments_and_messages(reddit, comments, messages):
         	        if message.was_comment and message.subject == "username mention" and (not str(message.author).lower() == "automoderator"):
                 	        try:
                         	        comments.append(reddit.comment(message.id))
-					print(message.id)
 	                        except:  # if this fails, the user deleted their account or comment so skip it
         	                        pass
                 	else:
@@ -343,7 +346,10 @@ def main():
 				break
 		if not username:  # If we didn't find a username, let them know and continue
 			if not debug:
-				message.reply("Hi there,\n\nYou did not specify a username to check. Please ensure that you have a user name, such as u/FreddySwapBot, in the body of the message you just sent me. Please feel free to try again. Thanks!")
+				try:
+					message.reply("Hi there,\n\nYou did not specify a username to check. Please ensure that you have a user name, such as u/FreddySwapBot, in the body of the message you just sent me. Please feel free to try again. Thanks!")
+				except:
+					print("Message has no reply option...")
 			else:
 				print("Hi there,\n\nYou did not specify a username to check. Please ensure that you have a user name, such as u/FreddySwapBot, in the body of the message you just sent me. Please feel free to try again. Thanks!" + "\n==========")
 			continue
@@ -352,7 +358,10 @@ def main():
 			trades = swap_data[username]
 		except:  # if that user has not done any trades, we have no info for them.
 			if not debug:
-				message.reply("Hello,\n\nu/" + username + " has not had any swaps yet.")
+				try:
+					message.reply("Hello,\n\nu/" + username + " has not had any swaps yet.")
+				except:
+					print("Message has no reply option...")
 			else:
 				print("Hello,\n\nu/" + username + " has not had any swaps yet." + "\n==========")
 			continue
@@ -369,12 +378,18 @@ def main():
 
 		if len(trades) == 0:
 			if not debug:
-				message.reply("Hello,\n\nu/" + username + " has not had any swaps yet.")
+				try:
+					message.reply("Hello,\n\nu/" + username + " has not had any swaps yet.")
+				except:
+					print("Message has no reply option...")
 			else:
 				print("Hello,\n\nu/" + username + " has not had any swaps yet." + "\n==========")
 		else:
 			if not debug:
-				message.reply("Hello,\n\nu/" + username + " has had the following " + str(len(trades)) + " swaps:\n\n" + final_text)
+				try:
+					message.reply("Hello,\n\nu/" + username + " has had the following " + str(len(trades)) + " swaps:\n\n" + final_text)
+				except:
+					print("Message has no reply option...")
 			else:
 				print("Hello,\n\nu/" + username + " has had the following " + str(len(trades)) + " swaps:\n\n" + final_text + "\n==========")
 
