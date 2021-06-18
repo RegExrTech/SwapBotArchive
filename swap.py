@@ -556,6 +556,9 @@ def main():
 	# This is for if anyone sends us a message requesting swap data
 	for message in messages:
 		text = (message.body + " " +  message.subject).replace("\n", " ").replace("\r", " ")
+		#Skip if first char is !. These messages potentially contain EscrowBot commands
+		if (text[0] == '!') :
+			continue
 		username = get_username_from_text(text)[2:]  # remove the leading u/ in the username
 		if not username:  # If we didn't find a username, let them know and continue
 			reply_text = "Hi there,\n\nYou did not specify a username to check. Please ensure that you have a user name in the body of the message you just sent me. Please feel free to try again. Thanks!"
