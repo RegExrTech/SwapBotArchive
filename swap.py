@@ -459,7 +459,9 @@ def handle_comment(comment, bot_username, sub, reddit, is_new_comment, sub_confi
 		if any([update_data[x]['is_duplicate'] for x in update_data]):
 			log(parent_post, comment, "Credit already given")
 			non_updated_users, user_flair_text = update_flair(author1, author2, sub_config)
-			inform_credit_already_given(correct_reply)
+			is_stuck = check_for_stuck_comment(comment, sub_config)
+			if not is_stuck:
+				inform_credit_already_given(correct_reply)
 			requests.post(request_url + "/remove-comment/", {'sub_name': sub_config.subreddit_name, 'comment_id': comment.id, 'platform': PLATFORM})
 		elif any([update_data[x]['is_recent'] for x in update_data]):
 			log(parent_post, comment, "Partner interaction too recent")
@@ -479,6 +481,19 @@ def handle_comment(comment, bot_username, sub, reddit, is_new_comment, sub_confi
 		if debug:
 			print("No correct looking replies were found")
 		return False
+
+def check_for_stuck_comment(comment, sub_config):
+	# Occasionally, comments get "stuck" in the inbox and the bot cannot mark them as unread.
+	# In these cases, the bot will reply to it until the comment is removed.
+	# As such, if the bot goes to inform a comment is a duplicate, it should first check if it is a stuck comment
+	# and remove the comment if appropriate before informing that it found a duplicate.
+	for message in sub_config.reddit_object.inbox.unread():
+		if message.was_comment and message.subject == "username mention" and (not str(message.author).lower() == "automoderator"):
+			if message.id == comment.id:
+				discord.log("Removing stuck comment " + comment.id)
+				comment.mod.remove
+				return True
+	return False
 
 def check_booster_count(username, sub_config):
 	# Any of the booster_check values being set to 0 will disable the check.
