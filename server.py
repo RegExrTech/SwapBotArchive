@@ -36,6 +36,7 @@ swap_data = {}
 comment_data = {}
 username_lookup = {}
 pending_requests = {}
+comments_blacklist = {}
 
 # TODO: This is hard coded but maybe we make it a sub config in the future
 TIMESTAMP_DELTA_THRESHOLD = 6 * 60 * 60  # 6 Hours
@@ -139,7 +140,7 @@ def blacklist_comment():
 	global comments_blacklist
 	if platform not in comments_blacklist:
 		comments_blacklist[platform] = []
-	comments_blacklist[platform].append(id)
+	comments_blacklist[platform].append(comment_id)
 	json_helper.dump(comments_blacklist, comments_blacklist_fname)
 	return jsonify({})
 
