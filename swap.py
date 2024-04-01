@@ -1,7 +1,8 @@
 import random
 import sys
 sys.path.insert(0, '.')
-sys.path.insert(0, 'Discord')
+sys.path.insert(0, 'logger')
+import logger
 from assign_role import assign_role
 import Config
 import requests
@@ -460,7 +461,9 @@ def handle_comment(comment, bot_username, sub, reddit, is_new_comment, sub_confi
 			log(parent_post, comment, "Credit already given")
 			non_updated_users, user_flair_text = update_flair(author1, author2, sub_config)
 			is_stuck = check_for_stuck_comment(comment, sub_config)
-			if not is_stuck:
+			if is_stuck:
+				requests.post(request_url + "/blacklist-comment/", {'comment_id': comment.id, 'platform': PLATFORM})
+			else:
 				inform_credit_already_given(correct_reply)
 			requests.post(request_url + "/remove-comment/", {'sub_name': sub_config.subreddit_name, 'comment_id': comment.id, 'platform': PLATFORM})
 		elif any([update_data[x]['is_recent'] for x in update_data]):
@@ -490,8 +493,7 @@ def check_for_stuck_comment(comment, sub_config):
 	for message in sub_config.reddit_object.inbox.unread():
 		if message.was_comment and message.subject == "username mention" and (not str(message.author).lower() == "automoderator"):
 			if message.id == comment.id:
-				discord.log("Removing stuck comment " + comment.id)
-				comment.mod.remove
+				logger.log("Found stuck comment " + comment.id + " on r/" + sub_config.subreddit_name)
 				return True
 	return False
 

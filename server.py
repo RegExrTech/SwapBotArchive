@@ -28,6 +28,7 @@ json_helper = JsonHelper()
 
 swaps_fname = 'database/{sub_name}-swaps.json'
 comment_fname = 'database/comments.json'
+comments_blacklist_fname = 'database/comments_blacklist.json'
 username_lookup_fname = 'Discord/paired_usernames.json'
 pending_requests_fname = "Discord/pending_requests.json"
 
@@ -126,6 +127,21 @@ def add_comment():
 	json_helper.dump(comment_data, comment_fname)
 	return jsonify({})
 
+@app.route('/blacklist-comment/', methods=['POST'])
+def blacklist_comment():
+	"""
+	Occasionally, comments get stuck and cannot be removed from a bot's unread message.
+	Use this feature to blacklist comment IDs to avoid doing repeat work on them.
+	"""
+	comment_id = request.form["comment_id"]
+	platform = request.form["platform"]
+
+	global comments_blacklist
+	if platform not in comments_blacklist:
+		comments_blacklist[platform] = []
+	comments_blacklist[platform].append(id)
+	json_helper.dump(comments_blacklist, comments_blacklist_fname)
+	return jsonify({})
 
 @app.route('/get-comments/', methods=['POST'])
 def get_comments():
@@ -155,12 +171,18 @@ def get_comments():
 	if platform not in comment_data[sub_name]:
 		comment_data[sub_name][platform] = {'active': [], 'archived': []}
 
+	global comments_blacklist
+	if platform not in comments_blacklist:
+		comments_blacklist[platform] = []
+
 	if active:
 		prev_ids = comment_data[sub_name][platform]['active']
 	else:
 		prev_ids = comment_data[sub_name][platform]['archived']
 
 	for id in ids:
+		if id in comments_blacklist[platform]:
+			continue
 		if id not in prev_ids:
 			prev_ids.append(id)
 			new_ids.append(id)
@@ -581,6 +603,7 @@ def dump():
 	json_helper.dump(comment_data, comment_fname)
 	json_helper.dump(username_lookup, username_lookup_fname)
 	json_helper.dump(pending_requests, pending_requests_fname)
+	json_helper.dump(comments_blacklist, comments_blacklist_fname)
 	return jsonify({})
 
 @app.route('/get-sub-db/', methods=["GET"])
@@ -615,6 +638,7 @@ def launch():
 	global comment_data
 	global username_lookup
 	global pending_requests
+	global comments_blacklist
 	for fname in os.listdir('database'):
 		if '-swaps.json' in fname:
 			try:
@@ -626,6 +650,7 @@ def launch():
 	comment_data = json_helper.get_db(comment_fname)
 	username_lookup = json_helper.get_db(username_lookup_fname, False)
 	pending_requests = json_helper.get_db(pending_requests_fname)
+	comments_blacklist = json_helper.get_db(comments_blacklist_fname)
 
 if __name__ == "__main__":
 	port = 8000
