@@ -1,6 +1,7 @@
 import random
 import sys
 sys.path.insert(0, '.')
+sys.path.insert(0, 'Discord')
 sys.path.insert(0, 'logger')
 import logger
 from assign_role import assign_role
