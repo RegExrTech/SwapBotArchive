@@ -926,21 +926,15 @@ def get_count_from_summary(trades_data):
 				trade_count += trades_data[sub][platform]['legacy_count']
 	return trade_count
 
-def handle_swap_data_request(message, sub_config):
-	text = (message.body + " " +  message.subject).replace("\n", " ").replace("\r", " ")
-	username = get_username_from_text(text)[2:]  # remove the leading u/ in the username
-	if not username:  # If we didn't find a username, let them know and continue
-		reply_text = "Hi there,\n\nYou did not specify a username to check. Please ensure that you have a user name in the body of the message you just sent me. Please feel free to try again. Thanks!"
-		reply_to_message(message, reply_text, sub_config)
-		return
+def format_swap_count_summary(sub_config, username, character_limit):
 	trades_data = requests.post(request_url + "/get-summary-from-subs/", {'sub_names': sub_config.database_name, 'current_platform': PLATFORM, 'username': username}).json()['data']
 	trade_count = get_count_from_summary(trades_data)
 	# Text based on swaps for this sub
 	if trade_count == 0:
-		reply_header = "Hello,\n\nu/" + username + " has not had any " + sub_config.flair_word + " in this sub yet."
+		reply_header = "u/" + username + " has not had any " + sub_config.flair_word + " in this sub yet."
 		swap_count_text = ""
 	else:
-		reply_header = "Hello,\n\nu/" + username + " has had the following " + str(trade_count) + " " + sub_config.flair_word + ":\n\n"
+		reply_header = "u/" + username + " has had the following " + str(trade_count) + " " + sub_config.flair_word + ":\n\n"
 		swap_count_text = format_swap_count(trades_data, sub_config)
 	# Get a summary of other subs at the bottom of the message
 	sister_sub_text = ""
@@ -949,7 +943,7 @@ def handle_swap_data_request(message, sub_config):
 		if sister_sub_count > 0:
 			sister_sub_text += "\n\nThis user also has " + str(sister_sub_count) + " " + sub_config.flair_word + " on r/" + sister_sub
 	# Truncate if too large
-	if len(reply_header+swap_count_text+sister_sub_text+kofi_text) > 10000:
+	if len(reply_header+swap_count_text+sister_sub_text+kofi_text) > character_limit:
 		truncated_text = "* And more..."
 		amount_to_truncate = len(reply_header+swap_count_text+sister_sub_text+kofi_text+truncated_text) + 1 - 10000
 		swap_count_text = swap_count_text[:len(swap_count_text) - amount_to_truncate]
@@ -957,8 +951,17 @@ def handle_swap_data_request(message, sub_config):
 	else:
 		truncated_text = ""
 
-	reply_text = reply_header + swap_count_text + truncated_text + sister_sub_text
+	return reply_header + swap_count_text + truncated_text + sister_sub_text
 
+
+def handle_swap_data_request(message, sub_config):
+	text = (message.body + " " +  message.subject).replace("\n", " ").replace("\r", " ")
+	username = get_username_from_text(text)[2:]  # remove the leading u/ in the username
+	if not username:  # If we didn't find a username, let them know and continue
+		reply_text = "Hi there,\n\nYou did not specify a username to check. Please ensure that you have a user name in the body of the message you just sent me. Please feel free to try again. Thanks!"
+		reply_to_message(message, reply_text, sub_config)
+		return
+	reply_text = format_swap_count_summary(sub_config, username, 10000)
 	reply_to_message(message, reply_text, sub_config)
 
 
