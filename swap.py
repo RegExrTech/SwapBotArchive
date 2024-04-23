@@ -204,6 +204,9 @@ def update_single_user_flair(sub, sub_config, author, swap_count, non_updated_us
 			if author in paired_usernames['reddit']:
 				discord_user_id = paired_usernames['reddit'][author]['discord']
 				assign_role(sub_config.discord_config.server_id, discord_user_id, discord_role_id, sub_config.discord_config.token)
+		content = format_swap_count_summary(sub_config, author, 200000) # Wiki pages are limited to 524288 bytes
+		overview_content = format_swap_count_overview_summary(content, sub_config, author)
+		wiki_helper.update_confirmation_page(author, content, overview_content, sub_config)
 	else:
 		print("Assigning flair " + swap_count + " to user " + author + " with template_id: " + template)
 		print("==========")
@@ -953,6 +956,11 @@ def format_swap_count_summary(sub_config, username, character_limit):
 
 	return reply_header + swap_count_text + truncated_text + sister_sub_text
 
+
+def format_swap_count_overview_summary(sub_summary, sub_config, username):
+	if " has had the following " not in sub_summary:
+		return ""
+	return "* [" + sub_summary.split("following ")[1].split(":")[0] + "](https://www.reddit.com/r/" + sub_config.subreddit_name + "/wiki/confirmations/" + username + ") on r/" + sub_config.subreddit_display_name
 
 def handle_swap_data_request(message, sub_config):
 	text = (message.body + " " +  message.subject).replace("\n", " ").replace("\r", " ")

@@ -4,7 +4,8 @@ import time
 import requests
 import swap
 
-WIKI_PAGE_NAME = 'swap_bot_config'
+CONFIG_WIKI_PAGE_NAME = 'swap_bot_config'
+CONFIRMATIONS_WIKI_PAGE_NAME = "confirmations/{}"
 
 def get_wiki_page(config, wiki_page_name):
 	# Get the config page
@@ -21,7 +22,7 @@ def get_wiki_page_content(config_page, config):
 		return config_page.content_md
 	except NotFound as e:
 		try:
-			create_wiki_config(config, config_page)
+			create_wiki_page(config, config_page)
 			return config_page.content_md
 		except NotFound as e:
 			print(e)
@@ -33,7 +34,7 @@ def get_wiki_page_content(config_page, config):
 		return ""
 
 def run_config_checker(config):
-	config_page = get_wiki_page(config, WIKI_PAGE_NAME)
+	config_page = get_wiki_page(config, CONFIG_WIKI_PAGE_NAME)
 	content = get_wiki_page_content(config_page, config)
 	if content == "":
 		return
@@ -124,9 +125,14 @@ def run_config_checker(config):
 	# Validate Wiki Page
 	validate_wiki_content(config, config_page)
 
-def create_wiki_config(config, config_page):
-	validate_wiki_content(config, config_page)
-	config_page.mod.update(listed=False, permlevel=2)
+def create_wiki_page(config, page):
+	if page.name == CONFIG_WIKI_PAGE_NAME:
+		validate_wiki_content(config, page)
+		permlevel=2
+	else:
+		page.edit(content="")
+		permlevel=1
+	page.mod.update(listed=False, permlevel=permlevel)
 
 def validate_wiki_content(config, config_page):
 	content_lines = []
@@ -157,23 +163,39 @@ def get_config_content(content):
 		config_content[key] = value
 	return config_content
 
+def update_confirmation_page(username, content, overview_content, sub_config):
+	if content:
+		page = get_wiki_page(sub_config, CONFIRMATIONS_WIKI_PAGE_NAME.format(username))
+		if page is not None:
+			# Makes page if one does not exist
+			get_wiki_page_content(page, sub_config)
+			page.edit(content=content)
+	if overview_content:
+		# Update the overview page
+		logger_config = Config("logger")
+		page = get_wiki_page(logger_config, CONFIRMATIONS_WIKI_PAGE_NAME.format(username))
+		if page is not None:
+			old_overview_content = get_wiki_page_content(page, logger_config).split("\n")
+			overview_content = "\n".join([overview_content] + [x for x in old_overview_content if not x.endswith("r/" + sub_config.subreddit_name)])
+			page.edit(content=overview_content)
+
 def invalidate_config(content):
 	content = "\n\n".join(content.split("\n\n")[1:] + ["bot_timestamp:" + str(time.time())])
 	config_page.edit(content=content)
 
 def inform_config_invalid(config_pag):
-	message = "I'm sorry but I was unable to parse the config you set in the " + WIKI_PAGE_NAME + " wiki page. Please review the [config guide](https://www.universalscammerlist.com/config_guide.html) and try again."
+	message = "I'm sorry but I was unable to parse the config you set in the " + CONFIG_WIKI_PAGE_NAME + " wiki page. Please review the [config guide](https://www.universalscammerlist.com/config_guide.html) and try again."
 	send_update_message(config_page, message)
 
 def inform_config_valid(config_page):
-	message = "I have successfully parsed the " + WIKI_PAGE_NAME + " wiki page and updated my config. Thank you for your contribution!"
+	message = "I have successfully parsed the " + CONFIG_WIKI_PAGE_NAME + " wiki page and updated my config. Thank you for your contribution!"
 	send_update_message(config_page, message)
 
 def send_update_message(config_page, message):
 	redditor = config_page.revision_by
 	username = redditor.name
 	message = "Hi u/" + username + "\n\n" + message
-	redditor.message(subject=WIKI_PAGE_NAME + " wiki update", message=message)
+	redditor.message(subject=CONFIG_WIKI_PAGE_NAME + " wiki update", message=message)
 
 if __name__ == "__main__":
 	import os
@@ -182,7 +204,7 @@ if __name__ == "__main__":
 			continue
 		print("=== " + fname + " ===")
 		config = Config(fname.split(".")[0])
-#		validate_wiki_content(config, get_wiki_page(config, WIKI_PAGE_NAME))
+#		validate_wiki_content(config, get_wiki_page(config, CONFIG_WIKI_PAGE_NAME))
 		page = get_wiki_page(config, 'config/automoderator')
 		content = get_wiki_page_content(page, config)
 		for rule in content.split("---"):
