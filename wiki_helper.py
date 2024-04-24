@@ -179,7 +179,7 @@ def update_confirmation_page(username, content, overview_content, sub_config):
 			# Replace the old content with the new if there is any overlap.
 			overview_lines = [overview_content] + [x for x in old_overview_content if not x.endswith("r/" + sub_config.subreddit_name)]
 			# Then filter out any lines with no interesting information.
-			overview_lines = [x for x in overview_lines if not x.startswith("* 0")]
+			overview_lines = [x for x in overview_lines if not x.startswith("* [0")]
 			page.edit(content="\n".join(overview_lines))
 
 def invalidate_config(content):
