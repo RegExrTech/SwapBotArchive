@@ -175,12 +175,18 @@ def update_confirmation_page(username, content, overview_content, sub_config):
 		logger_config = Config("logger")
 		page = get_wiki_page(logger_config, CONFIRMATIONS_WIKI_PAGE_NAME.format(username))
 		if page is not None:
-			old_overview_content = get_wiki_page_content(page, logger_config).split("\n")
+			old_overview_content = get_wiki_page_content(page, logger_config)
+			old_overview_lines = old_overview_content.split("\n")
 			# Replace the old content with the new if there is any overlap.
-			overview_lines = [overview_content] + [x for x in old_overview_content if not x.endswith("r/" + sub_config.subreddit_name)]
+			overview_lines = [overview_content] + [x for x in old_overview_lines if not x.endswith("r/" + sub_config.subreddit_name)]
 			# Then filter out any lines with no interesting information.
 			overview_lines = [x for x in overview_lines if not x.startswith("* [0")]
-			page.edit(content="\n".join(overview_lines))
+			# Sort so we're consistent and we can check for changes more easily.
+			overview_lines.sort(key = lambda x: x.split(" on ")[1])
+			new_content = "\n".join(overview_lines)
+			# Only make a network call if we're actually making update.
+			if new_content != old_overview_content:
+				page.edit(content=new_content)
 
 def invalidate_config(content):
 	content = "\n\n".join(content.split("\n\n")[1:] + ["bot_timestamp:" + str(time.time())])
