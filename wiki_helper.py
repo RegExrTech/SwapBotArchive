@@ -176,8 +176,11 @@ def update_confirmation_page(username, content, overview_content, sub_config):
 		page = get_wiki_page(logger_config, CONFIRMATIONS_WIKI_PAGE_NAME.format(username))
 		if page is not None:
 			old_overview_content = get_wiki_page_content(page, logger_config).split("\n")
-			overview_content = "\n".join([overview_content] + [x for x in old_overview_content if not x.endswith("r/" + sub_config.subreddit_name)])
-			page.edit(content=overview_content)
+			# Replace the old content with the new if there is any overlap.
+			overview_lines = [overview_content] + [x for x in old_overview_content if not x.endswith("r/" + sub_config.subreddit_name)]
+			# Then filter out any lines with no interesting information.
+			overview_lines = [x for x in overview_lines if not x.startswith("* 0")]
+			page.edit(content="\n".join(overview_lines))
 
 def invalidate_config(content):
 	content = "\n\n".join(content.split("\n\n")[1:] + ["bot_timestamp:" + str(time.time())])

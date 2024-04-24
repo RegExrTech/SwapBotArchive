@@ -113,8 +113,8 @@ def get_swap_count(author_name, subs, platform):
 
 def update_flair(author1, author2, sub_config, post_id="", comment_id=""):
 	"""
-	returns list of tuples of author name and (str)swap count if flair was NOT updated.
-	also returns a dict of usernames to flair text
+	Returns list of tuples of author name and (str)swap count if flair was NOT updated.
+	Also returns a dict of usernames to flair text
 	"""
 	non_updated_users = []
 	user_flair_text = {}
@@ -959,8 +959,10 @@ def format_swap_count_summary(sub_config, username, character_limit):
 
 def format_swap_count_overview_summary(sub_summary, sub_config, username):
 	if " has had the following " not in sub_summary:
-		return ""
-	return "* [" + sub_summary.split("following ")[1].split(":")[0] + "](https://www.reddit.com/r/" + sub_config.subreddit_name + "/wiki/confirmations/" + username + ") on r/" + sub_config.subreddit_display_name
+		count = "0 " + sub_config.flair_word
+	else:
+		count = sub_summary.split("following ")[1].split(":")[0]
+	return "* [" + count + "](https://www.reddit.com/r/" + sub_config.subreddit_name + "/wiki/confirmations/" + username + ") on r/" + sub_config.subreddit_display_name
 
 def handle_swap_data_request(message, sub_config):
 	text = (message.body + " " +  message.subject).replace("\n", " ").replace("\r", " ")
