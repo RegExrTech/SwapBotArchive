@@ -580,8 +580,7 @@ def reply(comment, reply_text):
 		else:
 			print(reply_text + "\n==========")
 	except Exception as e:  # Comment was probably deleted
-		print(e)
-		print("    Comment: " + str(comment))
+		logger.log("Unable to reply to comment " + comment.id + " with text:\n" + reply_text, e)
 
 def handle_no_author2(comment):
 	reply_text = "You did not tag anyone other than this bot in your comment. Please post a new top level comment tagging this bot and the person you traded with to get credit for the trade."
