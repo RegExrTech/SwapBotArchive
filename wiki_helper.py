@@ -180,7 +180,7 @@ def update_confirmation_page(username, content, overview_content, sub_config):
 			# Replace the old content with the new if there is any overlap.
 			overview_lines = [overview_content] + [x for x in old_overview_lines if not x.endswith("r/" + sub_config.subreddit_name)]
 			# Then filter out any lines with no interesting information.
-			overview_lines = [x for x in overview_lines if not x.startswith("* [0")]
+			overview_lines = [x for x in overview_lines if not x.startswith("* [0") and x]
 			# Sort so we're consistent and we can check for changes more easily.
 			overview_lines.sort(key = lambda x: x.split(" on ")[1])
 			new_content = "\n".join(overview_lines)
