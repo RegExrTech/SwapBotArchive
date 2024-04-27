@@ -229,147 +229,152 @@ def update_database(author1, author2, listing_url):
 	return_data = requests.post(request_url + "/check-comment/", {'sub_name': sub_config.database_name, 'author1': author1, 'author2': author2, 'post_id': post_id, 'comment_id': comment_id, 'real_sub_name': sub_config.subreddit_name, 'platform': PLATFORM}).json()
 	return return_data
 
-messages = send_request(GET, baseUrl, headers).json()
+def main():
+	messages = send_request(GET, baseUrl, headers).json()
 
-confirmation_invocations = []
-confirmation_replies = []
-messages_to_ignore = []
-# Check Discord for messages
-for message in messages:
-	author1_id = message['author']['id']
-	bot_user_id = TOKENS["bot_id"]
-	if "referenced_message" in message and message["referenced_message"] is not None and bot_user_id != author1_id and message['referenced_message']['author']['id'] == bot_user_id:
-		confirmation_replies.append(message)
-	elif bot_user_id != author1_id and "referenced_message" not in message:
-		confirmation_invocations.append(message)
-	elif "referenced_message" in message and bot_user_id == author1_id:
-		messages_to_ignore.append(message["referenced_message"])
+	confirmation_invocations = []
+	confirmation_replies = []
+	messages_to_ignore = []
+	# Check Discord for messages
+	for message in messages:
+		author1_id = message['author']['id']
+		bot_user_id = TOKENS["bot_id"]
+		if "referenced_message" in message and message["referenced_message"] is not None and bot_user_id != author1_id and message['referenced_message']['author']['id'] == bot_user_id:
+			confirmation_replies.append(message)
+		elif bot_user_id != author1_id and "referenced_message" not in message:
+			confirmation_invocations.append(message)
+		elif "referenced_message" in message and bot_user_id == author1_id:
+			messages_to_ignore.append(message["referenced_message"])
 
-for message in messages_to_ignore:
-	if not message:
-		continue
-	confirmation_invocations = [x for x in confirmation_invocations if x['id'] != message['id']]
-	confirmation_replies = [x for x in confirmation_replies if x['id'] != message['id']]
+	for message in messages_to_ignore:
+		if not message:
+			continue
+		confirmation_invocations = [x for x in confirmation_invocations if x['id'] != message['id']]
+		confirmation_replies = [x for x in confirmation_replies if x['id'] != message['id']]
 
-for message in confirmation_invocations:
-	body = message['content']
-	author1_id = message['author']['id']
-	bot_user_id = TOKENS["bot_id"]
-	confirmation_message_id = message['id']
-	invalids = [bot_user_id, author1_id]
-	# If the message is from the bot, skip
-	if bot_user_id == author1_id:
-		continue
+	for message in confirmation_invocations:
+		body = message['content']
+		author1_id = message['author']['id']
+		bot_user_id = TOKENS["bot_id"]
+		confirmation_message_id = message['id']
+		invalids = [bot_user_id, author1_id]
+		# If the message is from the bot, skip
+		if bot_user_id == author1_id:
+			continue
 
-	mentioned_users = get_mentioned_users(message, invalids)
-	if not mentioned_users:
-		reply("You did not mention any users in your message. Please try again.", confirmation_message_id, baseUrl)
-		continue
+		mentioned_users = get_mentioned_users(message, invalids)
+		if not mentioned_users:
+			reply("You did not mention any users in your message. Please try again.", confirmation_message_id, baseUrl)
+			continue
 
-	mentioned_roles = get_mentioned_roles(message)
+		mentioned_roles = get_mentioned_roles(message)
 
-	mentioned_posts = get_mentioned_posts(body, mentioned_users+mentioned_roles+invalids)
-	if not mentioned_posts:
-		reply("You did not mention any posts in your message. Please try again.", confirmation_message_id, baseUrl)
-		continue
+		mentioned_posts = get_mentioned_posts(body, mentioned_users+mentioned_roles+invalids)
+		if not mentioned_posts:
+			reply("You did not mention any posts in your message. Please try again.", confirmation_message_id, baseUrl)
+			continue
 
-	author2_id = mentioned_users[0]
-	original_post_id = mentioned_posts[0]
-	channel_id, original_post_data = get_correct_channel_id(original_post_id)
-	if not channel_id:
-		reply("I could not find " + str(original_post_id) + " in any of the BST channels. Please try again with a correct message ID.", confirmation_message_id, baseUrl)
-		continue
+		author2_id = mentioned_users[0]
+		original_post_id = mentioned_posts[0]
+		channel_id, original_post_data = get_correct_channel_id(original_post_id)
+		if not channel_id:
+			reply("I could not find " + str(original_post_id) + " in any of the BST channels. Please try again with a correct message ID.", confirmation_message_id, baseUrl)
+			continue
 
-	desired_author_id = original_post_data['author']['id']
-	if desired_author_id not in [author1_id, author2_id]:
-		reply("Neither you nor the person you tagged are the OP of the message you referenced.", confirmation_message_id, baseUrl)
-		continue
+		desired_author_id = original_post_data['author']['id']
+		if desired_author_id not in [author1_id, author2_id]:
+			reply("Neither you nor the person you tagged are the OP of the message you referenced.", confirmation_message_id, baseUrl)
+			continue
 
-	full_original_post_url = "https://www.discord.com/channels/" + server_id + "/" + channel_id + "/" + original_post_id
-	reply_message = "<@"+author2_id+">, if you have **COMPLETED** a transaction with <@"+author1_id+"> from the following post, please **REPLY TO THIS MESSAGE** indicating as such:\n\n" + full_original_post_url + "\n\nIf you did NOT complete such a transaction, please DO NOT REPLY to this message" + sub_config.discord_mod_contact_text + "."
-	reply(reply_message, confirmation_message_id, baseUrl)
+		full_original_post_url = "https://www.discord.com/channels/" + server_id + "/" + channel_id + "/" + original_post_id
+		reply_message = "<@"+author2_id+">, if you have **COMPLETED** a transaction with <@"+author1_id+"> from the following post, please **REPLY TO THIS MESSAGE** indicating as such:\n\n" + full_original_post_url + "\n\nIf you did NOT complete such a transaction, please DO NOT REPLY to this message" + sub_config.discord_mod_contact_text + "."
+		reply(reply_message, confirmation_message_id, baseUrl)
 
-paired_usernames = requests.get(request_url + "/get-paired-usernames/").json()
+	paired_usernames = requests.get(request_url + "/get-paired-usernames/").json()
 
-for message in confirmation_replies:
-	author1_id = message['author']['id']
-	bot_reply_id = message['referenced_message']['id']
-	bot_message = send_request(GET, baseUrl+"/"+bot_reply_id, headers).json()
-	author2_message = bot_message['referenced_message']
-	if not author2_message:
-		continue
-	author2_id = author2_message['author']['id']
+	for message in confirmation_replies:
+		author1_id = message['author']['id']
+		bot_reply_id = message['referenced_message']['id']
+		bot_message = send_request(GET, baseUrl+"/"+bot_reply_id, headers).json()
+		author2_message = bot_message['referenced_message']
+		if not author2_message:
+			continue
+		author2_id = author2_message['author']['id']
 
-	if author1_id not in [x['id'] for x in author2_message['mentions']]:
-		reply("You replied to a message that did not tag you. Please do not do that.", message['id'], baseUrl)
-		continue
-	if author1_id == author2_id:
-		reply("Sorry, but you cannot confirm a transaction with yourself.", message['id'], baseUrl)
-		continue
+		if author1_id not in [x['id'] for x in author2_message['mentions']]:
+			reply("You replied to a message that did not tag you. Please do not do that.", message['id'], baseUrl)
+			continue
+		if author1_id == author2_id:
+			reply("Sorry, but you cannot confirm a transaction with yourself.", message['id'], baseUrl)
+			continue
 
-	full_original_post_url = get_url(bot_message['content'])
-	if not full_original_post_url:
-		reply("Please only reply to messages that I tag you in. Thank you!", message['id'], baseUrl)
-		continue
+		full_original_post_url = get_url(bot_message['content'])
+		if not full_original_post_url:
+			reply("Please only reply to messages that I tag you in. Thank you!", message['id'], baseUrl)
+			continue
 
-	update_data = update_database(author1_id, author2_id, full_original_post_url)
-	if any([update_data[x]['is_duplicate'] == 'True' for x in update_data]):
-		reply("Sorry, but you already got credit for this transaction.", message['id'], baseUrl)
-		continue
-	elif any([update_data[x]['is_recent'] == 'True' for x in update_data]):
-		reply("Sorry, but you confirmed a transaction with this user too recently. Remember that you are only given one confirmation PER TRANSACTION, not per item.", message['id'], baseUrl)
-		continue
+		update_data = update_database(author1_id, author2_id, full_original_post_url)
+		if any([update_data[x]['is_duplicate'] == 'True' for x in update_data]):
+			reply("Sorry, but you already got credit for this transaction.", message['id'], baseUrl)
+			continue
+		elif any([update_data[x]['is_recent'] == 'True' for x in update_data]):
+			reply("Sorry, but you confirmed a transaction with this user too recently. Remember that you are only given one confirmation PER TRANSACTION, not per item.", message['id'], baseUrl)
+			continue
 
-	for discord_user_id in [author1_id, author2_id]:
-		for sub_name in [sub_config.subreddit_name] + sub_config.gives_flair_to:
-			if sub_name not in sub_config.sister_subs:
-				sister_sub_config, sister_reddit, sister_sub = swap.create_reddit_and_sub(sub_name)
-				sub_config.sister_subs[sub_name] = {'reddit': sister_reddit, 'sub': sister_sub, 'config': sister_sub_config}
-			current_sub_config = sub_config.sister_subs[sub_name]['config']
-			if not current_sub_config.discord_config:
-				continue
-			swap_count = str(swap.get_swap_count(discord_user_id, [sub_name] + current_sub_config.gets_flair_from, PLATFORM))
-			discord_role_id = swap.get_discord_role(current_sub_config.discord_roles, int(swap_count))
-			assign_role(current_sub_config.discord_config.server_id, discord_user_id, discord_role_id, current_sub_config.discord_config.token)
-		if discord_user_id in paired_usernames['discord']:
-			tmp_sub_config, tmp_reddit, tmp_sub = swap.create_reddit_and_sub(sub_config.subreddit_name)
-			if 'reddit' in paired_usernames['discord'][discord_user_id] and tmp_reddit:
-				reddit_username_string = paired_usernames['discord'][discord_user_id]['reddit']
-				reddit_user = tmp_reddit.redditor(reddit_username_string)
-				swap.update_flair(reddit_user, None, sub_config)
+		for discord_user_id in [author1_id, author2_id]:
+			for sub_name in [sub_config.subreddit_name] + sub_config.gives_flair_to:
+				if sub_name not in sub_config.sister_subs:
+					sister_sub_config, sister_reddit, sister_sub = swap.create_reddit_and_sub(sub_name)
+					sub_config.sister_subs[sub_name] = {'reddit': sister_reddit, 'sub': sister_sub, 'config': sister_sub_config}
+				current_sub_config = sub_config.sister_subs[sub_name]['config']
+				if not current_sub_config.discord_config:
+					continue
+				swap_count = str(swap.get_swap_count(discord_user_id, [sub_name] + current_sub_config.gets_flair_from, PLATFORM))
+				discord_role_id = swap.get_discord_role(current_sub_config.discord_roles, int(swap_count))
+				assign_role(current_sub_config.discord_config.server_id, discord_user_id, discord_role_id, current_sub_config.discord_config.token)
+			if discord_user_id in paired_usernames['discord']:
+				tmp_sub_config, tmp_reddit, tmp_sub = swap.create_reddit_and_sub(sub_config.subreddit_name)
+				if 'reddit' in paired_usernames['discord'][discord_user_id] and tmp_reddit:
+					reddit_username_string = paired_usernames['discord'][discord_user_id]['reddit']
+					reddit_user = tmp_reddit.redditor(reddit_username_string)
+					swap.update_flair(reddit_user, None, sub_config)
 
-	reply("This transaction has been recorded for <@!" + author2_id + "> and <@!" + author1_id + ">.", message['id'], baseUrl)
+		reply("This transaction has been recorded for <@!" + author2_id + "> and <@!" + author1_id + ">.", message['id'], baseUrl)
 
 
-# REPLY TO REQUESTS FOR FEEDBACK
+	# REPLY TO REQUESTS FOR FEEDBACK
 
-messages = send_request(GET, feedbackUrl, headers).json()
-invocations = []
-messages_to_ignore = []
-for message in messages:
-	author_id = message['author']['id']
-	bot_user_id = TOKENS["bot_id"]
-	if bot_user_id != author_id and "referenced_message" not in message:
-		invocations.append(message)
-	elif "referenced_message" in message and bot_user_id == author_id:
-		messages_to_ignore.append(message["referenced_message"])
+	messages = send_request(GET, feedbackUrl, headers).json()
+	invocations = []
+	messages_to_ignore = []
+	for message in messages:
+		author_id = message['author']['id']
+		bot_user_id = TOKENS["bot_id"]
+		if bot_user_id != author_id and "referenced_message" not in message:
+			invocations.append(message)
+		elif "referenced_message" in message and bot_user_id == author_id:
+			messages_to_ignore.append(message["referenced_message"])
 
-for message in messages_to_ignore:
-	if not message:
-		continue
-	invocations = [x for x in invocations if x['id'] != message['id']]
+	for message in messages_to_ignore:
+		if not message:
+			continue
+		invocations = [x for x in invocations if x['id'] != message['id']]
 
-for message in invocations:
-	user_to_check_list = get_mentioned_users(message, [])
-	if not user_to_check_list:
-		continue
-	user_to_check = user_to_check_list[0]
-	username = get_mentioned_usernames(message, [])[0]
-	transactions = requests.post(request_url + "/get-summary-from-subs/", {'sub_names': sub_config.subreddit_name, 'current_platform': PLATFORM, 'username': user_to_check}).json()['data'][sub_config.subreddit_name]
-	if not transactions:
-		reply("<@!" + user_to_check + "> has not confirmed any transactions yet.", message['id'], feedbackUrl)
-		continue
-	formatted_replies = create_embedded_feedback_check_reply(message['id'], author_id, username, transactions, sub_config)
-	for formatted_reply in formatted_replies:
-		send_request(POST, feedbackUrl, headers, data=formatted_reply, should_retry=True, is_embed=True)
+	for message in invocations:
+		user_to_check_list = get_mentioned_users(message, [])
+		if not user_to_check_list:
+			continue
+		user_to_check = user_to_check_list[0]
+		username = get_mentioned_usernames(message, [])[0]
+		transactions = requests.post(request_url + "/get-summary-from-subs/", {'sub_names': sub_config.subreddit_name, 'current_platform': PLATFORM, 'username': user_to_check}).json()['data'][sub_config.subreddit_name]
+		if not transactions:
+			reply("<@!" + user_to_check + "> has not confirmed any transactions yet.", message['id'], feedbackUrl)
+			continue
+		formatted_replies = create_embedded_feedback_check_reply(message['id'], author_id, username, transactions, sub_config)
+		for formatted_reply in formatted_replies:
+			send_request(POST, feedbackUrl, headers, data=formatted_reply, should_retry=True, is_embed=True)
 
+
+
+if __name__ == '__main__':
+	main()
