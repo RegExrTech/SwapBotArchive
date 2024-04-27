@@ -14,26 +14,7 @@ from Config import Config
 import swap
 import time
 
-parser = argparse.ArgumentParser()
-parser.add_argument('sub_name', metavar='C', type=str)
-args = parser.parse_args()
-sub_config = Config(args.sub_name.lower())
-
-
-bot_username = "Swap Bot#0749"
 request_url = "http://0.0.0.0:8000"
-
-TOKENS = json_helper.get_db("Discord/config/" + args.sub_name.lower() + ".json")
-confirmation_channel = TOKENS["confirmation_channel"]
-server_id = TOKENS["server_id"]
-
-bareUrl = "https://discordapp.com/api/channels/{}/messages"
-baseUrl = bareUrl.format(TOKENS["confirmation_channel"])
-feedbackUrl = bareUrl.format(TOKENS["feedback_check_channel"])
-bst_channel_url = "https://discordapp.com/api/channels/{}/messages/{}"
-headers = {"Authorization":"Bot {}".format(TOKENS["token"]),
-	"User-Agent":"SwapBot (https://www.regexr.tech, v0.1)",
-	"Content-Type":"application/json"}
 
 debug = False
 silent = False
@@ -377,4 +358,21 @@ def main():
 
 
 if __name__ == '__main__':
+	parser = argparse.ArgumentParser()
+	parser.add_argument('sub_name', metavar='C', type=str)
+	args = parser.parse_args()
+	sub_config = Config(args.sub_name.lower())
+
+	TOKENS = json_helper.get_db("Discord/config/" + args.sub_name.lower() + ".json")
+	confirmation_channel = TOKENS["confirmation_channel"]
+	server_id = TOKENS["server_id"]
+
+	bareUrl = "https://discordapp.com/api/channels/{}/messages"
+	baseUrl = bareUrl.format(TOKENS["confirmation_channel"])
+	feedbackUrl = bareUrl.format(TOKENS["feedback_check_channel"])
+	bst_channel_url = "https://discordapp.com/api/channels/{}/messages/{}"
+	headers = {"Authorization":"Bot {}".format(TOKENS["token"]),
+		"User-Agent":"SwapBot (https://www.regexr.tech, v0.1)",
+		"Content-Type":"application/json"}
+
 	main()
