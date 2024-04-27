@@ -108,7 +108,7 @@ def check_if_banned(usernames, sub):
 request_url = "http://0.0.0.0:8000"
 db = requests.get(request_url+"/get-db/").json()
 
-for user in [x.lower().split("/")[1] if "/" in x else x.lower() for x in ['robmusial']]:
+for user in [x.lower().split("/")[1] if "/" in x else x.lower() for x in ['BetterInsideTheBox']]:
 	print_user_in_all_subs(db, user.lower())
 
 #dump(db)
