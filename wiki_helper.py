@@ -174,7 +174,7 @@ def edit_wiki_page(page, content):
 		try:
 			page.edit(content=content)
 		except Exception as e:
-			logger.log("Failed tp update wiki page " + page.name, e)
+			logger.log("Failed to update wiki page " + page.name, e)
 			time.sleep(60)
 
 def update_confirmation_page(username, content, overview_content, sub_config):
