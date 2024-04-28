@@ -15,6 +15,7 @@ import swap
 import time
 
 request_url = "http://0.0.0.0:8000"
+bareUrl = "https://discordapp.com/api/channels/{}/messages"
 
 debug = False
 silent = False
@@ -188,19 +189,19 @@ def get_url(text):
 		return None
 	return found[0]
 
-def get_correct_channel_id(post_id):
-	bst_channel_ids = TOKENS['bst_channels']
+def get_correct_channel_id(post_id, sub_config):
+	bst_channel_ids = sub_config.discord_config.bst_channels
 	for bst_channel_id in bst_channel_ids:
-		r = send_request(GET, bst_channel_url.format(bst_channel_id, post_id), headers)
+		r = send_request(GET, sub_config.discord_config.bst_channel_url.format(bst_channel_id, post_id), sub_config.discord_config.headers)
 		if r.ok:
 			return bst_channel_id, r.json()
 	return None, {}
 
-def reply(message, reply_id, url):
+def reply(message, reply_id, url, sub_config):
 	message += kofi_text
 	message_data = {'content': message, 'message_reference': {'message_id': reply_id}}
 	if not debug:
-		send_request(POST, url, headers, json.dumps(message_data))
+		send_request(POST, url, sub_config.discord_config.headers, json.dumps(message_data))
 	else:
 		print("Would have sent message: " + message)
 
@@ -210,8 +211,8 @@ def update_database(author1, author2, listing_url):
 	return_data = requests.post(request_url + "/check-comment/", {'sub_name': sub_config.database_name, 'author1': author1, 'author2': author2, 'post_id': post_id, 'comment_id': comment_id, 'real_sub_name': sub_config.subreddit_name, 'platform': PLATFORM}).json()
 	return return_data
 
-def main():
-	messages = send_request(GET, baseUrl, headers).json()
+def main(sub_config):
+	messages = send_request(GET, sub_config.discord_config.baseUrl, sub_config.discord_config.headers).json()
 
 	confirmation_invocations = []
 	confirmation_replies = []
@@ -219,7 +220,7 @@ def main():
 	# Check Discord for messages
 	for message in messages:
 		author1_id = message['author']['id']
-		bot_user_id = TOKENS["bot_id"]
+		bot_user_id = sub_config.discord_config.bot_id
 		if "referenced_message" in message and message["referenced_message"] is not None and bot_user_id != author1_id and message['referenced_message']['author']['id'] == bot_user_id:
 			confirmation_replies.append(message)
 		elif bot_user_id != author1_id and "referenced_message" not in message:
@@ -236,7 +237,7 @@ def main():
 	for message in confirmation_invocations:
 		body = message['content']
 		author1_id = message['author']['id']
-		bot_user_id = TOKENS["bot_id"]
+		bot_user_id = sub_config.discord_config.bot_id
 		confirmation_message_id = message['id']
 		invalids = [bot_user_id, author1_id]
 		# If the message is from the bot, skip
@@ -245,61 +246,61 @@ def main():
 
 		mentioned_users = get_mentioned_users(message, invalids)
 		if not mentioned_users:
-			reply("You did not mention any users in your message. Please try again.", confirmation_message_id, baseUrl)
+			reply("You did not mention any users in your message. Please try again.", confirmation_message_id, sub_config.discord_config.baseUrl, sub_config)
 			continue
 
 		mentioned_roles = get_mentioned_roles(message)
 
 		mentioned_posts = get_mentioned_posts(body, mentioned_users+mentioned_roles+invalids)
 		if not mentioned_posts:
-			reply("You did not mention any posts in your message. Please try again.", confirmation_message_id, baseUrl)
+			reply("You did not mention any posts in your message. Please try again.", confirmation_message_id, sub_config.discord_config.baseUrl, sub_config)
 			continue
 
 		author2_id = mentioned_users[0]
 		original_post_id = mentioned_posts[0]
-		channel_id, original_post_data = get_correct_channel_id(original_post_id)
+		channel_id, original_post_data = get_correct_channel_id(original_post_id, sub_config)
 		if not channel_id:
-			reply("I could not find " + str(original_post_id) + " in any of the BST channels. Please try again with a correct message ID.", confirmation_message_id, baseUrl)
+			reply("I could not find " + str(original_post_id) + " in any of the BST channels. Please try again with a correct message ID.", confirmation_message_id, sub_config.discord_config.baseUrl, sub_config)
 			continue
 
 		desired_author_id = original_post_data['author']['id']
 		if desired_author_id not in [author1_id, author2_id]:
-			reply("Neither you nor the person you tagged are the OP of the message you referenced.", confirmation_message_id, baseUrl)
+			reply("Neither you nor the person you tagged are the OP of the message you referenced.", confirmation_message_id, sub_config.discord_config.baseUrl, sub_config)
 			continue
 
-		full_original_post_url = "https://www.discord.com/channels/" + server_id + "/" + channel_id + "/" + original_post_id
+		full_original_post_url = "https://www.discord.com/channels/" + sub_config.discord_config.server_id + "/" + channel_id + "/" + original_post_id
 		reply_message = "<@"+author2_id+">, if you have **COMPLETED** a transaction with <@"+author1_id+"> from the following post, please **REPLY TO THIS MESSAGE** indicating as such:\n\n" + full_original_post_url + "\n\nIf you did NOT complete such a transaction, please DO NOT REPLY to this message" + sub_config.discord_mod_contact_text + "."
-		reply(reply_message, confirmation_message_id, baseUrl)
+		reply(reply_message, confirmation_message_id, sub_config.discord_config.baseUrl, sub_config)
 
 	paired_usernames = requests.get(request_url + "/get-paired-usernames/").json()
 
 	for message in confirmation_replies:
 		author1_id = message['author']['id']
 		bot_reply_id = message['referenced_message']['id']
-		bot_message = send_request(GET, baseUrl+"/"+bot_reply_id, headers).json()
+		bot_message = send_request(GET, sub_config.discord_config.baseUrl+"/"+bot_reply_id, sub_config.discord_config.headers).json()
 		author2_message = bot_message['referenced_message']
 		if not author2_message:
 			continue
 		author2_id = author2_message['author']['id']
 
 		if author1_id not in [x['id'] for x in author2_message['mentions']]:
-			reply("You replied to a message that did not tag you. Please do not do that.", message['id'], baseUrl)
+			reply("You replied to a message that did not tag you. Please do not do that.", message['id'], sub_config.discord_config.baseUrl, sub_config)
 			continue
 		if author1_id == author2_id:
-			reply("Sorry, but you cannot confirm a transaction with yourself.", message['id'], baseUrl)
+			reply("Sorry, but you cannot confirm a transaction with yourself.", message['id'], sub_config.discord_config.baseUrl, sub_config)
 			continue
 
 		full_original_post_url = get_url(bot_message['content'])
 		if not full_original_post_url:
-			reply("Please only reply to messages that I tag you in. Thank you!", message['id'], baseUrl)
+			reply("Please only reply to messages that I tag you in. Thank you!", message['id'], sub_config.discord_config.baseUrl, sub_config)
 			continue
 
 		update_data = update_database(author1_id, author2_id, full_original_post_url)
 		if any([update_data[x]['is_duplicate'] == 'True' for x in update_data]):
-			reply("Sorry, but you already got credit for this transaction.", message['id'], baseUrl)
+			reply("Sorry, but you already got credit for this transaction.", message['id'], sub_config.discord_config.baseUrl, sub_config)
 			continue
 		elif any([update_data[x]['is_recent'] == 'True' for x in update_data]):
-			reply("Sorry, but you confirmed a transaction with this user too recently. Remember that you are only given one confirmation PER TRANSACTION, not per item.", message['id'], baseUrl)
+			reply("Sorry, but you confirmed a transaction with this user too recently. Remember that you are only given one confirmation PER TRANSACTION, not per item.", message['id'], sub_config.discord_config.baseUrl, sub_config)
 			continue
 
 		for discord_user_id in [author1_id, author2_id]:
@@ -320,17 +321,17 @@ def main():
 					reddit_user = tmp_reddit.redditor(reddit_username_string)
 					swap.update_flair(reddit_user, None, sub_config)
 
-		reply("This transaction has been recorded for <@!" + author2_id + "> and <@!" + author1_id + ">.", message['id'], baseUrl)
+		reply("This transaction has been recorded for <@!" + author2_id + "> and <@!" + author1_id + ">.", message['id'], sub_config.discord_config.baseUrl, sub_config)
 
 
 	# REPLY TO REQUESTS FOR FEEDBACK
 
-	messages = send_request(GET, feedbackUrl, headers).json()
+	messages = send_request(GET, sub_config.discord_config.feedbackUrl, sub_config.discord_config.headers).json()
 	invocations = []
 	messages_to_ignore = []
 	for message in messages:
 		author_id = message['author']['id']
-		bot_user_id = TOKENS["bot_id"]
+		bot_user_id = sub_config.discord_config.bot_id
 		if bot_user_id != author_id and "referenced_message" not in message:
 			invocations.append(message)
 		elif "referenced_message" in message and bot_user_id == author_id:
@@ -349,11 +350,11 @@ def main():
 		username = get_mentioned_usernames(message, [])[0]
 		transactions = requests.post(request_url + "/get-summary-from-subs/", {'sub_names': sub_config.subreddit_name, 'current_platform': PLATFORM, 'username': user_to_check}).json()['data'][sub_config.subreddit_name]
 		if not transactions:
-			reply("<@!" + user_to_check + "> has not confirmed any transactions yet.", message['id'], feedbackUrl)
+			reply("<@!" + user_to_check + "> has not confirmed any transactions yet.", message['id'], sub_config.discord_config.feedbackUrl, sub_config)
 			continue
 		formatted_replies = create_embedded_feedback_check_reply(message['id'], author_id, username, transactions, sub_config)
 		for formatted_reply in formatted_replies:
-			send_request(POST, feedbackUrl, headers, data=formatted_reply, should_retry=True, is_embed=True)
+			send_request(POST, sub_config.discord_config.feedbackUrl, sub_config.discord_config.headers, data=formatted_reply, should_retry=True, is_embed=True)
 
 
 
@@ -363,16 +364,4 @@ if __name__ == '__main__':
 	args = parser.parse_args()
 	sub_config = Config(args.sub_name.lower())
 
-	TOKENS = json_helper.get_db("Discord/config/" + args.sub_name.lower() + ".json")
-	confirmation_channel = TOKENS["confirmation_channel"]
-	server_id = TOKENS["server_id"]
-
-	bareUrl = "https://discordapp.com/api/channels/{}/messages"
-	baseUrl = bareUrl.format(TOKENS["confirmation_channel"])
-	feedbackUrl = bareUrl.format(TOKENS["feedback_check_channel"])
-	bst_channel_url = "https://discordapp.com/api/channels/{}/messages/{}"
-	headers = {"Authorization":"Bot {}".format(TOKENS["token"]),
-		"User-Agent":"SwapBot (https://www.regexr.tech, v0.1)",
-		"Content-Type":"application/json"}
-
-	main()
+	main(sub_config)
