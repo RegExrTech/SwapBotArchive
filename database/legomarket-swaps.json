@@ -4449,6 +4449,12 @@
                     "partner": "wishnana",
                     "post_id": "1c6hvm2",
                     "timestamp": 1713643285
+                },
+                {
+                    "comment_id": "l1pmca4",
+                    "partner": "zappa_721",
+                    "post_id": "1cbm7ph",
+                    "timestamp": 1714447995
                 }
             ]
         },
@@ -7532,6 +7538,12 @@
                     "partner": "diablojota",
                     "post_id": "zt4fl1",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l1v1kjs",
+                    "partner": "therealrealpachenko",
+                    "post_id": "1c9so15",
+                    "timestamp": 1714448508
                 }
             ]
         },
@@ -7718,6 +7730,12 @@
                     "partner": "bunger98",
                     "post_id": "162tckp",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l1n8obs",
+                    "partner": "carbohydrationwalrus",
+                    "post_id": "1c16mda",
+                    "timestamp": 1714464071
                 }
             ]
         },
@@ -8514,6 +8532,16 @@
         "car397": {
             "legacy_count": 2,
             "transactions": []
+        },
+        "carbohydrationwalrus": {
+            "transactions": [
+                {
+                    "comment_id": "l1n8obs",
+                    "partner": "budbik",
+                    "post_id": "1c16mda",
+                    "timestamp": 1714464071
+                }
+            ]
         },
         "careeningkiwi": {
             "legacy_count": 3,
@@ -44826,6 +44854,16 @@
                 }
             ]
         },
+        "therealrealpachenko": {
+            "transactions": [
+                {
+                    "comment_id": "l1v1kjs",
+                    "partner": "browncoat47",
+                    "post_id": "1c9so15",
+                    "timestamp": 1714448508
+                }
+            ]
+        },
         "theremanentfour": {
             "legacy_count": 1,
             "transactions": []
@@ -49647,6 +49685,12 @@
                     "partner": "rexpress23",
                     "post_id": "1c38mnc",
                     "timestamp": 1713455917
+                },
+                {
+                    "comment_id": "l1pmca4",
+                    "partner": "bakerymaker",
+                    "post_id": "1cbm7ph",
+                    "timestamp": 1714447995
                 }
             ]
         },
