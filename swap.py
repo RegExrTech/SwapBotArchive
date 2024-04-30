@@ -568,13 +568,14 @@ def get_username_from_text(text, usernames_to_ignore=[]):
 			break
 	return username.lower()
 
-def reply(comment, reply_text):
+def reply(comment, reply_text, lock=True):
 	try:
 		reply_text = "Hello, u/" + comment.author.name + ". " + reply_text
 		if not debug:
 			if not silent:
 				reply = comment.reply(reply_text+kofi_text)
-				reply.mod.lock()
+				if lock:
+					reply.mod.lock()
 			else:
 				print(reply_text + "\n==========")
 		else:
@@ -596,7 +597,7 @@ def handle_deleted_post(comment):
 
 def handle_wrong_sub(comment):
 	reply_text = "Whoops! Looks like you tagged me in the wrong subreddit. If you meant to tag a different bot, please **EDIT** this comment, remove my username, and tag the correct bot instead. If you meant to tag me, please make a new comment in the sub where I operate. Thanks!"
-	reply(comment, reply_text)
+	reply(comment, reply_text, lock=False)
 
 def handle_edefinition(comment):
 	# No more peeking
