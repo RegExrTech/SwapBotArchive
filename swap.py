@@ -1,3 +1,4 @@
+import traceback
 import random
 import sys
 sys.path.insert(0, '.')
@@ -585,7 +586,7 @@ def reply(comment, reply_text, lock=True):
 		else:
 			print(reply_text + "\n==========")
 	except Exception as e:  # Comment was probably deleted
-		logger.log("Unable to reply to comment " + comment.id + " with text:\n" + reply_text, e)
+		logger.log("Unable to reply to comment " + comment.id + " with text:\n" + reply_text, e, traceback.format_exc())
 
 def handle_no_author2(comment):
 	reply_text = "You did not tag anyone other than this bot in your comment. Please post a new top level comment tagging this bot and the person you traded with to get credit for the trade."
