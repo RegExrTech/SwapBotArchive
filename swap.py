@@ -346,6 +346,10 @@ def handle_comment(comment, bot_username, sub, reddit, is_new_comment, sub_confi
 		requests.post(request_url + "/remove-comment/", {'sub_name': sub_config.subreddit_name, 'comment_id': comment.id, 'platform': PLATFORM})
 		return True
 	author1 = comment.author  # Author of the top level comment
+	# Remove comments that were deleted
+	if author1 is None:
+		requests.post(request_url + "/remove-comment/", {'sub_name': sub_config.subreddit_name, 'comment_id': comment.id, 'platform': PLATFORM})
+		return True
 	comment_text = get_comment_text(comment)
 	# Determine if they properly tagged a trade partner
 	desired_author2_string = get_username_from_text(comment_text, [bot_username, str(author1)])
