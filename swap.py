@@ -320,7 +320,7 @@ def handle_comment(comment, bot_username, sub, reddit, is_new_comment, sub_confi
 	# Get an instance of the parent post
 	parent_post = comment
 	top_level_comment = comment
-	while parent_post.__class__.__name__ == "Comment":
+	while isinstance(parent_post, praw.models.Comment):
 		top_level_comment = parent_post
 		parent_post = parent_post.parent()
 	try:
@@ -573,7 +573,7 @@ def get_username_from_text(text, usernames_to_ignore=[]):
 			break
 	return username.lower()
 
-def reply(comment, reply_text, lock=True):
+def reply(comment, reply_text, lock=True, try_parent=True):
 	try:
 		reply_text = "Hello, u/" + comment.author.name + ". " + reply_text
 		if not debug:
@@ -585,8 +585,11 @@ def reply(comment, reply_text, lock=True):
 				print(reply_text + "\n==========")
 		else:
 			print(reply_text + "\n==========")
-	except Exception as e:  # Comment was probably deleted
-		logger.log("Unable to reply to comment " + comment.id + " with text:\n" + reply_text, e, traceback.format_exc())
+	except Exception as e:
+		if try_parent and comment.parent():
+			reply(comment.parent(), reply_text, lock=lock, try_parent=False)
+		else:
+			logger.log("Unable to reply to comment " + comment.id + " with text:\n" + reply_text, e, traceback.format_exc())
 
 def handle_no_author2(comment):
 	reply_text = "You did not tag anyone other than this bot in your comment. Please post a new top level comment tagging this bot and the person you traded with to get credit for the trade."
