@@ -881,7 +881,7 @@ def handle_legacy_add(message, sub_config):
 		return reply_to_message(message, reply_text, sub_config)
 
 	# Check a username is present in the args
-	username1 = items[1]
+	username1 = items[1].strip()
 	if 'u/' not in username1:
 		response_text = "Error: No usernames could be found in the message you sent." + error_text
 		return reply_to_message(message, reply_text, sub_config)
