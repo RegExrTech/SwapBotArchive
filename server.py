@@ -316,7 +316,8 @@ def archive_comment():
 	comment_id = request.form['comment_id']
 	if comment_id in comment_data[sub_name][platform]['active']:
 		comment_data[sub_name][platform]['active'].remove(comment_id)
-	comment_data[sub_name][platform]['archived'].append(comment_id)
+	if comment_id not in comment_data[sub_name][platform]['archived']:
+		comment_data[sub_name][platform]['archived'].append(comment_id)
 	json_helper.dump(comment_data, comment_fname)
 	return jsonify({})
 
