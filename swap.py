@@ -281,6 +281,7 @@ def set_active_comments_and_messages(reddit, sub, bot_name, comments, messages, 
 			print("Failed to turn comment id " + comment_id + " into a comment object with bot " + bot_name + " with error " + str(e))
 			pass
 
+	unmarked = []
 	if not debug:
 		for message in to_mark_as_read:
 			try:
@@ -288,6 +289,22 @@ def set_active_comments_and_messages(reddit, sub, bot_name, comments, messages, 
 			except Exception as e:
 				print(e)
 				print("Unable to mark message as read. Leaving it as is.")
+				unmarked.append(message.id)
+	try:
+		for message in reddit.inbox.unread():
+			if message.id in unmarked:
+				continue
+			if message in comments:
+				if not debug:
+					comments.remove(message)
+					requests.post(request_url + "/blacklist-comment/", {'comment_id': message.id, 'platform': PLATFORM})
+					requests.post(request_url + "/remove-comment/", {'sub_name': sub_config.subreddit_name, 'comment_id': message.id, 'platform': PLATFORM})
+					inform_comment_blacklisted(message)
+				logger.log(bot_name + " blacklisted comment " + message.id)
+			if message.id in new_ids:
+				new_ids.remove(message.id)
+	except Exception as e:
+		logger.log("Failed to perform the blacklisting operations", e, traceback.format_exc())
 
 def set_archived_comments(reddit, comments, sub_config):
 	ids = ",".join([comment.id for comment in comments])
@@ -491,7 +508,7 @@ def handle_comment(comment, bot_username, sub, reddit, is_new_comment, sub_confi
 		if is_new_comment:
 			inform_comment_tracked(comment, desired_author2_string, parent_post, sub_config.subreddit_name, str(author1))
 		if debug:
-			print("No correct looking replies were found")
+			print("No correct looking replies were found for comment id " + comment.id)
 		return False
 
 def check_for_stuck_comment(comment, sub_config):
@@ -671,6 +688,10 @@ def inform_comment_archived(comment, sub_config):
 
 def inform_comment_deleted(comment):
 	reply_text = "This comment has been around for more than a week and will no longer be tracked. If you wish to attempt to get trade credit for this swap again, please make a new comment and tag both this bot and your trade partner."
+	reply(comment, reply_text)
+
+def inform_comment_blacklisted(comment):
+	reply_text = "Occasionally, there is reddit glitch where comments cannot be easily parsed by bots. This is a 1:1000 occurence and this comment happens to be one of them! As such, I cannot process this comment and will not look at it ever again. Please delete this comment and make a new one with the exact same text as before. Sorry for the inconvenience!"
 	reply(comment, reply_text)
 
 def inform_giving_credit(comment, non_updated_users, sub_config, user_flair_text):
