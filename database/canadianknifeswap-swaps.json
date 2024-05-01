@@ -4765,6 +4765,12 @@
                     "partner": "joker09180",
                     "post_id": "1be0ks8",
                     "timestamp": 1711072890
+                },
+                {
+                    "comment_id": "l1tt098",
+                    "partner": "too-old-for-stuff",
+                    "post_id": "1cc7pku",
+                    "timestamp": 1714477002
                 }
             ]
         },
@@ -10630,6 +10636,16 @@
                     "partner": "knifecollectorbc",
                     "post_id": "123c3za",
                     "timestamp": 0
+                }
+            ]
+        },
+        "too-old-for-stuff": {
+            "transactions": [
+                {
+                    "comment_id": "l1tt098",
+                    "partner": "grippyg10",
+                    "post_id": "1cc7pku",
+                    "timestamp": 1714477002
                 }
             ]
         },

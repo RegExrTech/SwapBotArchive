@@ -27347,6 +27347,12 @@
                     "partner": "kicsta",
                     "post_id": "ym6bet",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l1zo097",
+                    "partner": "faiqwaheed",
+                    "post_id": "1c8979g",
+                    "timestamp": 1714508065
                 }
             ]
         },
@@ -33458,6 +33464,12 @@
                     "partner": "zqyux",
                     "post_id": "15hkdj1",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l1zo097",
+                    "partner": "digitalrelic",
+                    "post_id": "1c8979g",
+                    "timestamp": 1714508065
                 }
             ]
         },
@@ -49902,6 +49914,16 @@
             "legacy_count": 2,
             "transactions": []
         },
+        "jesusmakesmelaugh": {
+            "transactions": [
+                {
+                    "comment_id": "l21inzi",
+                    "partner": "midnightoperator94",
+                    "post_id": "1cfibh5",
+                    "timestamp": 1714535287
+                }
+            ]
+        },
         "jetblue723": {
             "legacy_count": 5,
             "transactions": [
@@ -65875,6 +65897,16 @@
                     "partner": "dweebez",
                     "post_id": "1algb6m",
                     "timestamp": 1709045639
+                }
+            ]
+        },
+        "midnightoperator94": {
+            "transactions": [
+                {
+                    "comment_id": "l21inzi",
+                    "partner": "jesusmakesmelaugh",
+                    "post_id": "1cfibh5",
+                    "timestamp": 1714535287
                 }
             ]
         },
