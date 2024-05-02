@@ -4455,6 +4455,12 @@
                     "partner": "zappa_721",
                     "post_id": "1cbm7ph",
                     "timestamp": 1714447995
+                },
+                {
+                    "comment_id": "l277nm4",
+                    "partner": "heyimderrick",
+                    "post_id": "1candpp",
+                    "timestamp": 1714626561
                 }
             ]
         },
@@ -19846,6 +19852,12 @@
                     "partner": "space-wizard",
                     "post_id": "1c5mpux",
                     "timestamp": 1714053638
+                },
+                {
+                    "comment_id": "l277nm4",
+                    "partner": "bakerymaker",
+                    "post_id": "1candpp",
+                    "timestamp": 1714626561
                 }
             ]
         },
@@ -24334,6 +24346,12 @@
                     "partner": "mazovianartcop",
                     "post_id": "14xw41a",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l26q1e8",
+                    "partner": "mrbrucedwayne",
+                    "post_id": "1cbawjg",
+                    "timestamp": 1714616399
                 }
             ]
         },
@@ -30163,6 +30181,16 @@
             "legacy_count": 3,
             "transactions": []
         },
+        "mrbrucedwayne": {
+            "transactions": [
+                {
+                    "comment_id": "l26q1e8",
+                    "partner": "jwalker1995",
+                    "post_id": "1cbawjg",
+                    "timestamp": 1714616399
+                }
+            ]
+        },
         "mrcastlebuilder": {
             "legacy_count": 1,
             "transactions": []
@@ -32213,6 +32241,12 @@
                     "partner": "lavoera",
                     "post_id": "18mgixl",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l240a50",
+                    "partner": "onatu",
+                    "post_id": "1ccr5v9",
+                    "timestamp": 1714592937
                 }
             ]
         },
@@ -32423,6 +32457,12 @@
                     "partner": "hweird",
                     "post_id": "1ccr5v9",
                     "timestamp": 1714478388
+                },
+                {
+                    "comment_id": "l240a50",
+                    "partner": "ok-number8636",
+                    "post_id": "1ccr5v9",
+                    "timestamp": 1714592937
                 }
             ]
         },
