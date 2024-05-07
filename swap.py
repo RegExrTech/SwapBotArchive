@@ -977,7 +977,7 @@ def format_swap_count_summary(sub_config, username, character_limit):
 	# Truncate if too large
 	if len(reply_header+swap_count_text+sister_sub_text+kofi_text) > character_limit:
 		truncated_text = "* And more..."
-		amount_to_truncate = len(reply_header+swap_count_text+sister_sub_text+kofi_text+truncated_text) + 1 - 10000
+		amount_to_truncate = len(reply_header+swap_count_text+sister_sub_text+kofi_text+truncated_text) + 1 - character_limit
 		swap_count_text = swap_count_text[:len(swap_count_text) - amount_to_truncate]
 		swap_count_text = "*".join(swap_count_text.split("*")[:-1])
 	else:
