@@ -3794,6 +3794,16 @@
                 }
             ]
         },
+        "etienneallo": {
+            "transactions": [
+                {
+                    "comment_id": "l26qi0x",
+                    "partner": "polzni",
+                    "post_id": "1ajuif1",
+                    "timestamp": 1715047302
+                }
+            ]
+        },
         "evan_edc": {
             "transactions": [
                 {
@@ -4363,6 +4373,12 @@
                     "partner": "deathaze",
                     "post_id": "1bp2sbv",
                     "timestamp": 1712325670
+                },
+                {
+                    "comment_id": "l2uq89h",
+                    "partner": "joker09180",
+                    "post_id": "1ceimql",
+                    "timestamp": 1715040762
                 }
             ]
         },
@@ -5731,6 +5747,12 @@
                     "partner": "stumalucanoe",
                     "post_id": "1byb9vd",
                     "timestamp": 1713405645
+                },
+                {
+                    "comment_id": "l2uq89h",
+                    "partner": "future_molasses_8844",
+                    "post_id": "1ceimql",
+                    "timestamp": 1715040762
                 }
             ]
         },
@@ -8430,6 +8452,16 @@
                 }
             ]
         },
+        "polzni": {
+            "transactions": [
+                {
+                    "comment_id": "l26qi0x",
+                    "partner": "etienneallo",
+                    "post_id": "1ajuif1",
+                    "timestamp": 1715047302
+                }
+            ]
+        },
         "popcansodawater": {
             "legacy_count": 1,
             "transactions": []
@@ -10390,6 +10422,12 @@
                     "partner": "deathbyninjadust",
                     "post_id": "1bzz5v3",
                     "timestamp": 1713211239
+                },
+                {
+                    "comment_id": "l2uithx",
+                    "partner": "vomitorypepper",
+                    "post_id": "1cglnmn",
+                    "timestamp": 1715033751
                 }
             ]
         },
@@ -11330,6 +11368,12 @@
                     "partner": "mr_managerr",
                     "post_id": "1ccc5hy",
                     "timestamp": 1714589022
+                },
+                {
+                    "comment_id": "l2uithx",
+                    "partner": "the_burnt_waffle",
+                    "post_id": "1cglnmn",
+                    "timestamp": 1715033751
                 }
             ]
         },
