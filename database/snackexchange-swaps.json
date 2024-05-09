@@ -8935,6 +8935,16 @@
             "legacy_count": 1,
             "transactions": []
         },
+        "cr1spyfries": {
+            "transactions": [
+                {
+                    "comment_id": "l32cqo8",
+                    "partner": "crazyhound71",
+                    "post_id": "1cmrt32",
+                    "timestamp": 1715165149
+                }
+            ]
+        },
         "crack_the_nut": {
             "legacy_count": 1,
             "transactions": []
@@ -9005,6 +9015,12 @@
                     "partner": "southern_meaning4942",
                     "post_id": "1cbunih",
                     "timestamp": 1713983770
+                },
+                {
+                    "comment_id": "l32cqo8",
+                    "partner": "cr1spyfries",
+                    "post_id": "1cmrt32",
+                    "timestamp": 1715165149
                 }
             ]
         },
@@ -13336,6 +13352,16 @@
         "fallnmidnitestar": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "famousblinkadam": {
+            "transactions": [
+                {
+                    "comment_id": "l382iul",
+                    "partner": "kooky-barracuda2301",
+                    "post_id": "1cnlx6l",
+                    "timestamp": 1715220967
+                }
+            ]
         },
         "famousvegetable": {
             "legacy_count": 1,
@@ -22238,6 +22264,12 @@
                     "partner": "illustrated-skies",
                     "post_id": "1c1o1ez",
                     "timestamp": 1713384058
+                },
+                {
+                    "comment_id": "l382iul",
+                    "partner": "famousblinkadam",
+                    "post_id": "1cnlx6l",
+                    "timestamp": 1715220967
                 }
             ]
         },
@@ -30279,16 +30311,6 @@
                     "comment_id": "",
                     "partner": "snakescatsanddogs",
                     "post_id": "jzpnma",
-                    "timestamp": 0
-                }
-            ]
-        },
-        "none": {
-            "transactions": [
-                {
-                    "comment_id": "",
-                    "partner": "tarekeal",
-                    "post_id": "krtuyy",
                     "timestamp": 0
                 }
             ]

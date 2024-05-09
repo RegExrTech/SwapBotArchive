@@ -263,6 +263,12 @@
                     "partner": "plorb001",
                     "post_id": "1bzeuxk",
                     "timestamp": 1713427277
+                },
+                {
+                    "comment_id": "l2txusk",
+                    "partner": "citadel712",
+                    "post_id": "1cfk0hp",
+                    "timestamp": 1715176843
                 }
             ]
         },
@@ -10808,6 +10814,18 @@
                     "partner": "mowoki",
                     "post_id": "1c3acm2",
                     "timestamp": 1713845732
+                },
+                {
+                    "comment_id": "l2txusk",
+                    "partner": "3dplays",
+                    "post_id": "1cfk0hp",
+                    "timestamp": 1715176843
+                },
+                {
+                    "comment_id": "l364309",
+                    "partner": "jrpaperstax",
+                    "post_id": "1cfk0hp",
+                    "timestamp": 1715208582
                 }
             ]
         },
@@ -19535,6 +19553,12 @@
                     "partner": "mowoki",
                     "post_id": "13v1mmh",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l31h6a6",
+                    "partner": "woozelwuzzle",
+                    "post_id": "1cbc4h0",
+                    "timestamp": 1715169192
                 }
             ]
         },
@@ -20684,6 +20708,16 @@
                     "partner": "yellowbrickroady",
                     "post_id": "12a9l36",
                     "timestamp": 0
+                }
+            ]
+        },
+        "galfridus": {
+            "transactions": [
+                {
+                    "comment_id": "l36r8ah",
+                    "partner": "nnumster",
+                    "post_id": "1bbdbed",
+                    "timestamp": 1715205454
                 }
             ]
         },
@@ -29232,6 +29266,12 @@
                     "partner": "metal_af83",
                     "post_id": "1btadn9",
                     "timestamp": 1712617729
+                },
+                {
+                    "comment_id": "l364309",
+                    "partner": "citadel712",
+                    "post_id": "1cfk0hp",
+                    "timestamp": 1715208582
                 }
             ]
         },
@@ -39853,6 +39893,12 @@
                     "partner": "aoleary145",
                     "post_id": "f9x1pw",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l36r8ah",
+                    "partner": "galfridus",
+                    "post_id": "1bbdbed",
+                    "timestamp": 1715205454
                 }
             ]
         },
@@ -63936,6 +63982,12 @@
                     "partner": "nathandbrown1",
                     "post_id": "1akg1wt",
                     "timestamp": 1708692928
+                },
+                {
+                    "comment_id": "l31h6a6",
+                    "partner": "flyingfool44",
+                    "post_id": "1cbc4h0",
+                    "timestamp": 1715169192
                 }
             ]
         },
