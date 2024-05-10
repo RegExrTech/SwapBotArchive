@@ -1464,6 +1464,16 @@
                 }
             ]
         },
+        "blue272727": {
+            "transactions": [
+                {
+                    "comment_id": "l353o21",
+                    "partner": "super_carrick",
+                    "post_id": "1cjf622",
+                    "timestamp": 1715306450
+                }
+            ]
+        },
         "bluespammer": {
             "transactions": [
                 {
@@ -1471,6 +1481,12 @@
                     "partner": "ncc-1707",
                     "post_id": "1bwyi1x",
                     "timestamp": 1712507312
+                },
+                {
+                    "comment_id": "l3dtipo",
+                    "partner": "sudden-lawfulness686",
+                    "post_id": "1cmtspd",
+                    "timestamp": 1715312516
                 }
             ]
         },
@@ -9072,6 +9088,16 @@
                 }
             ]
         },
+        "sudden-lawfulness686": {
+            "transactions": [
+                {
+                    "comment_id": "l3dtipo",
+                    "partner": "bluespammer",
+                    "post_id": "1cmtspd",
+                    "timestamp": 1715312516
+                }
+            ]
+        },
         "super_carrick": {
             "transactions": [
                 {
@@ -9079,6 +9105,12 @@
                     "partner": "techsqueeze",
                     "post_id": "1cdujyv",
                     "timestamp": 1714244650
+                },
+                {
+                    "comment_id": "l353o21",
+                    "partner": "blue272727",
+                    "post_id": "1cjf622",
+                    "timestamp": 1715306450
                 }
             ]
         },

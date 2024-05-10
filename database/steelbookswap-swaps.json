@@ -6117,6 +6117,12 @@
                     "partner": "royale-w-cheese",
                     "post_id": "1cilyry",
                     "timestamp": 1715022674
+                },
+                {
+                    "comment_id": "l3ann6r",
+                    "partner": "jepppoy",
+                    "post_id": "1cilyry",
+                    "timestamp": 1715269373
                 }
             ]
         },
@@ -10387,6 +10393,12 @@
                     "partner": "spartacus373stonksss",
                     "post_id": "1cerxwc",
                     "timestamp": 1715241662
+                },
+                {
+                    "comment_id": "l3co2mw",
+                    "partner": "merchie",
+                    "post_id": "1clyr28",
+                    "timestamp": 1715299770
                 }
             ]
         },
@@ -13873,6 +13885,12 @@
                     "partner": "grivas10",
                     "post_id": "15cbg5z",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l3ann6r",
+                    "partner": "deity_elysian",
+                    "post_id": "1cilyry",
+                    "timestamp": 1715269373
                 }
             ]
         },
@@ -17022,6 +17040,16 @@
                     "partner": "panda_jerk",
                     "post_id": "12uz739",
                     "timestamp": 0
+                }
+            ]
+        },
+        "merchie": {
+            "transactions": [
+                {
+                    "comment_id": "l3co2mw",
+                    "partner": "gallopmygoose",
+                    "post_id": "1clyr28",
+                    "timestamp": 1715299770
                 }
             ]
         },
