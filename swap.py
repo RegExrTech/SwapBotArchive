@@ -593,18 +593,19 @@ def get_username_from_text(text, usernames_to_ignore=[]):
 def reply(comment, reply_text, lock=True, try_parent=True):
 	try:
 		reply_text = "Hello, u/" + comment.author.name + ". " + reply_text
-		if not debug:
-			if not silent:
-				reply = comment.reply(reply_text+kofi_text)
-				if lock:
+		if not debug and not silent:
+			reply = comment.reply(reply_text+kofi_text)
+			if lock:
+				try:
 					reply.mod.lock()
-			else:
-				print(reply_text + "\n==========")
+				except:
+					pass
 		else:
 			print(reply_text + "\n==========")
 	except Exception as e:
-		if try_parent and comment.parent():
-			reply(comment.parent(), reply_text, lock=lock, try_parent=False)
+		parent = comment.parent()
+		if try_parent and parent:
+			reply(parent, reply_text, lock=lock, try_parent=False)
 		else:
 			logger.log("Unable to reply to comment " + comment.id + " with text:\n" + reply_text, e, traceback.format_exc())
 
