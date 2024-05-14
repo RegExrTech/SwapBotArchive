@@ -22082,6 +22082,12 @@
                     "partner": "swampgas_1",
                     "post_id": "13hx6hm",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l3vo1wy",
+                    "partner": "ushi_ooshi",
+                    "post_id": "1cfrg80",
+                    "timestamp": 1715622068
                 }
             ]
         },
@@ -36204,6 +36210,16 @@
             "legacy_count": 15,
             "transactions": []
         },
+        "helloitsmeimherenow": {
+            "transactions": [
+                {
+                    "comment_id": "l3fu3zx",
+                    "partner": "my_chat_account",
+                    "post_id": "1cl4l5d",
+                    "timestamp": 1715565642
+                }
+            ]
+        },
         "hellojayare": {
             "legacy_count": 9,
             "transactions": []
@@ -39993,6 +40009,16 @@
         "ironchefbadass": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "ironink738": {
+            "transactions": [
+                {
+                    "comment_id": "l3vnwfw",
+                    "partner": "ushi_ooshi",
+                    "post_id": "1cfrg80",
+                    "timestamp": 1715621903
+                }
+            ]
         },
         "ironlioninc": {
             "legacy_count": 1,
@@ -60641,7 +60667,14 @@
         },
         "my_chat_account": {
             "legacy_count": 8,
-            "transactions": []
+            "transactions": [
+                {
+                    "comment_id": "l3fu3zx",
+                    "partner": "helloitsmeimherenow",
+                    "post_id": "1cl4l5d",
+                    "timestamp": 1715565642
+                }
+            ]
         },
         "my_password_is_____": {
             "legacy_count": 1,
@@ -94710,6 +94743,22 @@
         "usefroggyvoice": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "ushi_ooshi": {
+            "transactions": [
+                {
+                    "comment_id": "l3vnwfw",
+                    "partner": "ironink738",
+                    "post_id": "1cfrg80",
+                    "timestamp": 1715621903
+                },
+                {
+                    "comment_id": "l3vo1wy",
+                    "partner": "davidrforbus",
+                    "post_id": "1cfrg80",
+                    "timestamp": 1715622068
+                }
+            ]
         },
         "ustarizg": {
             "legacy_count": 2,

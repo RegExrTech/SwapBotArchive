@@ -1632,6 +1632,12 @@
                     "partner": "50wwaayyss",
                     "post_id": "1ce0x66",
                     "timestamp": 1715360399
+                },
+                {
+                    "comment_id": "l3wur2o",
+                    "partner": "jrdrew",
+                    "post_id": "1corkjb",
+                    "timestamp": 1715636355
                 }
             ]
         },
@@ -8557,6 +8563,12 @@
                     "partner": "delicious-ticket8676",
                     "post_id": "1ck8bhm",
                     "timestamp": 1715229938
+                },
+                {
+                    "comment_id": "l3s1fyz",
+                    "partner": "explosivereddit",
+                    "post_id": "1ck8bhm",
+                    "timestamp": 1715557518
                 }
             ]
         },
@@ -11705,6 +11717,12 @@
                     "partner": "cryo-k",
                     "post_id": "1c5zqai",
                     "timestamp": 1714491898
+                },
+                {
+                    "comment_id": "l3t4i13",
+                    "partner": "smokeythebear-_-",
+                    "post_id": "1cg2wni",
+                    "timestamp": 1715575230
                 }
             ]
         },
@@ -21644,6 +21662,16 @@
                 }
             ]
         },
+        "exift": {
+            "transactions": [
+                {
+                    "comment_id": "l3voqqx",
+                    "partner": "mrbitbybit",
+                    "post_id": "1cgct64",
+                    "timestamp": 1715622189
+                }
+            ]
+        },
         "existential_gouda": {
             "transactions": [
                 {
@@ -21773,6 +21801,12 @@
                     "partner": "sirmatthias",
                     "post_id": "vpeonr",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l3s1fyz",
+                    "partner": "bigmack0",
+                    "post_id": "1ck8bhm",
+                    "timestamp": 1715557518
                 }
             ]
         },
@@ -22483,6 +22517,16 @@
         "fbolanos": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "fdsalt329": {
+            "transactions": [
+                {
+                    "comment_id": "l3sd6ze",
+                    "partner": "knoxknifebroker",
+                    "post_id": "1cikwdh",
+                    "timestamp": 1715564845
+                }
+            ]
         },
         "fearlesssecret4036": {
             "transactions": [
@@ -34284,6 +34328,12 @@
                     "partner": "izieey",
                     "post_id": "18enhiv",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l3wur2o",
+                    "partner": "6432out",
+                    "post_id": "1corkjb",
+                    "timestamp": 1715636355
                 }
             ]
         },
@@ -36407,6 +36457,12 @@
                     "partner": "kglenns",
                     "post_id": "190uuta",
                     "timestamp": 1705197683
+                },
+                {
+                    "comment_id": "l3sd6ze",
+                    "partner": "fdsalt329",
+                    "post_id": "1cikwdh",
+                    "timestamp": 1715564845
                 }
             ]
         },
@@ -44811,6 +44867,12 @@
                     "partner": "j2thesho",
                     "post_id": "1cgct64",
                     "timestamp": 1715038850
+                },
+                {
+                    "comment_id": "l3voqqx",
+                    "partner": "exift",
+                    "post_id": "1cgct64",
+                    "timestamp": 1715622189
                 }
             ]
         },
@@ -61900,6 +61962,12 @@
                     "partner": "2-pam-chloride",
                     "post_id": "1cg2wni",
                     "timestamp": 1714712456
+                },
+                {
+                    "comment_id": "l3t4i13",
+                    "partner": "cabinetfree5404",
+                    "post_id": "1cg2wni",
+                    "timestamp": 1715575230
                 }
             ]
         },
