@@ -66,7 +66,7 @@ class Config():
 					continue
 				if raw_config["subreddit_name"] == self.subreddit_name:
 					continue
-				gets_flair_from.append(raw_config['subreddit_name'])
+				gets_flair_from.append(raw_config['subreddit_name'].lower())
 		else:
 			gets_flair_from = initial_list
 		return gets_flair_from
@@ -87,7 +87,7 @@ class Config():
 			# If a sub does not have a wildcard, any sub explicitly listed is included.
 			# If a sub ONLY has a wildcard, ALL subs are included.
 			if (raw_config['gets_flair_from'][0] == "*" and sub_name not in raw_config['gets_flair_from']) or (sub_name in raw_config['gets_flair_from'] and not raw_config['gets_flair_from'][0] == "*"):
-				gives_flair_to.append(raw_config['subreddit_name'])
+				gives_flair_to.append(raw_config['subreddit_name'].lower())
 		return gives_flair_to
 
 	def dump(self):
