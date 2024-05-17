@@ -195,8 +195,9 @@ def update_confirmation_page(username, content, overview_content, sub_config):
 			overview_lines = [overview_content] + [x for x in old_overview_lines if not x.endswith("r/" + sub_config.subreddit_name)]
 			# Then filter out any lines with no interesting information.
 			overview_lines = [x for x in overview_lines if not x.startswith("* [0") and x]
-			# Sort so we're consistent and we can check for changes more easily.
-			overview_lines.sort(key = lambda x: x.split(" on ")[1])
+			# Sort by highest to lowest so we're consistent and we can check for changes more easily.
+			overview_lines.sort(key = lambda x: int(x.split(" ")[1].split("[")[-1]))
+			overview_lines = overview_lines[::-1]
 			new_content = "\n".join(overview_lines)
 			# Only make a network call if we're actually making update.
 			if new_content != old_overview_content:
