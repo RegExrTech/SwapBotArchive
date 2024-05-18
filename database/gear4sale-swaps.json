@@ -402,6 +402,16 @@
                 }
             ]
         },
+        "gentleman_flanging": {
+            "transactions": [
+                {
+                    "comment_id": "l47i0vm",
+                    "partner": "massive_gerbil",
+                    "post_id": "1cl98b3",
+                    "timestamp": 1715816618
+                }
+            ]
+        },
         "gerarg89": {
             "transactions": [
                 {
@@ -681,6 +691,12 @@
                     "partner": "drewkid",
                     "post_id": "1ah63pw",
                     "timestamp": 1709627442
+                },
+                {
+                    "comment_id": "l47i0vm",
+                    "partner": "gentleman_flanging",
+                    "post_id": "1cl98b3",
+                    "timestamp": 1715816618
                 }
             ]
         },
