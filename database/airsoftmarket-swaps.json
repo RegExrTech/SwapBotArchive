@@ -5620,6 +5620,12 @@
                     "partner": "noreference9324",
                     "post_id": "1cqdwb4",
                     "timestamp": 1715796485
+                },
+                {
+                    "comment_id": "l4ozp9c",
+                    "partner": "poweredbykrisp",
+                    "post_id": "1ct695i",
+                    "timestamp": 1716093771
                 }
             ]
         },
@@ -22801,6 +22807,12 @@
                     "partner": "drk_drgn",
                     "post_id": "1cm52km",
                     "timestamp": 1715587484
+                },
+                {
+                    "comment_id": "l467aco",
+                    "partner": "tfirstdayz",
+                    "post_id": "1clqzso",
+                    "timestamp": 1716084038
                 }
             ]
         },
@@ -25391,6 +25403,12 @@
                     "partner": "phaiya",
                     "post_id": "1bj0fwq",
                     "timestamp": 1711822230
+                },
+                {
+                    "comment_id": "l4og8yl",
+                    "partner": "unkledunks",
+                    "post_id": "1cbqeuf",
+                    "timestamp": 1716087426
                 }
             ]
         },
@@ -32092,6 +32110,12 @@
                     "partner": "brantec_",
                     "post_id": "1bwucra",
                     "timestamp": 1713159257
+                },
+                {
+                    "comment_id": "l4mxizi",
+                    "partner": "spddmn77",
+                    "post_id": "1ckzxb1",
+                    "timestamp": 1716062047
                 }
             ]
         },
@@ -54553,6 +54577,18 @@
                     "partner": "alex-yeetmaster",
                     "post_id": "1cglh0i",
                     "timestamp": 1714982445
+                },
+                {
+                    "comment_id": "l4nk4ov",
+                    "partner": "spacetripsteps",
+                    "post_id": "1cqhu31",
+                    "timestamp": 1716091891
+                },
+                {
+                    "comment_id": "l4ozp9c",
+                    "partner": "audiophilliac221",
+                    "post_id": "1ct695i",
+                    "timestamp": 1716093771
                 }
             ]
         },
@@ -64863,6 +64899,12 @@
                     "partner": "brobauchery",
                     "post_id": "14n7sbn",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l4nk4ov",
+                    "partner": "poweredbykrisp",
+                    "post_id": "1cqhu31",
+                    "timestamp": 1716091891
                 }
             ]
         },
@@ -64903,6 +64945,16 @@
         "spazzticsmurff": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "spddmn77": {
+            "transactions": [
+                {
+                    "comment_id": "l4mxizi",
+                    "partner": "hk41655645",
+                    "post_id": "1ckzxb1",
+                    "timestamp": 1716062047
+                }
+            ]
         },
         "spearhead90": {
             "legacy_count": 1,
@@ -68250,6 +68302,16 @@
         "tf_jackal": {
             "legacy_count": 15,
             "transactions": []
+        },
+        "tfirstdayz": {
+            "transactions": [
+                {
+                    "comment_id": "l467aco",
+                    "partner": "dtg_figures",
+                    "post_id": "1clqzso",
+                    "timestamp": 1716084038
+                }
+            ]
         },
         "tggvf6": {
             "transactions": [
@@ -74557,6 +74619,12 @@
                     "partner": "farimagination79",
                     "post_id": "1b3o40z",
                     "timestamp": 1711381893
+                },
+                {
+                    "comment_id": "l4og8yl",
+                    "partner": "extevious",
+                    "post_id": "1cbqeuf",
+                    "timestamp": 1716087426
                 }
             ]
         },

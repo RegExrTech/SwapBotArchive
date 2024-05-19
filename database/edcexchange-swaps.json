@@ -1753,6 +1753,12 @@
                     "partner": "shun-bun",
                     "post_id": "1biq6oa",
                     "timestamp": 1713532110
+                },
+                {
+                    "comment_id": "l4mul1w",
+                    "partner": "soroka_dmc",
+                    "post_id": "1bp2ips",
+                    "timestamp": 1716060914
                 }
             ]
         },
@@ -1956,6 +1962,12 @@
                     "partner": "wikidgsxr",
                     "post_id": "18tntdq",
                     "timestamp": 1704239085
+                },
+                {
+                    "comment_id": "l4ljxlr",
+                    "partner": "dankster82",
+                    "post_id": "1cp0kmc",
+                    "timestamp": 1716049020
                 }
             ]
         },
@@ -17149,7 +17161,14 @@
         },
         "dankster82": {
             "legacy_count": 1,
-            "transactions": []
+            "transactions": [
+                {
+                    "comment_id": "l4ljxlr",
+                    "partner": "_blend",
+                    "post_id": "1cp0kmc",
+                    "timestamp": 1716049020
+                }
+            ]
         },
         "danlawsonphoto": {
             "transactions": [
@@ -62687,6 +62706,16 @@
         "sonnyjm243": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "soroka_dmc": {
+            "transactions": [
+                {
+                    "comment_id": "l4mul1w",
+                    "partner": "8andit",
+                    "post_id": "1bp2ips",
+                    "timestamp": 1716060914
+                }
+            ]
         },
         "soul4solace": {
             "transactions": [
