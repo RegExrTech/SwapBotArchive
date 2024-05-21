@@ -22296,6 +22296,12 @@
                     "partner": "famousblinkadam",
                     "post_id": "1cnlx6l",
                     "timestamp": 1715220967
+                },
+                {
+                    "comment_id": "l4z6rgx",
+                    "partner": "star_statics",
+                    "post_id": "1cwzajk",
+                    "timestamp": 1716266247
                 }
             ]
         },
@@ -26189,6 +26195,16 @@
         "mauvaiseacrylic": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "maxhardcorepower": {
+            "transactions": [
+                {
+                    "comment_id": "l4qa3zx",
+                    "partner": "p4percr4nes",
+                    "post_id": "1cvnnrl",
+                    "timestamp": 1716124152
+                }
+            ]
         },
         "maxsquid": {
             "legacy_count": 1,
@@ -31687,6 +31703,12 @@
                     "partner": "famousblinkadam",
                     "post_id": "1cp3nv9",
                     "timestamp": 1715388840
+                },
+                {
+                    "comment_id": "l4qa3zx",
+                    "partner": "maxhardcorepower",
+                    "post_id": "1cvnnrl",
+                    "timestamp": 1716124152
                 }
             ]
         },
@@ -39898,6 +39920,16 @@
                 }
             ]
         },
+        "star_statics": {
+            "transactions": [
+                {
+                    "comment_id": "l4z6rgx",
+                    "partner": "kooky-barracuda2301",
+                    "post_id": "1cwzajk",
+                    "timestamp": 1716266247
+                }
+            ]
+        },
         "starboard-to-port": {
             "transactions": [
                 {
@@ -44936,6 +44968,12 @@
                     "partner": "hip-h0p-opotamus",
                     "post_id": "1b6vn4m",
                     "timestamp": 1709624660
+                },
+                {
+                    "comment_id": "l4wt9uw",
+                    "partner": "yourmomplaysmagic",
+                    "post_id": "1cwmqn2",
+                    "timestamp": 1716233180
                 }
             ]
         },
@@ -46256,6 +46294,16 @@
                     "partner": "heysunflowerstate",
                     "post_id": "i48pya",
                     "timestamp": 0
+                }
+            ]
+        },
+        "yourmomplaysmagic": {
+            "transactions": [
+                {
+                    "comment_id": "l4wt9uw",
+                    "partner": "whattfisthisshit",
+                    "post_id": "1cwmqn2",
+                    "timestamp": 1716233180
                 }
             ]
         },
