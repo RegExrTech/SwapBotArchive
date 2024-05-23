@@ -594,10 +594,10 @@ def reply(comment, reply_text, lock=True, try_parent=True):
 	try:
 		reply_text = "Hello, u/" + comment.author.name + ". " + reply_text
 		if not debug and not silent:
-			reply = comment.reply(reply_text+kofi_text)
+			bot_reply = comment.reply(reply_text+kofi_text)
 			if lock:
 				try:
-					reply.mod.lock()
+					bot_reply.mod.lock()
 				except:
 					pass
 		else:
