@@ -1,6 +1,6 @@
+import re
 import datetime
 import time
-import json_helper
 import requests
 import re
 import json
@@ -9,6 +9,7 @@ import argparse
 import sys
 sys.path.insert(0, ".")
 sys.path.insert(0, "Discord")
+import json_helper
 from assign_role import assign_role
 from Config import Config
 import swap
@@ -236,6 +237,7 @@ def main(sub_config):
 
 	for message in confirmation_invocations:
 		body = message['content']
+		body = re.sub("<:.*?:.*?>", "", body)
 		author1_id = message['author']['id']
 		bot_user_id = sub_config.discord_config.bot_id
 		confirmation_message_id = message['id']
