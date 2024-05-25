@@ -776,6 +776,16 @@
                 }
             ]
         },
+        "a_yellowbird": {
+            "transactions": [
+                {
+                    "comment_id": "l5edhsy",
+                    "partner": "ronald_dobbs",
+                    "post_id": "1cv2c0j",
+                    "timestamp": 1716570376
+                }
+            ]
+        },
         "aaaa43212345": {
             "transactions": [
                 {
@@ -1891,6 +1901,12 @@
                     "partner": "villainhikes",
                     "post_id": "1cen4sv",
                     "timestamp": 1714992320
+                },
+                {
+                    "comment_id": "l59oosl",
+                    "partner": "somethinglemony",
+                    "post_id": "1cjgz61",
+                    "timestamp": 1716434272
                 }
             ]
         },
@@ -2163,6 +2179,16 @@
                     "partner": "steviefrench420",
                     "post_id": "15ux6e8",
                     "timestamp": 0
+                }
+            ]
+        },
+        "angrytg": {
+            "transactions": [
+                {
+                    "comment_id": "l5knek3",
+                    "partner": "live_work9665",
+                    "post_id": "1culiw9",
+                    "timestamp": 1716615390
                 }
             ]
         },
@@ -2926,6 +2952,16 @@
                 }
             ]
         },
+        "bearsseasontickets": {
+            "transactions": [
+                {
+                    "comment_id": "l5j2r35",
+                    "partner": "radmonk",
+                    "post_id": "1bpf0m2",
+                    "timestamp": 1716602856
+                }
+            ]
+        },
         "beavertrunk": {
             "transactions": [
                 {
@@ -3329,6 +3365,12 @@
                     "partner": "z4raggs",
                     "post_id": "18yu1f1",
                     "timestamp": 1705580252
+                },
+                {
+                    "comment_id": "l5f6sho",
+                    "partner": "crazeeeyez",
+                    "post_id": "1cjce71",
+                    "timestamp": 1716550672
                 }
             ]
         },
@@ -4912,6 +4954,16 @@
                 }
             ]
         },
+        "cicada17": {
+            "transactions": [
+                {
+                    "comment_id": "l5e506x",
+                    "partner": "jayblooey",
+                    "post_id": "1cs6zi9",
+                    "timestamp": 1716511442
+                }
+            ]
+        },
         "citizenonpatrol": {
             "transactions": [
                 {
@@ -5333,6 +5385,12 @@
                     "partner": "bgriar",
                     "post_id": "1cigxv7",
                     "timestamp": 1715306500
+                },
+                {
+                    "comment_id": "l5f6sho",
+                    "partner": "billyyumyum_2by2",
+                    "post_id": "1cjce71",
+                    "timestamp": 1716550672
                 }
             ]
         },
@@ -10044,6 +10102,16 @@
                 }
             ]
         },
+        "jayblooey": {
+            "transactions": [
+                {
+                    "comment_id": "l5e506x",
+                    "partner": "cicada17",
+                    "post_id": "1cs6zi9",
+                    "timestamp": 1716511442
+                }
+            ]
+        },
         "jbreezy24": {
             "transactions": [
                 {
@@ -11733,6 +11801,16 @@
                     "partner": "pitiful-rule-7240",
                     "post_id": "1448i0p",
                     "timestamp": 0
+                }
+            ]
+        },
+        "live_work9665": {
+            "transactions": [
+                {
+                    "comment_id": "l5knek3",
+                    "partner": "angrytg",
+                    "post_id": "1culiw9",
+                    "timestamp": 1716615390
                 }
             ]
         },
@@ -16318,6 +16396,16 @@
                 }
             ]
         },
+        "radmonk": {
+            "transactions": [
+                {
+                    "comment_id": "l5j2r35",
+                    "partner": "bearsseasontickets",
+                    "post_id": "1bpf0m2",
+                    "timestamp": 1716602856
+                }
+            ]
+        },
         "rainydaybear999": {
             "transactions": [
                 {
@@ -17001,6 +17089,12 @@
                     "partner": "koreangonebad",
                     "post_id": "18kvgyb",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l5edhsy",
+                    "partner": "a_yellowbird",
+                    "post_id": "1cv2c0j",
+                    "timestamp": 1716570376
                 }
             ]
         },
@@ -18639,6 +18733,12 @@
                     "partner": "0ut0fb0unds",
                     "post_id": "1cjgz61",
                     "timestamp": 1715279712
+                },
+                {
+                    "comment_id": "l59oosl",
+                    "partner": "aloofpavillion",
+                    "post_id": "1cjgz61",
+                    "timestamp": 1716434272
                 }
             ]
         },

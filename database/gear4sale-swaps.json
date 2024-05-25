@@ -548,6 +548,16 @@
                 }
             ]
         },
+        "johnnysmitch": {
+            "transactions": [
+                {
+                    "comment_id": "l525z66",
+                    "partner": "macinslash",
+                    "post_id": "1cd4znz",
+                    "timestamp": 1716323571
+                }
+            ]
+        },
         "kelpicardal21": {
             "transactions": [
                 {
@@ -667,6 +677,12 @@
                     "partner": "frank-swildyears",
                     "post_id": "1bfl6pj",
                     "timestamp": 1710800572
+                },
+                {
+                    "comment_id": "l525z66",
+                    "partner": "johnnysmitch",
+                    "post_id": "1cd4znz",
+                    "timestamp": 1716323571
                 }
             ]
         },

@@ -153,6 +153,12 @@
                     "partner": "samo_dimitrije",
                     "post_id": "1494k18",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l565gsf",
+                    "partner": "gt_indirectking",
+                    "post_id": "15ollb0",
+                    "timestamp": 1716409443
                 }
             ]
         },
@@ -561,6 +567,12 @@
                     "partner": "glenncinho",
                     "post_id": "z3qo00",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l54w5o9",
+                    "partner": "juanoldmcdjuanold",
+                    "post_id": "1cfm36p",
+                    "timestamp": 1716494451
                 }
             ]
         },
@@ -2337,6 +2349,16 @@
                 }
             ]
         },
+        "gt_indirectking": {
+            "transactions": [
+                {
+                    "comment_id": "l565gsf",
+                    "partner": "_thinkrad_",
+                    "post_id": "15ollb0",
+                    "timestamp": 1716409443
+                }
+            ]
+        },
         "gut_cut": {
             "transactions": [
                 {
@@ -2980,6 +3002,16 @@
         "jstor_and_chill": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "juanoldmcdjuanold": {
+            "transactions": [
+                {
+                    "comment_id": "l54w5o9",
+                    "partner": "alfredw1",
+                    "post_id": "1cfm36p",
+                    "timestamp": 1716494451
+                }
+            ]
         },
         "judman13": {
             "transactions": [

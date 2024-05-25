@@ -196,6 +196,12 @@
                     "partner": "pkmntcgtradeguy",
                     "post_id": "1cmduws",
                     "timestamp": 1715979117
+                },
+                {
+                    "comment_id": "l5fo925",
+                    "partner": "nixongsp1992",
+                    "post_id": "1coz4re",
+                    "timestamp": 1716583609
                 }
             ]
         },
@@ -601,6 +607,16 @@
                 }
             ]
         },
+        "mrdrsignior": {
+            "transactions": [
+                {
+                    "comment_id": "l59jt0k",
+                    "partner": "nixongsp1992",
+                    "post_id": "1coz4re",
+                    "timestamp": 1716437598
+                }
+            ]
+        },
         "mrkboss": {
             "transactions": [
                 {
@@ -674,6 +690,18 @@
                     "partner": "secret_agent89",
                     "post_id": "1coz4re",
                     "timestamp": 1715917709
+                },
+                {
+                    "comment_id": "l59jt0k",
+                    "partner": "mrdrsignior",
+                    "post_id": "1coz4re",
+                    "timestamp": 1716437598
+                },
+                {
+                    "comment_id": "l5fo925",
+                    "partner": "chewdizzle12",
+                    "post_id": "1coz4re",
+                    "timestamp": 1716583609
                 }
             ]
         },
