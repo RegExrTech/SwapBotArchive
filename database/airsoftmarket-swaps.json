@@ -8334,6 +8334,12 @@
                     "partner": "savagesnarf",
                     "post_id": "1chb3as",
                     "timestamp": 1714858288
+                },
+                {
+                    "comment_id": "l5mz3ek",
+                    "partner": "truecrazyman",
+                    "post_id": "1cwld64",
+                    "timestamp": 1716660321
                 }
             ]
         },
@@ -10495,6 +10501,16 @@
         "brundan069": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "bruningfire": {
+            "transactions": [
+                {
+                    "comment_id": "l5nk6cx",
+                    "partner": "mrasianboie",
+                    "post_id": "1cvul3n",
+                    "timestamp": 1716669838
+                }
+            ]
         },
         "brycef94": {
             "legacy_count": 1,
@@ -19662,6 +19678,16 @@
             "legacy_count": 1,
             "transactions": []
         },
+        "darkstar01ftw": {
+            "transactions": [
+                {
+                    "comment_id": "l5kxddl",
+                    "partner": "extevious",
+                    "post_id": "1cvcpg4",
+                    "timestamp": 1716674511
+                }
+            ]
+        },
         "darnefergitu": {
             "legacy_count": 1,
             "transactions": []
@@ -25461,6 +25487,18 @@
                     "partner": "overlyfriedrice",
                     "post_id": "1cvcpg4",
                     "timestamp": 1716618496
+                },
+                {
+                    "comment_id": "l5kxddl",
+                    "partner": "darkstar01ftw",
+                    "post_id": "1cvcpg4",
+                    "timestamp": 1716674511
+                },
+                {
+                    "comment_id": "l5ooyao",
+                    "partner": "the_hidden_taco",
+                    "post_id": "1cvcpg4",
+                    "timestamp": 1716687554
                 }
             ]
         },
@@ -46311,6 +46349,16 @@
                     "partner": "aneilbreenfilm",
                     "post_id": "12e2bbr",
                     "timestamp": 0
+                }
+            ]
+        },
+        "mrasianboie": {
+            "transactions": [
+                {
+                    "comment_id": "l5nk6cx",
+                    "partner": "bruningfire",
+                    "post_id": "1cvul3n",
+                    "timestamp": 1716669838
                 }
             ]
         },
@@ -69609,6 +69657,12 @@
                     "partner": "twelvepaws1992",
                     "post_id": "1cg60ty",
                     "timestamp": 1714841842
+                },
+                {
+                    "comment_id": "l5ooyao",
+                    "partner": "extevious",
+                    "post_id": "1cvcpg4",
+                    "timestamp": 1716687554
                 }
             ]
         },
@@ -73488,6 +73542,12 @@
                     "partner": "dto-oscar",
                     "post_id": "13ywav7",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l5mz3ek",
+                    "partner": "biack-kat",
+                    "post_id": "1cwld64",
+                    "timestamp": 1716660321
                 }
             ]
         },

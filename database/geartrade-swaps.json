@@ -9343,6 +9343,12 @@
                     "partner": "traditional_ad_1855",
                     "post_id": "1cffh40",
                     "timestamp": 1715476596
+                },
+                {
+                    "comment_id": "l5ob8yk",
+                    "partner": "xxthedorklordxx",
+                    "post_id": "1cffh40",
+                    "timestamp": 1716682869
                 }
             ]
         },
@@ -14782,6 +14788,16 @@
                 }
             ]
         },
+        "ok_salad_8047": {
+            "transactions": [
+                {
+                    "comment_id": "l5e7346",
+                    "partner": "wildswalker",
+                    "post_id": "1cs6z46",
+                    "timestamp": 1716710473
+                }
+            ]
+        },
         "okayruin": {
             "transactions": [
                 {
@@ -17173,6 +17189,16 @@
                     "partner": "mista_fresh",
                     "post_id": "1c3848h",
                     "timestamp": 1713578491
+                }
+            ]
+        },
+        "rpdubc": {
+            "transactions": [
+                {
+                    "comment_id": "l5e1vrg",
+                    "partner": "traddaddy21",
+                    "post_id": "1ckbmt8",
+                    "timestamp": 1716667285
                 }
             ]
         },
@@ -20537,6 +20563,12 @@
                     "partner": "pbgriffin",
                     "post_id": "1bycya9",
                     "timestamp": 1713008410
+                },
+                {
+                    "comment_id": "l5e1vrg",
+                    "partner": "rpdubc",
+                    "post_id": "1ckbmt8",
+                    "timestamp": 1716667285
                 }
             ]
         },
@@ -21953,6 +21985,12 @@
                     "partner": "jake55555",
                     "post_id": "1cs6z46",
                     "timestamp": 1715738879
+                },
+                {
+                    "comment_id": "l5e7346",
+                    "partner": "ok_salad_8047",
+                    "post_id": "1cs6z46",
+                    "timestamp": 1716710473
                 }
             ]
         },
@@ -22495,6 +22533,16 @@
                     "partner": "gravensteinzz",
                     "post_id": "1b4y73o",
                     "timestamp": 1711326324
+                }
+            ]
+        },
+        "xxthedorklordxx": {
+            "transactions": [
+                {
+                    "comment_id": "l5ob8yk",
+                    "partner": "houstontexansfan05",
+                    "post_id": "1cffh40",
+                    "timestamp": 1716682869
                 }
             ]
         },

@@ -2291,6 +2291,16 @@
             "legacy_count": 5,
             "transactions": []
         },
+        "bearbunny1990": {
+            "transactions": [
+                {
+                    "comment_id": "l5j6g9u",
+                    "partner": "external-moment8680",
+                    "post_id": "1cw2d4q",
+                    "timestamp": 1716635592
+                }
+            ]
+        },
         "beardle": {
             "legacy_count": 5,
             "transactions": [
@@ -3457,6 +3467,12 @@
                     "partner": "amidamaru89",
                     "post_id": "1cbk5ha",
                     "timestamp": 1714464830
+                },
+                {
+                    "comment_id": "l5p663c",
+                    "partner": "eatabagofrichards69",
+                    "post_id": "1ct5l9p",
+                    "timestamp": 1716697028
                 }
             ]
         },
@@ -5698,6 +5714,12 @@
                     "partner": "adorable_depth2238",
                     "post_id": "rszlzk",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l5nqxcl",
+                    "partner": "external-moment8680",
+                    "post_id": "1cw2d4q",
+                    "timestamp": 1716681243
                 }
             ]
         },
@@ -7114,6 +7136,16 @@
                 }
             ]
         },
+        "eatabagofrichards69": {
+            "transactions": [
+                {
+                    "comment_id": "l5p663c",
+                    "partner": "bubblypeaches",
+                    "post_id": "1ct5l9p",
+                    "timestamp": 1716697028
+                }
+            ]
+        },
         "ebuni": {
             "transactions": [
                 {
@@ -8008,6 +8040,18 @@
                     "partner": "scorpei",
                     "post_id": "1cw2d4q",
                     "timestamp": 1716602698
+                },
+                {
+                    "comment_id": "l5j6g9u",
+                    "partner": "bearbunny1990",
+                    "post_id": "1cw2d4q",
+                    "timestamp": 1716635592
+                },
+                {
+                    "comment_id": "l5nqxcl",
+                    "partner": "dailythought",
+                    "post_id": "1cw2d4q",
+                    "timestamp": 1716681243
                 }
             ]
         },
