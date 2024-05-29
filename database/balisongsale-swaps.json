@@ -4937,6 +4937,12 @@
                     "partner": "key_experience4584",
                     "post_id": "1bzhcl4",
                     "timestamp": 1712938708
+                },
+                {
+                    "comment_id": "l62h3hq",
+                    "partner": "public_ad_7158",
+                    "post_id": "1cxhids",
+                    "timestamp": 1716926600
                 }
             ]
         },
@@ -5481,6 +5487,12 @@
                     "partner": "-jelli-",
                     "post_id": "13iohox",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l63f7or",
+                    "partner": "kingcake57",
+                    "post_id": "1csa4pg",
+                    "timestamp": 1716937259
                 }
             ]
         },
@@ -5997,6 +6009,16 @@
                     "partner": "excellent_priority_5",
                     "post_id": "1chyye6",
                     "timestamp": 1716209368
+                }
+            ]
+        },
+        "kingcake57": {
+            "transactions": [
+                {
+                    "comment_id": "l63f7or",
+                    "partner": "jettsd",
+                    "post_id": "1csa4pg",
+                    "timestamp": 1716937259
                 }
             ]
         },
@@ -8347,6 +8369,16 @@
                     "partner": "excellent_priority_5",
                     "post_id": "10y1cp0",
                     "timestamp": 0
+                }
+            ]
+        },
+        "public_ad_7158": {
+            "transactions": [
+                {
+                    "comment_id": "l62h3hq",
+                    "partner": "human_evolution",
+                    "post_id": "1cxhids",
+                    "timestamp": 1716926600
                 }
             ]
         },
