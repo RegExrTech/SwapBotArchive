@@ -11911,6 +11911,12 @@
                     "partner": "milecyhigh",
                     "post_id": "1bcg5ry",
                     "timestamp": 1711502926
+                },
+                {
+                    "comment_id": "l696t81",
+                    "partner": "blobwad",
+                    "post_id": "1cwflvv",
+                    "timestamp": 1717034806
                 }
             ]
         },
@@ -14287,6 +14293,16 @@
                     "partner": "eliteabola",
                     "post_id": "k4d9zo",
                     "timestamp": 0
+                }
+            ]
+        },
+        "blobwad": {
+            "transactions": [
+                {
+                    "comment_id": "l696t81",
+                    "partner": "bbllaakkee",
+                    "post_id": "1cwflvv",
+                    "timestamp": 1717034806
                 }
             ]
         },
@@ -30032,7 +30048,14 @@
         },
         "dribblejam": {
             "legacy_count": 1,
-            "transactions": []
+            "transactions": [
+                {
+                    "comment_id": "l64mott",
+                    "partner": "mtvulf",
+                    "post_id": "1br51qb",
+                    "timestamp": 1716995901
+                }
+            ]
         },
         "drival": {
             "transactions": [
@@ -69380,6 +69403,12 @@
                     "partner": "pakattack44",
                     "post_id": "13c3arw",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l64mott",
+                    "partner": "dribblejam",
+                    "post_id": "1br51qb",
+                    "timestamp": 1716995901
                 }
             ]
         },
@@ -70859,6 +70888,16 @@
                     "partner": "therealmrsymba",
                     "post_id": "106lvhd",
                     "timestamp": 0
+                }
+            ]
+        },
+        "nestledrink": {
+            "transactions": [
+                {
+                    "comment_id": "l68qdca",
+                    "partner": "pvm_april",
+                    "post_id": "1czzukq",
+                    "timestamp": 1717021780
                 }
             ]
         },
@@ -79446,6 +79485,16 @@
                     "partner": "makmony12",
                     "post_id": "zxrxva",
                     "timestamp": 0
+                }
+            ]
+        },
+        "pvm_april": {
+            "transactions": [
+                {
+                    "comment_id": "l68qdca",
+                    "partner": "nestledrink",
+                    "post_id": "1czzukq",
+                    "timestamp": 1717021780
                 }
             ]
         },

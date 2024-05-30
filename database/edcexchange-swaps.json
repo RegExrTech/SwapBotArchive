@@ -34922,6 +34922,12 @@
                     "partner": "toosoonraccoon",
                     "post_id": "1bjlfiw",
                     "timestamp": 1712189148
+                },
+                {
+                    "comment_id": "l67k7uz",
+                    "partner": "xnept00n",
+                    "post_id": "1cv0cmw",
+                    "timestamp": 1717007983
                 }
             ]
         },
@@ -38028,6 +38034,16 @@
                     "partner": "thedaliman",
                     "post_id": "11u5el7",
                     "timestamp": 0
+                }
+            ]
+        },
+        "lemonader19": {
+            "transactions": [
+                {
+                    "comment_id": "l65nmed",
+                    "partner": "ymmaat",
+                    "post_id": "1cz8m9p",
+                    "timestamp": 1716980611
                 }
             ]
         },
@@ -50251,7 +50267,14 @@
         },
         "paradigmsofanto": {
             "legacy_count": 1,
-            "transactions": []
+            "transactions": [
+                {
+                    "comment_id": "l67b3ev",
+                    "partner": "senseitsunami",
+                    "post_id": "1cofrw7",
+                    "timestamp": 1717004691
+                }
+            ]
         },
         "paradoxplaysstuff": {
             "legacy_count": 1,
@@ -59831,6 +59854,16 @@
                     "partner": "arduousanonymity",
                     "post_id": "18ko6b9",
                     "timestamp": 0
+                }
+            ]
+        },
+        "senseitsunami": {
+            "transactions": [
+                {
+                    "comment_id": "l67b3ev",
+                    "partner": "paradigmsofanto",
+                    "post_id": "1cofrw7",
+                    "timestamp": 1717004691
                 }
             ]
         },
@@ -75917,6 +75950,12 @@
                     "partner": "spike71spiegel",
                     "post_id": "1cv0cmw",
                     "timestamp": 1716779211
+                },
+                {
+                    "comment_id": "l67k7uz",
+                    "partner": "june031987",
+                    "post_id": "1cv0cmw",
+                    "timestamp": 1717007983
                 }
             ]
         },
@@ -76422,6 +76461,12 @@
                     "partner": "ok_bug8859",
                     "post_id": "10pgkhb",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l65nmed",
+                    "partner": "lemonader19",
+                    "post_id": "1cz8m9p",
+                    "timestamp": 1716980611
                 }
             ]
         },
