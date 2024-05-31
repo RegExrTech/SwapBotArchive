@@ -68,6 +68,12 @@
                     "partner": "apukong",
                     "post_id": "1cauo0k",
                     "timestamp": 1715812631
+                },
+                {
+                    "comment_id": "l68esci",
+                    "partner": "emergency_abrocoma28",
+                    "post_id": "1cw7ldb",
+                    "timestamp": 1717120888
                 }
             ]
         },
@@ -264,6 +270,16 @@
                     "partner": "rebatwa2",
                     "post_id": "1cml1yk",
                     "timestamp": 1715461541
+                }
+            ]
+        },
+        "emergency_abrocoma28": {
+            "transactions": [
+                {
+                    "comment_id": "l68esci",
+                    "partner": "artordrakan",
+                    "post_id": "1cw7ldb",
+                    "timestamp": 1717120888
                 }
             ]
         },

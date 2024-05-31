@@ -6239,6 +6239,12 @@
                     "partner": "psychologicaltart127",
                     "post_id": "1bv5fcg",
                     "timestamp": 1714611163
+                },
+                {
+                    "comment_id": "l6egtn9",
+                    "partner": "itslagginyo",
+                    "post_id": "1d1a27c",
+                    "timestamp": 1717121162
                 }
             ]
         },
@@ -19416,6 +19422,16 @@
                 }
             ]
         },
+        "donkeykong154": {
+            "transactions": [
+                {
+                    "comment_id": "l6a6o4c",
+                    "partner": "kefefs_v2",
+                    "post_id": "1czklw4",
+                    "timestamp": 1717057099
+                }
+            ]
+        },
         "donnietobasco2": {
             "transactions": [
                 {
@@ -31604,6 +31620,12 @@
                     "partner": "pandamoney55",
                     "post_id": "wyqa5a",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l6egtn9",
+                    "partner": "audiomortis",
+                    "post_id": "1d1a27c",
+                    "timestamp": 1717121162
                 }
             ]
         },
@@ -35820,6 +35842,12 @@
                     "partner": "knifedigger",
                     "post_id": "10y4ga0",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l6a6o4c",
+                    "partner": "donkeykong154",
+                    "post_id": "1czklw4",
+                    "timestamp": 1717057099
                 }
             ]
         },
@@ -63731,6 +63759,12 @@
                     "partner": "xnept00n",
                     "post_id": "1cv0cmw",
                     "timestamp": 1716779211
+                },
+                {
+                    "comment_id": "l6cv1w7",
+                    "partner": "verbageddon",
+                    "post_id": "1cy7fpk",
+                    "timestamp": 1717102787
                 }
             ]
         },
@@ -73488,6 +73522,16 @@
         "venyvjr": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "verbageddon": {
+            "transactions": [
+                {
+                    "comment_id": "l6cv1w7",
+                    "partner": "spike71spiegel",
+                    "post_id": "1cy7fpk",
+                    "timestamp": 1717102787
+                }
+            ]
         },
         "verpus77": {
             "legacy_count": 1,

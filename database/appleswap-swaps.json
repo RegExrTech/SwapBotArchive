@@ -1479,6 +1479,12 @@
                     "partner": "lilmanbigtalk",
                     "post_id": "1bqzob0",
                     "timestamp": 1712625274
+                },
+                {
+                    "comment_id": "l6ev2bj",
+                    "partner": "lord_zatara",
+                    "post_id": "1d0qbnw",
+                    "timestamp": 1717118921
                 }
             ]
         },
@@ -33457,6 +33463,12 @@
                     "partner": "aenut52",
                     "post_id": "r5dlc7",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l67hnur",
+                    "partner": "lxz9",
+                    "post_id": "1d2ni56",
+                    "timestamp": 1717120891
                 }
             ]
         },
@@ -61339,6 +61351,16 @@
                 }
             ]
         },
+        "lord_zatara": {
+            "transactions": [
+                {
+                    "comment_id": "l6ev2bj",
+                    "partner": "89pietrokim",
+                    "post_id": "1d0qbnw",
+                    "timestamp": 1717118921
+                }
+            ]
+        },
         "lordfarquadcore": {
             "transactions": [
                 {
@@ -62148,6 +62170,12 @@
                     "partner": "nontoxic628",
                     "post_id": "10x3xbc",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l67hnur",
+                    "partner": "evster13",
+                    "post_id": "1d2ni56",
+                    "timestamp": 1717120891
                 }
             ]
         },
@@ -65522,6 +65550,12 @@
                     "partner": "superkwn",
                     "post_id": "obdrc9",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l6e130h",
+                    "partner": "squeakywipers",
+                    "post_id": "1cxow9w",
+                    "timestamp": 1717107798
                 }
             ]
         },
@@ -92121,6 +92155,12 @@
                     "partner": "integra891",
                     "post_id": "1951p5j",
                     "timestamp": 1705497012
+                },
+                {
+                    "comment_id": "l6e130h",
+                    "partner": "megabloksarehitler",
+                    "post_id": "1cxow9w",
+                    "timestamp": 1717107798
                 }
             ]
         },
