@@ -9275,6 +9275,12 @@
                     "partner": "pad132",
                     "post_id": "1bpdicm",
                     "timestamp": 1711699292
+                },
+                {
+                    "comment_id": "l68kcdk",
+                    "partner": "wide_comment3081",
+                    "post_id": "1d37biq",
+                    "timestamp": 1717207272
                 }
             ]
         },
@@ -45284,6 +45290,16 @@
         "wickedd_witch": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "wide_comment3081": {
+            "transactions": [
+                {
+                    "comment_id": "l68kcdk",
+                    "partner": "crunchyteatime",
+                    "post_id": "1d37biq",
+                    "timestamp": 1717207272
+                }
+            ]
         },
         "wiggitywiener": {
             "legacy_count": 1,

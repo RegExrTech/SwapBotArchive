@@ -1829,6 +1829,16 @@
                 }
             ]
         },
+        "candieddoo": {
+            "transactions": [
+                {
+                    "comment_id": "l6fmafn",
+                    "partner": "wristrolls",
+                    "post_id": "1d46eey",
+                    "timestamp": 1717175023
+                }
+            ]
+        },
         "canzilla23": {
             "legacy_count": 2,
             "transactions": []
@@ -2818,6 +2828,16 @@
                     "partner": "veloholic91",
                     "post_id": "z85bcf",
                     "timestamp": 0
+                }
+            ]
+        },
+        "dennisroadsman": {
+            "transactions": [
+                {
+                    "comment_id": "l6khvml",
+                    "partner": "yojimbokingofsamurai",
+                    "post_id": "1cmq14m",
+                    "timestamp": 1717209870
                 }
             ]
         },
@@ -5798,6 +5818,16 @@
                 }
             ]
         },
+        "lacollebeach": {
+            "transactions": [
+                {
+                    "comment_id": "l6hdvx4",
+                    "partner": "relationill7507",
+                    "post_id": "1d0o8o2",
+                    "timestamp": 1717168690
+                }
+            ]
+        },
         "lakeharkwatchco": {
             "transactions": [
                 {
@@ -8180,6 +8210,12 @@
                     "partner": "many_distribution_21",
                     "post_id": "196n6ku",
                     "timestamp": 1705510772
+                },
+                {
+                    "comment_id": "l6hdvx4",
+                    "partner": "lacollebeach",
+                    "post_id": "1d0o8o2",
+                    "timestamp": 1717168690
                 }
             ]
         },
@@ -11106,6 +11142,12 @@
                     "partner": "iwc-pilot",
                     "post_id": "1cexrfu",
                     "timestamp": 1714522463
+                },
+                {
+                    "comment_id": "l6fmafn",
+                    "partner": "candieddoo",
+                    "post_id": "1d46eey",
+                    "timestamp": 1717175023
                 }
             ]
         },
@@ -11136,6 +11178,16 @@
                     "partner": "bc723",
                     "post_id": "114w4rz",
                     "timestamp": 0
+                }
+            ]
+        },
+        "yojimbokingofsamurai": {
+            "transactions": [
+                {
+                    "comment_id": "l6khvml",
+                    "partner": "dennisroadsman",
+                    "post_id": "1cmq14m",
+                    "timestamp": 1717209870
                 }
             ]
         },
