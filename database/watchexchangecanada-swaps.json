@@ -7087,6 +7087,12 @@
                     "partner": "mutakingprime",
                     "post_id": "1ci07tf",
                     "timestamp": 1714660483
+                },
+                {
+                    "comment_id": "l6nye8j",
+                    "partner": "orangeleafs",
+                    "post_id": "1d4vpza",
+                    "timestamp": 1717269533
                 }
             ]
         },
@@ -7379,6 +7385,12 @@
                     "partner": "dlp55",
                     "post_id": "1bxdg23",
                     "timestamp": 1713550922
+                },
+                {
+                    "comment_id": "l6nye8j",
+                    "partner": "notclever15322",
+                    "post_id": "1d4vpza",
+                    "timestamp": 1717269533
                 }
             ]
         },
@@ -8808,6 +8820,16 @@
                 }
             ]
         },
+        "seniortiss": {
+            "transactions": [
+                {
+                    "comment_id": "l63m51s",
+                    "partner": "techsqueeze",
+                    "post_id": "1d0j1np",
+                    "timestamp": 1717293630
+                }
+            ]
+        },
         "senor-fantastico": {
             "legacy_count": 1,
             "transactions": []
@@ -9081,6 +9103,12 @@
                     "partner": "pdavayios47",
                     "post_id": "1ck622e",
                     "timestamp": 1716744903
+                },
+                {
+                    "comment_id": "l6n7cu7",
+                    "partner": "techsqueeze",
+                    "post_id": "1d57353",
+                    "timestamp": 1717259452
                 }
             ]
         },
@@ -10021,6 +10049,18 @@
                     "partner": "farklear",
                     "post_id": "1d0iwjk",
                     "timestamp": 1716930577
+                },
+                {
+                    "comment_id": "l6n7cu7",
+                    "partner": "sorry_comfortable_51",
+                    "post_id": "1d57353",
+                    "timestamp": 1717259452
+                },
+                {
+                    "comment_id": "l63m51s",
+                    "partner": "seniortiss",
+                    "post_id": "1d0j1np",
+                    "timestamp": 1717293630
                 }
             ]
         },

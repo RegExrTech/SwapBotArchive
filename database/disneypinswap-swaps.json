@@ -3491,6 +3491,12 @@
                     "partner": "marzz_barzz_",
                     "post_id": "1cw1845",
                     "timestamp": 1717003278
+                },
+                {
+                    "comment_id": "l6ogkxb",
+                    "partner": "substantial_cash_501",
+                    "post_id": "1cws7zv",
+                    "timestamp": 1717282838
                 }
             ]
         },
@@ -14633,6 +14639,12 @@
                     "partner": "dailythought",
                     "post_id": "1cvlr94",
                     "timestamp": 1717186641
+                },
+                {
+                    "comment_id": "l6m1xhv",
+                    "partner": "rebtilia",
+                    "post_id": "1cvlr94",
+                    "timestamp": 1717251017
                 }
             ]
         },
@@ -24273,6 +24285,12 @@
                     "partner": "hot_company_365",
                     "post_id": "1aggbys",
                     "timestamp": 1716174784
+                },
+                {
+                    "comment_id": "l6m1xhv",
+                    "partner": "laurainallcaps",
+                    "post_id": "1cvlr94",
+                    "timestamp": 1717251017
                 }
             ]
         },
@@ -29263,6 +29281,16 @@
         "stripedsweater13": {
             "legacy_count": 2,
             "transactions": []
+        },
+        "substantial_cash_501": {
+            "transactions": [
+                {
+                    "comment_id": "l6ogkxb",
+                    "partner": "bubblypeaches",
+                    "post_id": "1cws7zv",
+                    "timestamp": 1717282838
+                }
+            ]
         },
         "sugarrush-raver": {
             "transactions": [
