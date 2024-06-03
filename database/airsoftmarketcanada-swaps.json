@@ -6733,6 +6733,12 @@
                     "partner": "mrpinhead71",
                     "post_id": "1d1cjof",
                     "timestamp": 1717277823
+                },
+                {
+                    "comment_id": "l6vb4en",
+                    "partner": "lordjuan132",
+                    "post_id": "1d1cjof",
+                    "timestamp": 1717391676
                 }
             ]
         },
@@ -16273,6 +16279,16 @@
                     "partner": "oo7-dimitri",
                     "post_id": "18w5o5a",
                     "timestamp": 1704578516
+                }
+            ]
+        },
+        "lordjuan132": {
+            "transactions": [
+                {
+                    "comment_id": "l6vb4en",
+                    "partner": "cdn_citizen",
+                    "post_id": "1d1cjof",
+                    "timestamp": 1717391676
                 }
             ]
         },
