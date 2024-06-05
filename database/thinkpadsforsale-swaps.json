@@ -2957,6 +2957,16 @@
                 }
             ]
         },
+        "johnkangw": {
+            "transactions": [
+                {
+                    "comment_id": "l74y85v",
+                    "partner": "zero00shadow",
+                    "post_id": "1cxaur0",
+                    "timestamp": 1717547100
+                }
+            ]
+        },
         "johnnycisgood": {
             "transactions": [
                 {
@@ -6362,6 +6372,12 @@
                     "partner": "s-m-2",
                     "post_id": "1bk4v7b",
                     "timestamp": 1716251686
+                },
+                {
+                    "comment_id": "l74y85v",
+                    "partner": "johnkangw",
+                    "post_id": "1cxaur0",
+                    "timestamp": 1717547100
                 }
             ]
         },
