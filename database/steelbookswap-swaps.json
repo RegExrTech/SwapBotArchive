@@ -3888,6 +3888,12 @@
                     "partner": "snooepiphanies1293",
                     "post_id": "1cbbrkn",
                     "timestamp": 1715628706
+                },
+                {
+                    "comment_id": "l726g43",
+                    "partner": "thetvprogram",
+                    "post_id": "1adz7dr",
+                    "timestamp": 1717596044
                 }
             ]
         },
@@ -4491,6 +4497,12 @@
                     "partner": "spartacus373stonksss",
                     "post_id": "1cud6rv",
                     "timestamp": 1717260144
+                },
+                {
+                    "comment_id": "l79v1zk",
+                    "partner": "foreigneternity",
+                    "post_id": "1cznq51",
+                    "timestamp": 1717619999
                 }
             ]
         },
@@ -4859,6 +4871,12 @@
                     "partner": "twall1297",
                     "post_id": "18x2ftx",
                     "timestamp": 1707144830
+                },
+                {
+                    "comment_id": "l78ub4s",
+                    "partner": "pwdftw",
+                    "post_id": "1cneebl",
+                    "timestamp": 1717608103
                 }
             ]
         },
@@ -6486,6 +6504,12 @@
                     "partner": "cripple1",
                     "post_id": "1cp1c6x",
                     "timestamp": 1716263069
+                },
+                {
+                    "comment_id": "l784b99",
+                    "partner": "pwdftw",
+                    "post_id": "1d24tlh",
+                    "timestamp": 1717599038
                 }
             ]
         },
@@ -10263,6 +10287,12 @@
                     "partner": "gallopmygoose",
                     "post_id": "1cznq51",
                     "timestamp": 1717191869
+                },
+                {
+                    "comment_id": "l79v1zk",
+                    "partner": "clean_republic_6023",
+                    "post_id": "1cznq51",
+                    "timestamp": 1717619999
                 }
             ]
         },
@@ -19311,6 +19341,16 @@
                 }
             ]
         },
+        "nismokid90": {
+            "transactions": [
+                {
+                    "comment_id": "l79wjac",
+                    "partner": "thegoldynchild",
+                    "post_id": "1d1u3nc",
+                    "timestamp": 1717623351
+                }
+            ]
+        },
         "njpoker31": {
             "transactions": [
                 {
@@ -21577,6 +21617,18 @@
                     "partner": "spartacus373stonksss",
                     "post_id": "1cubii5",
                     "timestamp": 1716513134
+                },
+                {
+                    "comment_id": "l784b99",
+                    "partner": "desperate-emu-8545",
+                    "post_id": "1d24tlh",
+                    "timestamp": 1717599038
+                },
+                {
+                    "comment_id": "l78ub4s",
+                    "partner": "comeontars69",
+                    "post_id": "1cneebl",
+                    "timestamp": 1717608103
                 }
             ]
         },
@@ -25469,6 +25521,12 @@
                     "partner": "clean_republic_6023",
                     "post_id": "1cud6rv",
                     "timestamp": 1717260144
+                },
+                {
+                    "comment_id": "l75ku5c",
+                    "partner": "splff3000",
+                    "post_id": "1d4p5qz",
+                    "timestamp": 1717607470
                 }
             ]
         },
@@ -25565,6 +25623,12 @@
                     "partner": "eeghho",
                     "post_id": "1cvvrla",
                     "timestamp": 1717280103
+                },
+                {
+                    "comment_id": "l75ku5c",
+                    "partner": "spartacus373stonksss",
+                    "post_id": "1d4p5qz",
+                    "timestamp": 1717607470
                 }
             ]
         },
@@ -26983,6 +27047,12 @@
                     "partner": "njpoker31",
                     "post_id": "1cwp6ko",
                     "timestamp": 1716909024
+                },
+                {
+                    "comment_id": "l72685x",
+                    "partner": "thetvprogram",
+                    "post_id": "1d4xsnt",
+                    "timestamp": 1717596238
                 }
             ]
         },
@@ -27448,6 +27518,12 @@
                     "partner": "c7aea",
                     "post_id": "1c7g56l",
                     "timestamp": 1714511828
+                },
+                {
+                    "comment_id": "l79wjac",
+                    "partner": "nismokid90",
+                    "post_id": "1d1u3nc",
+                    "timestamp": 1717623351
                 }
             ]
         },
@@ -28007,6 +28083,22 @@
                     "partner": "fainer",
                     "post_id": "1d16864",
                     "timestamp": 1717319996
+                }
+            ]
+        },
+        "thetvprogram": {
+            "transactions": [
+                {
+                    "comment_id": "l726g43",
+                    "partner": "champion_dave",
+                    "post_id": "1adz7dr",
+                    "timestamp": 1717596044
+                },
+                {
+                    "comment_id": "l72685x",
+                    "partner": "tc_buckeye",
+                    "post_id": "1d4xsnt",
+                    "timestamp": 1717596238
                 }
             ]
         },

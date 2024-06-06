@@ -82143,6 +82143,16 @@
             "legacy_count": 1,
             "transactions": []
         },
+        "spartacus373stonksss": {
+            "transactions": [
+                {
+                    "comment_id": "l7blbyb",
+                    "partner": "thebiggestzeldafan",
+                    "post_id": "1cy8kii",
+                    "timestamp": 1717645069
+                }
+            ]
+        },
         "spartan-000089": {
             "legacy_count": 2,
             "transactions": [
@@ -87647,6 +87657,16 @@
         "thebiggadowski": {
             "legacy_count": 6,
             "transactions": []
+        },
+        "thebiggestzeldafan": {
+            "transactions": [
+                {
+                    "comment_id": "l7blbyb",
+                    "partner": "spartacus373stonksss",
+                    "post_id": "1cy8kii",
+                    "timestamp": 1717645069
+                }
+            ]
         },
         "thebindingofasac": {
             "legacy_count": 1,
