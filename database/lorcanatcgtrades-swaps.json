@@ -342,6 +342,22 @@
                     "partner": "investigatorno2277",
                     "post_id": "1cybbw6",
                     "timestamp": 1717509645
+                },
+                {
+                    "comment_id": "l7kah5s",
+                    "partner": "sneakyhedgehog",
+                    "post_id": "1d7auig",
+                    "timestamp": 1717788044
+                }
+            ]
+        },
+        "fapsandnaps": {
+            "transactions": [
+                {
+                    "comment_id": "l7fvo3h",
+                    "partner": "ragnartheliterate",
+                    "post_id": "1d3fjze",
+                    "timestamp": 1717711845
                 }
             ]
         },
@@ -410,6 +426,16 @@
         "homelessbum": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "housedraagnaj": {
+            "transactions": [
+                {
+                    "comment_id": "l7k5geq",
+                    "partner": "xxanon00xx",
+                    "post_id": "1d7a36i",
+                    "timestamp": 1717782128
+                }
+            ]
         },
         "huangj01": {
             "legacy_count": 1,
@@ -812,6 +838,12 @@
                     "partner": "chewdizzle12",
                     "post_id": "1cmduws",
                     "timestamp": 1715979117
+                },
+                {
+                    "comment_id": "l7kaks3",
+                    "partner": "sneakyhedgehog",
+                    "post_id": "1d7auig",
+                    "timestamp": 1717783908
                 }
             ]
         },
@@ -981,6 +1013,12 @@
                     "partner": "secret_agent89",
                     "post_id": "1cye0hj",
                     "timestamp": 1717199806
+                },
+                {
+                    "comment_id": "l7fvo3h",
+                    "partner": "fapsandnaps",
+                    "post_id": "1d3fjze",
+                    "timestamp": 1717711845
                 }
             ]
         },
@@ -1241,6 +1279,22 @@
                 }
             ]
         },
+        "sneakyhedgehog": {
+            "transactions": [
+                {
+                    "comment_id": "l7kaks3",
+                    "partner": "pkmntcgtradeguy",
+                    "post_id": "1d7auig",
+                    "timestamp": 1717783908
+                },
+                {
+                    "comment_id": "l7kah5s",
+                    "partner": "eziomarsden",
+                    "post_id": "1d7auig",
+                    "timestamp": 1717788044
+                }
+            ]
+        },
         "sperry023": {
             "legacy_count": 2,
             "transactions": []
@@ -1412,7 +1466,14 @@
         },
         "xxanon00xx": {
             "legacy_count": 1,
-            "transactions": []
+            "transactions": [
+                {
+                    "comment_id": "l7k5geq",
+                    "partner": "housedraagnaj",
+                    "post_id": "1d7a36i",
+                    "timestamp": 1717782128
+                }
+            ]
         },
         "yueske": {
             "transactions": [
