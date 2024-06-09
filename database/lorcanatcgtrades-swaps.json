@@ -1132,7 +1132,14 @@
         },
         "sayijinromeo": {
             "legacy_count": 2,
-            "transactions": []
+            "transactions": [
+                {
+                    "comment_id": "l7r3lil",
+                    "partner": "swizzle213",
+                    "post_id": "1d5ugov",
+                    "timestamp": 1717894742
+                }
+            ]
         },
         "scotthall2ez": {
             "legacy_count": 1,
@@ -1380,6 +1387,12 @@
                     "partner": "secret_agent89",
                     "post_id": "1cye0hj",
                     "timestamp": 1716945712
+                },
+                {
+                    "comment_id": "l7r3lil",
+                    "partner": "sayijinromeo",
+                    "post_id": "1d5ugov",
+                    "timestamp": 1717894742
                 }
             ]
         },
