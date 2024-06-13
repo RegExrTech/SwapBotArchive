@@ -639,7 +639,7 @@ def handle_comment_on_blacklisted_post(comment, type):
 	reply(comment, reply_text)
 
 def handle_comment_made_too_early(comment):
-	reply_text = "You tried to confirm a transaction too quickly! Please make sure that all transactions are confirmed **AFTER** *both* parties have received their end of the deal. **NOT BEFORE**. Please feel free to try confirming again at a later date. This comment will no longer be tracked. Thanks!"
+	reply_text = "You tried to confirm a transaction too quickly! Please make sure that all transactions are confirmed **AFTER** *both* parties have received their end of the deal, **NOT BEFORE**, and that you are doing the confirmation in the post where the transaction originated. Please feel free to try confirming again at a later date or in the correct post. This comment will no longer be tracked. Thanks!"
 	reply(comment, reply_text)
 
 def handle_giveaway(comment):
