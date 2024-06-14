@@ -5226,6 +5226,12 @@
                     "partner": "totf_joe",
                     "post_id": "1d24unn",
                     "timestamp": 1718148796
+                },
+                {
+                    "comment_id": "l8isjjt",
+                    "partner": "camaramalama",
+                    "post_id": "1cmshwj",
+                    "timestamp": 1718332871
                 }
             ]
         },
@@ -14008,6 +14014,16 @@
                 }
             ]
         },
+        "camaramalama": {
+            "transactions": [
+                {
+                    "comment_id": "l8isjjt",
+                    "partner": "archer-613",
+                    "post_id": "1cmshwj",
+                    "timestamp": 1718332871
+                }
+            ]
+        },
         "camebackforcfb": {
             "transactions": [
                 {
@@ -17351,6 +17367,12 @@
                     "partner": "its_grime_up_north",
                     "post_id": "1d8dsco",
                     "timestamp": 1718244781
+                },
+                {
+                    "comment_id": "l8ib4wy",
+                    "partner": "deathbycitra",
+                    "post_id": "1d8dsco",
+                    "timestamp": 1718324320
                 }
             ]
         },
@@ -18829,6 +18851,12 @@
                     "partner": "shtit",
                     "post_id": "1ae4h13",
                     "timestamp": 1707063163
+                },
+                {
+                    "comment_id": "l8ib4wy",
+                    "partner": "cronorhellrorjasonth",
+                    "post_id": "1d8dsco",
+                    "timestamp": 1718324320
                 }
             ]
         },
@@ -33469,6 +33497,12 @@
                     "partner": "ok-cartoonist-1881",
                     "post_id": "1cqd6da",
                     "timestamp": 1717217005
+                },
+                {
+                    "comment_id": "l8g2e7r",
+                    "partner": "rkubiak",
+                    "post_id": "1d5f9co",
+                    "timestamp": 1718309652
                 }
             ]
         },
@@ -58775,6 +58809,16 @@
         "rkbrew": {
             "legacy_count": 5,
             "transactions": []
+        },
+        "rkubiak": {
+            "transactions": [
+                {
+                    "comment_id": "l8g2e7r",
+                    "partner": "jabronihawk",
+                    "post_id": "1d5f9co",
+                    "timestamp": 1718309652
+                }
+            ]
         },
         "rlfire16": {
             "transactions": [

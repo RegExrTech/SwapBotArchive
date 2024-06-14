@@ -5882,6 +5882,12 @@
                     "partner": "auriblizzard",
                     "post_id": "1czk49k",
                     "timestamp": 1717704374
+                },
+                {
+                    "comment_id": "l8hatu1",
+                    "partner": "torocat",
+                    "post_id": "1cyhpa8",
+                    "timestamp": 1718310695
                 }
             ]
         },
@@ -6509,6 +6515,16 @@
                     "partner": "snuckledrops",
                     "post_id": "weq5km",
                     "timestamp": 0
+                }
+            ]
+        },
+        "davethewave28": {
+            "transactions": [
+                {
+                    "comment_id": "l8iz322",
+                    "partner": "wrong-mission-5186",
+                    "post_id": "1ddrui6",
+                    "timestamp": 1718340242
                 }
             ]
         },
@@ -14859,6 +14875,12 @@
                     "partner": "geobarr1025",
                     "post_id": "1d6jse5",
                     "timestamp": 1718072223
+                },
+                {
+                    "comment_id": "l8fak73",
+                    "partner": "majestic-jelly-2630",
+                    "post_id": "1d0ti0k",
+                    "timestamp": 1718336221
                 }
             ]
         },
@@ -15927,6 +15949,12 @@
                     "partner": "hesitantpanda",
                     "post_id": "1dbamp5",
                     "timestamp": 1718219489
+                },
+                {
+                    "comment_id": "l809q5h",
+                    "partner": "torocat",
+                    "post_id": "1d556nt",
+                    "timestamp": 1718330471
                 }
             ]
         },
@@ -16407,6 +16435,12 @@
                     "partner": "pal1ndr0m3s",
                     "post_id": "1d8g61q",
                     "timestamp": 1717904296
+                },
+                {
+                    "comment_id": "l8fak73",
+                    "partner": "lampshadetricky",
+                    "post_id": "1d0ti0k",
+                    "timestamp": 1718336221
                 }
             ]
         },
@@ -31665,6 +31699,18 @@
                     "partner": "bearbunny1990",
                     "post_id": "1cyhpa8",
                     "timestamp": 1717812428
+                },
+                {
+                    "comment_id": "l8hatu1",
+                    "partner": "dailythought",
+                    "post_id": "1cyhpa8",
+                    "timestamp": 1718310695
+                },
+                {
+                    "comment_id": "l809q5h",
+                    "partner": "loreleibailey",
+                    "post_id": "1d556nt",
+                    "timestamp": 1718330471
                 }
             ]
         },
@@ -34087,6 +34133,12 @@
                     "partner": "tigerwaitress",
                     "post_id": "1dakoz6",
                     "timestamp": 1718249862
+                },
+                {
+                    "comment_id": "l8iz322",
+                    "partner": "davethewave28",
+                    "post_id": "1ddrui6",
+                    "timestamp": 1718340242
                 }
             ]
         },
