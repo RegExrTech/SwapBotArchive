@@ -699,6 +699,12 @@
                     "partner": "wizardofgames",
                     "post_id": "11yla4y",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l8i4dqb",
+                    "partner": "bald_yoshi",
+                    "post_id": "1bf3gad",
+                    "timestamp": 1718503252
                 }
             ]
         },
@@ -1551,6 +1557,12 @@
                     "partner": "jman22379",
                     "post_id": "1d6bxc9",
                     "timestamp": 1717877015
+                },
+                {
+                    "comment_id": "l8i4dqb",
+                    "partner": "alabastor",
+                    "post_id": "1bf3gad",
+                    "timestamp": 1718503252
                 }
             ]
         },
@@ -3629,6 +3641,12 @@
                     "partner": "mangaslut411",
                     "post_id": "1cyzgi4",
                     "timestamp": 1717463983
+                },
+                {
+                    "comment_id": "l8rmga2",
+                    "partner": "jelybely8",
+                    "post_id": "1d6qqa9",
+                    "timestamp": 1718482800
                 }
             ]
         },
@@ -5159,6 +5177,12 @@
                     "partner": "viv_no_cap",
                     "post_id": "1ap739e",
                     "timestamp": 1709153281
+                },
+                {
+                    "comment_id": "l8ofsjr",
+                    "partner": "xslimes",
+                    "post_id": "1d9nwmy",
+                    "timestamp": 1718432020
                 }
             ]
         },
@@ -7417,6 +7441,12 @@
                     "partner": "0x7258e29c",
                     "post_id": "13b7owx",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l8mg1k5",
+                    "partner": "lee_akira",
+                    "post_id": "1d3r5ap",
+                    "timestamp": 1718392733
                 }
             ]
         },
@@ -9021,6 +9051,12 @@
                     "partner": "bald_yoshi",
                     "post_id": "1cc7qgx",
                     "timestamp": 1714917633
+                },
+                {
+                    "comment_id": "l8rmga2",
+                    "partner": "cloudfr0g",
+                    "post_id": "1d6qqa9",
+                    "timestamp": 1718482800
                 }
             ]
         },
@@ -11259,6 +11295,12 @@
                     "partner": "0x7258e29c",
                     "post_id": "1bcu7w0",
                     "timestamp": 1711661342
+                },
+                {
+                    "comment_id": "l8mg1k5",
+                    "partner": "hylianlikely",
+                    "post_id": "1d3r5ap",
+                    "timestamp": 1718392733
                 }
             ]
         },
@@ -16168,6 +16210,16 @@
                 }
             ]
         },
+        "rufusslimshot": {
+            "transactions": [
+                {
+                    "comment_id": "l8njvrv",
+                    "partner": "sbaker444",
+                    "post_id": "1d60idr",
+                    "timestamp": 1718417121
+                }
+            ]
+        },
         "ruined_oculi": {
             "transactions": [
                 {
@@ -16487,6 +16539,12 @@
                     "partner": "noice5",
                     "post_id": "1ckrd7e",
                     "timestamp": 1716502274
+                },
+                {
+                    "comment_id": "l8njvrv",
+                    "partner": "rufusslimshot",
+                    "post_id": "1d60idr",
+                    "timestamp": 1718417121
                 }
             ]
         },
@@ -21713,6 +21771,16 @@
                     "partner": "time-tomatillo3638",
                     "post_id": "v0ag4t",
                     "timestamp": 0
+                }
+            ]
+        },
+        "xslimes": {
+            "transactions": [
+                {
+                    "comment_id": "l8ofsjr",
+                    "partner": "doubledam00021",
+                    "post_id": "1d9nwmy",
+                    "timestamp": 1718432020
                 }
             ]
         },
