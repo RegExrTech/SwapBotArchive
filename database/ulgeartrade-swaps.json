@@ -4038,6 +4038,16 @@
                 }
             ]
         },
+        "danswaay": {
+            "transactions": [
+                {
+                    "comment_id": "l8v1ifc",
+                    "partner": "pingupenguins",
+                    "post_id": "1dcmg6m",
+                    "timestamp": 1718548269
+                }
+            ]
+        },
         "daonei": {
             "transactions": [
                 {
@@ -11398,6 +11408,16 @@
                     "partner": "fc_pty",
                     "post_id": "1c85py1",
                     "timestamp": 1718305815
+                }
+            ]
+        },
+        "pingupenguins": {
+            "transactions": [
+                {
+                    "comment_id": "l8v1ifc",
+                    "partner": "danswaay",
+                    "post_id": "1dcmg6m",
+                    "timestamp": 1718548269
                 }
             ]
         },

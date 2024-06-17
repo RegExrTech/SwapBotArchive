@@ -2932,6 +2932,16 @@
                 }
             ]
         },
+        "academicattempt8094": {
+            "transactions": [
+                {
+                    "comment_id": "l8bm2n5",
+                    "partner": "aeromaverick",
+                    "post_id": "1dbe9t2",
+                    "timestamp": 1718589668
+                }
+            ]
+        },
         "acceptable-ad-7561": {
             "transactions": [
                 {
@@ -3556,6 +3566,12 @@
                     "partner": "silvia0240",
                     "post_id": "1dbe9t2",
                     "timestamp": 1718306008
+                },
+                {
+                    "comment_id": "l8bm2n5",
+                    "partner": "academicattempt8094",
+                    "post_id": "1dbe9t2",
+                    "timestamp": 1718589668
                 }
             ]
         },
@@ -7826,6 +7842,12 @@
                     "partner": "birdingsc",
                     "post_id": "1cor3qz",
                     "timestamp": 1715828354
+                },
+                {
+                    "comment_id": "l8vhfe6",
+                    "partner": "recreational-crack",
+                    "post_id": "1dap44m",
+                    "timestamp": 1718558101
                 }
             ]
         },
@@ -18341,6 +18363,12 @@
                     "partner": "bigmack0",
                     "post_id": "1ck8bhm",
                     "timestamp": 1715229938
+                },
+                {
+                    "comment_id": "l8web1g",
+                    "partner": "thehole89",
+                    "post_id": "1demodt",
+                    "timestamp": 1718575706
                 }
             ]
         },
@@ -56443,6 +56471,16 @@
                 }
             ]
         },
+        "recreational-crack": {
+            "transactions": [
+                {
+                    "comment_id": "l8vhfe6",
+                    "partner": "bbbermooo",
+                    "post_id": "1dap44m",
+                    "timestamp": 1718558101
+                }
+            ]
+        },
         "red-se7en": {
             "legacy_count": 1,
             "transactions": []
@@ -69748,6 +69786,12 @@
                     "partner": "parceljockey",
                     "post_id": "1d1xzqc",
                     "timestamp": 1717282213
+                },
+                {
+                    "comment_id": "l8web1g",
+                    "partner": "delicious-ticket8676",
+                    "post_id": "1demodt",
+                    "timestamp": 1718575706
                 }
             ]
         },
