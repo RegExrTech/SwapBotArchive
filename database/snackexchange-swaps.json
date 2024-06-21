@@ -13564,6 +13564,16 @@
             "legacy_count": 1,
             "transactions": []
         },
+        "fays89": {
+            "transactions": [
+                {
+                    "comment_id": "l95yk7a",
+                    "partner": "proper_ginger",
+                    "post_id": "1dit4pv",
+                    "timestamp": 1718725169
+                }
+            ]
+        },
         "fbeezy": {
             "legacy_count": 1,
             "transactions": []
@@ -33915,6 +33925,16 @@
         "prometheuszer0": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "proper_ginger": {
+            "transactions": [
+                {
+                    "comment_id": "l95yk7a",
+                    "partner": "fays89",
+                    "post_id": "1dit4pv",
+                    "timestamp": 1718725169
+                }
+            ]
         },
         "prophetoflost": {
             "transactions": [
