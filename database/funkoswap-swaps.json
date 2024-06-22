@@ -1234,6 +1234,16 @@
             "legacy_count": 1,
             "transactions": []
         },
+        "a_verthandi": {
+            "transactions": [
+                {
+                    "comment_id": "l9o6qpp",
+                    "partner": "spartacus373stonksss",
+                    "post_id": "1c3cxbt",
+                    "timestamp": 1719003306
+                }
+            ]
+        },
         "aallison17": {
             "legacy_count": 1,
             "transactions": []
@@ -82184,6 +82194,12 @@
                     "partner": "thebiggestzeldafan",
                     "post_id": "1cy8kii",
                     "timestamp": 1717645069
+                },
+                {
+                    "comment_id": "l9o6qpp",
+                    "partner": "a_verthandi",
+                    "post_id": "1c3cxbt",
+                    "timestamp": 1719003306
                 }
             ]
         },

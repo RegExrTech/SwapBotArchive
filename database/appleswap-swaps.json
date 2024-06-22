@@ -4208,6 +4208,12 @@
                     "partner": "im6cninoit",
                     "post_id": "1c8ik5s",
                     "timestamp": 1715961348
+                },
+                {
+                    "comment_id": "l9omiz3",
+                    "partner": "wazman2222",
+                    "post_id": "1d1avfd",
+                    "timestamp": 1719009245
                 }
             ]
         },
@@ -33916,6 +33922,16 @@
                 }
             ]
         },
+        "fahad_tariq": {
+            "transactions": [
+                {
+                    "comment_id": "l9oxki6",
+                    "partner": "rutgersftw",
+                    "post_id": "1dbbknv",
+                    "timestamp": 1719016953
+                }
+            ]
+        },
         "faintingdori": {
             "transactions": [
                 {
@@ -50539,6 +50555,16 @@
                     "partner": "friendfromwork",
                     "post_id": "hj32at",
                     "timestamp": 0
+                }
+            ]
+        },
+        "jesse295": {
+            "transactions": [
+                {
+                    "comment_id": "l99pxzj",
+                    "partner": "ubuntuforyou",
+                    "post_id": "1dg4u3o",
+                    "timestamp": 1719021673
                 }
             ]
         },
@@ -80315,6 +80341,12 @@
                     "partner": "wasabigyoza",
                     "post_id": "16l7cur",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "l9pg781",
+                    "partner": "won74",
+                    "post_id": "1cjdq8l",
+                    "timestamp": 1719022323
                 }
             ]
         },
@@ -84535,6 +84567,12 @@
                     "partner": "kicsta",
                     "post_id": "18gkjcc",
                     "timestamp": 1704420108
+                },
+                {
+                    "comment_id": "l9oxki6",
+                    "partner": "fahad_tariq",
+                    "post_id": "1dbbknv",
+                    "timestamp": 1719016953
                 }
             ]
         },
@@ -104139,6 +104177,12 @@
                     "partner": "bimmyjutler",
                     "post_id": "1bvba0p",
                     "timestamp": 1712714434
+                },
+                {
+                    "comment_id": "l9lqout",
+                    "partner": "vangoku",
+                    "post_id": "1dicmnp",
+                    "timestamp": 1719035766
                 }
             ]
         },
@@ -104171,6 +104215,16 @@
                     "partner": "darckhart",
                     "post_id": "1135lbp",
                     "timestamp": 0
+                }
+            ]
+        },
+        "ubuntuforyou": {
+            "transactions": [
+                {
+                    "comment_id": "l99pxzj",
+                    "partner": "jesse295",
+                    "post_id": "1dg4u3o",
+                    "timestamp": 1719021673
                 }
             ]
         },
@@ -105592,6 +105646,12 @@
                     "partner": "dangerous-ranger7614",
                     "post_id": "1b6mxlw",
                     "timestamp": 1712291903
+                },
+                {
+                    "comment_id": "l9lqout",
+                    "partner": "tzac11",
+                    "post_id": "1dicmnp",
+                    "timestamp": 1719035766
                 }
             ]
         },
@@ -108125,6 +108185,16 @@
                 }
             ]
         },
+        "wazman2222": {
+            "transactions": [
+                {
+                    "comment_id": "l9omiz3",
+                    "partner": "aimboii",
+                    "post_id": "1d1avfd",
+                    "timestamp": 1719009245
+                }
+            ]
+        },
         "wcurl8": {
             "transactions": [
                 {
@@ -109466,6 +109536,12 @@
                     "partner": "dog__meat",
                     "post_id": "1d4w249",
                     "timestamp": 1717796001
+                },
+                {
+                    "comment_id": "l9pg781",
+                    "partner": "quiet_record_spinner",
+                    "post_id": "1cjdq8l",
+                    "timestamp": 1719022323
                 }
             ]
         },
