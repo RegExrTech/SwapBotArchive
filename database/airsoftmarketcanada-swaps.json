@@ -6909,6 +6909,12 @@
                     "partner": "hauteplayer",
                     "post_id": "1diea8y",
                     "timestamp": 1719000466
+                },
+                {
+                    "comment_id": "la2u585",
+                    "partner": "designer_baseball_71",
+                    "post_id": "1diea8y",
+                    "timestamp": 1719253165
                 }
             ]
         },
@@ -8341,6 +8347,16 @@
                     "partner": "sanmao333",
                     "post_id": "17a5gtw",
                     "timestamp": 0
+                }
+            ]
+        },
+        "designer_baseball_71": {
+            "transactions": [
+                {
+                    "comment_id": "la2u585",
+                    "partner": "cdn_citizen",
+                    "post_id": "1diea8y",
+                    "timestamp": 1719253165
                 }
             ]
         },
@@ -10775,6 +10791,16 @@
                 }
             ]
         },
+        "four1four_": {
+            "transactions": [
+                {
+                    "comment_id": "l9v7dae",
+                    "partner": "sanbogukai",
+                    "post_id": "1dlgfmo",
+                    "timestamp": 1719166605
+                }
+            ]
+        },
         "frankthenoob4321": {
             "transactions": [
                 {
@@ -12228,6 +12254,12 @@
                     "partner": "howardyee2002",
                     "post_id": "1aosmoe",
                     "timestamp": 1708372875
+                },
+                {
+                    "comment_id": "l9x2q4v",
+                    "partner": "howardyee2002",
+                    "post_id": "1dkecbv",
+                    "timestamp": 1719163000
                 }
             ]
         },
@@ -13256,6 +13288,12 @@
                     "partner": "proudmaple4",
                     "post_id": "1d4l2jk",
                     "timestamp": 1718812822
+                },
+                {
+                    "comment_id": "l9x2q4v",
+                    "partner": "gredditgeek",
+                    "post_id": "1dkecbv",
+                    "timestamp": 1719163000
                 }
             ]
         },
@@ -17098,6 +17136,12 @@
                     "partner": "sandprolo",
                     "post_id": "1ctd5wj",
                     "timestamp": 1716760684
+                },
+                {
+                    "comment_id": "l9y5qho",
+                    "partner": "sandprolo",
+                    "post_id": "1djlyfl",
+                    "timestamp": 1719177285
                 }
             ]
         },
@@ -23361,6 +23405,12 @@
                     "partner": "burstflames",
                     "post_id": "19dro6i",
                     "timestamp": 1713220170
+                },
+                {
+                    "comment_id": "l9v7dae",
+                    "partner": "four1four_",
+                    "post_id": "1dlgfmo",
+                    "timestamp": 1719166605
                 }
             ]
         },
@@ -23401,6 +23451,12 @@
                     "partner": "cdn_citizen",
                     "post_id": "1dby6ll",
                     "timestamp": 1718124831
+                },
+                {
+                    "comment_id": "l9y5qho",
+                    "partner": "luciusl",
+                    "post_id": "1djlyfl",
+                    "timestamp": 1719177285
                 }
             ]
         },
@@ -26604,6 +26660,12 @@
                     "partner": "healthysugar265",
                     "post_id": "19346sm",
                     "timestamp": 1705516913
+                },
+                {
+                    "comment_id": "la5j3di",
+                    "partner": "torque-spec",
+                    "post_id": "1dn38uy",
+                    "timestamp": 1719286046
                 }
             ]
         },
@@ -27796,6 +27858,16 @@
                     "partner": "garbageman98",
                     "post_id": "1bqo8yy",
                     "timestamp": 1712107140
+                }
+            ]
+        },
+        "torque-spec": {
+            "transactions": [
+                {
+                    "comment_id": "la5j3di",
+                    "partner": "teh-snapper",
+                    "post_id": "1dn38uy",
+                    "timestamp": 1719286046
                 }
             ]
         },
