@@ -1863,6 +1863,16 @@
                 }
             ]
         },
+        "chewy11152021": {
+            "transactions": [
+                {
+                    "comment_id": "la888cd",
+                    "partner": "deathaze",
+                    "post_id": "1dl8ej1",
+                    "timestamp": 1719350592
+                }
+            ]
+        },
         "chinashopelephant": {
             "transactions": [
                 {
@@ -3012,6 +3022,18 @@
                     "partner": "slick-operator",
                     "post_id": "1bz542z",
                     "timestamp": 1713686446
+                },
+                {
+                    "comment_id": "la8815x",
+                    "partner": "rsn_88",
+                    "post_id": "1dl8ej1",
+                    "timestamp": 1719339755
+                },
+                {
+                    "comment_id": "la888cd",
+                    "partner": "chewy11152021",
+                    "post_id": "1dl8ej1",
+                    "timestamp": 1719350592
                 }
             ]
         },
@@ -6368,6 +6390,12 @@
                     "partner": "s1michaelwestens7",
                     "post_id": "1bouc1s",
                     "timestamp": 1712722794
+                },
+                {
+                    "comment_id": "la9ujqp",
+                    "partner": "zipzak007",
+                    "post_id": "1di48qo",
+                    "timestamp": 1719356990
                 }
             ]
         },
@@ -9307,6 +9335,12 @@
                     "partner": "deathbyninjadust",
                     "post_id": "1cocxpo",
                     "timestamp": 1715824905
+                },
+                {
+                    "comment_id": "la8815x",
+                    "partner": "deathaze",
+                    "post_id": "1dl8ej1",
+                    "timestamp": 1719339755
                 }
             ]
         },
@@ -12398,6 +12432,16 @@
         "zero_85": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "zipzak007": {
+            "transactions": [
+                {
+                    "comment_id": "la9ujqp",
+                    "partner": "kronqd",
+                    "post_id": "1di48qo",
+                    "timestamp": 1719356990
+                }
+            ]
         },
         "zubination": {
             "legacy_count": 1,

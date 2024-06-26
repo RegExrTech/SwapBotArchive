@@ -2319,6 +2319,12 @@
                     "partner": "nikephorosinbeta",
                     "post_id": "1d2lyfw",
                     "timestamp": 1717508675
+                },
+                {
+                    "comment_id": "la2jymb",
+                    "partner": "driverok8201",
+                    "post_id": "1di892g",
+                    "timestamp": 1719345639
                 }
             ]
         },
@@ -15021,6 +15027,12 @@
                     "partner": "synnarc",
                     "post_id": "1di892g",
                     "timestamp": 1719287414
+                },
+                {
+                    "comment_id": "la2jymb",
+                    "partner": "akhesh2003",
+                    "post_id": "1di892g",
+                    "timestamp": 1719345639
                 }
             ]
         },
@@ -37229,6 +37241,16 @@
             "legacy_count": 1,
             "transactions": []
         },
+        "ragequithell": {
+            "transactions": [
+                {
+                    "comment_id": "la7f2rk",
+                    "partner": "snezel",
+                    "post_id": "1dj7jjb",
+                    "timestamp": 1719377244
+                }
+            ]
+        },
         "raggedysuperior": {
             "legacy_count": 1,
             "transactions": []
@@ -42434,6 +42456,12 @@
                     "partner": "terrorban",
                     "post_id": "1d2wvmf",
                     "timestamp": 1717401619
+                },
+                {
+                    "comment_id": "la7f2rk",
+                    "partner": "ragequithell",
+                    "post_id": "1dj7jjb",
+                    "timestamp": 1719377244
                 }
             ]
         },

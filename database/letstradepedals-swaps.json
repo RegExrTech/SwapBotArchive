@@ -21818,6 +21818,12 @@
                     "partner": "zergleek",
                     "post_id": "1ayjy4w",
                     "timestamp": 1710601084
+                },
+                {
+                    "comment_id": "l9zuvel",
+                    "partner": "gipperski",
+                    "post_id": "1cyydrk",
+                    "timestamp": 1719388854
                 }
             ]
         },
@@ -22114,6 +22120,12 @@
                     "partner": "internal-breath2058",
                     "post_id": "xslgm1",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "laa5d78",
+                    "partner": "selectionguilty825",
+                    "post_id": "1dbiaz6",
+                    "timestamp": 1719360694
                 }
             ]
         },
@@ -27308,6 +27320,16 @@
         "ginnwild": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "gipperski": {
+            "transactions": [
+                {
+                    "comment_id": "l9zuvel",
+                    "partner": "dubteka",
+                    "post_id": "1cyydrk",
+                    "timestamp": 1719388854
+                }
+            ]
         },
         "gitboxinwags": {
             "legacy_count": 3,
@@ -36329,6 +36351,12 @@
                     "partner": "positiveprune5600",
                     "post_id": "1dg7tks",
                     "timestamp": 1718938547
+                },
+                {
+                    "comment_id": "la7wnn4",
+                    "partner": "jsook724",
+                    "post_id": "1de3wnk",
+                    "timestamp": 1719350548
                 }
             ]
         },
@@ -36580,6 +36608,12 @@
                     "partner": "dradis11",
                     "post_id": "1de3wnk",
                     "timestamp": 1719259538
+                },
+                {
+                    "comment_id": "la7wnn4",
+                    "partner": "jonishuert",
+                    "post_id": "1de3wnk",
+                    "timestamp": 1719350548
                 }
             ]
         },
@@ -61608,6 +61642,12 @@
                     "partner": "howisbabymade",
                     "post_id": "1d5ecg9",
                     "timestamp": 1719278301
+                },
+                {
+                    "comment_id": "laa5d78",
+                    "partner": "each1issettingsun",
+                    "post_id": "1dbiaz6",
+                    "timestamp": 1719360694
                 }
             ]
         },
@@ -63352,6 +63392,12 @@
                     "partner": "rubicon000000",
                     "post_id": "1akdg27",
                     "timestamp": 1708892150
+                },
+                {
+                    "comment_id": "laa07ij",
+                    "partner": "war_on_thought",
+                    "post_id": "1ck6xvn",
+                    "timestamp": 1719362944
                 }
             ]
         },
@@ -75957,6 +76003,12 @@
                     "partner": "allpraisetocheezus",
                     "post_id": "1ck6xvn",
                     "timestamp": 1715634302
+                },
+                {
+                    "comment_id": "laa07ij",
+                    "partner": "shoegaze_303",
+                    "post_id": "1ck6xvn",
+                    "timestamp": 1719362944
                 }
             ]
         },
