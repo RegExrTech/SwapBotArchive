@@ -2078,6 +2078,16 @@
                 }
             ]
         },
+        "bumassrednecks": {
+            "transactions": [
+                {
+                    "comment_id": "la9fxz3",
+                    "partner": "butterfly_knife97",
+                    "post_id": "1dicdn5",
+                    "timestamp": 1719453668
+                }
+            ]
+        },
         "burro_loco": {
             "transactions": [
                 {
@@ -2161,6 +2171,12 @@
                     "partner": "vodkabottle_2",
                     "post_id": "1dicdn5",
                     "timestamp": 1719367288
+                },
+                {
+                    "comment_id": "la9fxz3",
+                    "partner": "bumassrednecks",
+                    "post_id": "1dicdn5",
+                    "timestamp": 1719453668
                 }
             ]
         },
@@ -8524,6 +8540,16 @@
                 }
             ]
         },
+        "pez-perez": {
+            "transactions": [
+                {
+                    "comment_id": "lan6qto",
+                    "partner": "starfox80",
+                    "post_id": "1dolb1n",
+                    "timestamp": 1719556530
+                }
+            ]
+        },
         "pignamela": {
             "transactions": [
                 {
@@ -10155,6 +10181,12 @@
                     "partner": "nueki",
                     "post_id": "14p842v",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "lan6qto",
+                    "partner": "pez-perez",
+                    "post_id": "1dolb1n",
+                    "timestamp": 1719556530
                 }
             ]
         },

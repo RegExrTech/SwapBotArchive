@@ -6017,6 +6017,12 @@
                     "partner": "drfunkyfingers",
                     "post_id": "1bi66dx",
                     "timestamp": 1712977381
+                },
+                {
+                    "comment_id": "lag2nk0",
+                    "partner": "supercoolguy2000",
+                    "post_id": "1d3ftsw",
+                    "timestamp": 1719460859
                 }
             ]
         },
@@ -7177,6 +7183,12 @@
                     "partner": "galwaykinnell",
                     "post_id": "1d4o8sz",
                     "timestamp": 1718240354
+                },
+                {
+                    "comment_id": "lafu85g",
+                    "partner": "whoatetheherdez",
+                    "post_id": "1dj435b",
+                    "timestamp": 1719459741
                 }
             ]
         },
@@ -8153,6 +8165,16 @@
                     "partner": "manic_andthe_apostle",
                     "post_id": "1byacs4",
                     "timestamp": 1713168045
+                }
+            ]
+        },
+        "supercoolguy2000": {
+            "transactions": [
+                {
+                    "comment_id": "lag2nk0",
+                    "partner": "nicky_666_o",
+                    "post_id": "1d3ftsw",
+                    "timestamp": 1719460859
                 }
             ]
         },
@@ -9235,6 +9257,16 @@
                     "partner": "smeesturkeyleg",
                     "post_id": "13w51y1",
                     "timestamp": 0
+                }
+            ]
+        },
+        "whoatetheherdez": {
+            "transactions": [
+                {
+                    "comment_id": "lafu85g",
+                    "partner": "ryanblueshoes",
+                    "post_id": "1dj435b",
+                    "timestamp": 1719459741
                 }
             ]
         },
