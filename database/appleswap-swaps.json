@@ -17847,6 +17847,12 @@
                     "partner": "kicsta",
                     "post_id": "uspzds",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "laqn2vk",
+                    "partner": "serniebanders_16",
+                    "post_id": "1di7yru",
+                    "timestamp": 1719609736
                 }
             ]
         },
@@ -23711,6 +23717,12 @@
                     "partner": "cooltaj",
                     "post_id": "1btn8yo",
                     "timestamp": 1712284290
+                },
+                {
+                    "comment_id": "laovwuk",
+                    "partner": "voltshock619",
+                    "post_id": "1dklas7",
+                    "timestamp": 1719588568
                 }
             ]
         },
@@ -87207,6 +87219,16 @@
                 }
             ]
         },
+        "seituh": {
+            "transactions": [
+                {
+                    "comment_id": "larnqjl",
+                    "partner": "yungslimelife",
+                    "post_id": "1dm7jxo",
+                    "timestamp": 1719623735
+                }
+            ]
+        },
         "sekiroborne": {
             "transactions": [
                 {
@@ -87652,6 +87674,16 @@
                     "partner": "dabrain13",
                     "post_id": "pfm392",
                     "timestamp": 0
+                }
+            ]
+        },
+        "serniebanders_16": {
+            "transactions": [
+                {
+                    "comment_id": "laqn2vk",
+                    "partner": "camramansz",
+                    "post_id": "1di7yru",
+                    "timestamp": 1719609736
                 }
             ]
         },
@@ -107147,6 +107179,12 @@
                     "partner": "nitropom",
                     "post_id": "184fh7n",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "laovwuk",
+                    "partner": "cuoitaiba",
+                    "post_id": "1dklas7",
+                    "timestamp": 1719588568
                 }
             ]
         },
@@ -112457,6 +112495,16 @@
         "yungroti305": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "yungslimelife": {
+            "transactions": [
+                {
+                    "comment_id": "larnqjl",
+                    "partner": "seituh",
+                    "post_id": "1dm7jxo",
+                    "timestamp": 1719623735
+                }
+            ]
         },
         "yupitsme987": {
             "transactions": [

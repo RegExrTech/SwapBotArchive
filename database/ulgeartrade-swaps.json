@@ -1803,6 +1803,12 @@
                     "partner": "not_just_the_it_guy",
                     "post_id": "1daoab0",
                     "timestamp": 1718501036
+                },
+                {
+                    "comment_id": "laoomcx",
+                    "partner": "couragecraft",
+                    "post_id": "1dfit5x",
+                    "timestamp": 1719591329
                 }
             ]
         },
@@ -2385,6 +2391,12 @@
                     "partner": "jfrosty42",
                     "post_id": "1aydw7o",
                     "timestamp": 1709424335
+                },
+                {
+                    "comment_id": "lapev0b",
+                    "partner": "roughnecknine0",
+                    "post_id": "1dgsyyb",
+                    "timestamp": 1719601606
                 }
             ]
         },
@@ -2911,6 +2923,12 @@
                     "partner": "dicknutter",
                     "post_id": "1ahapsh",
                     "timestamp": 1718718757
+                },
+                {
+                    "comment_id": "lao7x2m",
+                    "partner": "smckinley903",
+                    "post_id": "1d3ofng",
+                    "timestamp": 1719581114
                 }
             ]
         },
@@ -3825,6 +3843,12 @@
                     "partner": "scrapyardfox",
                     "post_id": "1d0hmwv",
                     "timestamp": 1717304258
+                },
+                {
+                    "comment_id": "laoomcx",
+                    "partner": "any_trail",
+                    "post_id": "1dfit5x",
+                    "timestamp": 1719591329
                 }
             ]
         },
@@ -4195,6 +4219,16 @@
                     "partner": "hikininlevis",
                     "post_id": "1d91j5h",
                     "timestamp": 1718049657
+                }
+            ]
+        },
+        "danjuh-zone": {
+            "transactions": [
+                {
+                    "comment_id": "lapf8dc",
+                    "partner": "roughnecknine0",
+                    "post_id": "1dgsyyb",
+                    "timestamp": 1719601241
                 }
             ]
         },
@@ -11119,6 +11153,16 @@
                 }
             ]
         },
+        "object_in_space": {
+            "transactions": [
+                {
+                    "comment_id": "lapf4jr",
+                    "partner": "roughnecknine0",
+                    "post_id": "1dgsyyb",
+                    "timestamp": 1719608321
+                }
+            ]
+        },
         "oceanographers": {
             "transactions": [
                 {
@@ -12817,6 +12861,30 @@
                     "partner": "phredphish",
                     "post_id": "1dgsyyb",
                     "timestamp": 1719536285
+                },
+                {
+                    "comment_id": "lapek8p",
+                    "partner": "starwalker124",
+                    "post_id": "1dgsyyb",
+                    "timestamp": 1719594097
+                },
+                {
+                    "comment_id": "lapf8dc",
+                    "partner": "danjuh-zone",
+                    "post_id": "1dgsyyb",
+                    "timestamp": 1719601241
+                },
+                {
+                    "comment_id": "lapev0b",
+                    "partner": "bhamsterbpack",
+                    "post_id": "1dgsyyb",
+                    "timestamp": 1719601606
+                },
+                {
+                    "comment_id": "lapf4jr",
+                    "partner": "object_in_space",
+                    "post_id": "1dgsyyb",
+                    "timestamp": 1719608321
                 }
             ]
         },
@@ -13650,6 +13718,16 @@
                 }
             ]
         },
+        "smckinley903": {
+            "transactions": [
+                {
+                    "comment_id": "lao7x2m",
+                    "partner": "bryceu",
+                    "post_id": "1d3ofng",
+                    "timestamp": 1719581114
+                }
+            ]
+        },
         "smithersredsoda": {
             "transactions": [
                 {
@@ -14015,6 +14093,16 @@
                     "partner": "randomsteve95370",
                     "post_id": "1b4ta2z",
                     "timestamp": 1709941091
+                }
+            ]
+        },
+        "starwalker124": {
+            "transactions": [
+                {
+                    "comment_id": "lapek8p",
+                    "partner": "roughnecknine0",
+                    "post_id": "1dgsyyb",
+                    "timestamp": 1719594097
                 }
             ]
         },

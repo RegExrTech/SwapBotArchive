@@ -22150,6 +22150,12 @@
                     "partner": "pocketngold",
                     "post_id": "1ab6idv",
                     "timestamp": 1706665682
+                },
+                {
+                    "comment_id": "lajskma",
+                    "partner": "just_ostrich_5589",
+                    "post_id": "1c9y81o",
+                    "timestamp": 1719594578
                 }
             ]
         },
@@ -24681,6 +24687,12 @@
                     "partner": "spike71spiegel",
                     "post_id": "1deyyqi",
                     "timestamp": 1719459084
+                },
+                {
+                    "comment_id": "laggb96",
+                    "partner": "newknife_angrywife",
+                    "post_id": "1dc2mrr",
+                    "timestamp": 1719604863
                 }
             ]
         },
@@ -35585,6 +35597,16 @@
         "just_in_a_tree": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "just_ostrich_5589": {
+            "transactions": [
+                {
+                    "comment_id": "lajskma",
+                    "partner": "everydaynormalguy666",
+                    "post_id": "1c9y81o",
+                    "timestamp": 1719594578
+                }
+            ]
         },
         "justamiddleagedguy": {
             "legacy_count": 1,
@@ -47868,6 +47890,12 @@
                     "partner": "mech_monster",
                     "post_id": "1dc2mrr",
                     "timestamp": 1718407436
+                },
+                {
+                    "comment_id": "laggb96",
+                    "partner": "fulgenxio",
+                    "post_id": "1dc2mrr",
+                    "timestamp": 1719604863
                 }
             ]
         },

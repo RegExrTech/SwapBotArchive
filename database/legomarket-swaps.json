@@ -147,6 +147,12 @@
                     "partner": "theoonie",
                     "post_id": "1cowcro",
                     "timestamp": 1715841384
+                },
+                {
+                    "comment_id": "laautr1",
+                    "partner": "zappa_721",
+                    "post_id": "1dmvskb",
+                    "timestamp": 1719626438
                 }
             ]
         },
@@ -8164,6 +8170,12 @@
                     "partner": "thirdds",
                     "post_id": "1dc6ruc",
                     "timestamp": 1718803224
+                },
+                {
+                    "comment_id": "lamsev9",
+                    "partner": "downbylaw123",
+                    "post_id": "1dnrunf",
+                    "timestamp": 1719572848
                 }
             ]
         },
@@ -8718,6 +8730,12 @@
                     "partner": "kordelski83",
                     "post_id": "1deflew",
                     "timestamp": 1718759531
+                },
+                {
+                    "comment_id": "laqde0p",
+                    "partner": "cradalack",
+                    "post_id": "1dkk6bz",
+                    "timestamp": 1719606217
                 }
             ]
         },
@@ -11705,6 +11723,16 @@
             "legacy_count": 4,
             "transactions": []
         },
+        "cradalack": {
+            "transactions": [
+                {
+                    "comment_id": "laqde0p",
+                    "partner": "capnmrly",
+                    "post_id": "1dkk6bz",
+                    "timestamp": 1719606217
+                }
+            ]
+        },
         "craftkitty": {
             "legacy_count": 2,
             "transactions": [
@@ -14594,7 +14622,14 @@
         },
         "downbylaw123": {
             "legacy_count": 4,
-            "transactions": []
+            "transactions": [
+                {
+                    "comment_id": "lamsev9",
+                    "partner": "burritobilly",
+                    "post_id": "1dnrunf",
+                    "timestamp": 1719572848
+                }
+            ]
         },
         "dozazz": {
             "legacy_count": 1,
@@ -52050,6 +52085,12 @@
                     "partner": "total_gusto",
                     "post_id": "1cfkitl",
                     "timestamp": 1714788522
+                },
+                {
+                    "comment_id": "laautr1",
+                    "partner": "-crockett-",
+                    "post_id": "1dmvskb",
+                    "timestamp": 1719626438
                 }
             ]
         },
