@@ -528,6 +528,16 @@
             "legacy_count": 1,
             "transactions": []
         },
+        "gattacain": {
+            "transactions": [
+                {
+                    "comment_id": "lawy5vm",
+                    "partner": "thelorcanaduck",
+                    "post_id": "1dn4jk3",
+                    "timestamp": 1719712256
+                }
+            ]
+        },
         "gbennett2201": {
             "transactions": [
                 {
@@ -611,6 +621,12 @@
                     "partner": "comprehensivemode949",
                     "post_id": "1dfijmw",
                     "timestamp": 1719461488
+                },
+                {
+                    "comment_id": "lavcyjq",
+                    "partner": "just_caesar",
+                    "post_id": "1dpf61m",
+                    "timestamp": 1719732009
                 }
             ]
         },
@@ -695,6 +711,16 @@
                     "partner": "joefamous",
                     "post_id": "1cahg1o",
                     "timestamp": 1714770910
+                }
+            ]
+        },
+        "just_caesar": {
+            "transactions": [
+                {
+                    "comment_id": "lavcyjq",
+                    "partner": "investigatorno2277",
+                    "post_id": "1dpf61m",
+                    "timestamp": 1719732009
                 }
             ]
         },
@@ -1264,6 +1290,12 @@
                     "partner": "chewdizzle12",
                     "post_id": "1dhxed0",
                     "timestamp": 1719626919
+                },
+                {
+                    "comment_id": "lav1vlr",
+                    "partner": "silentquacker",
+                    "post_id": "1dm7myh",
+                    "timestamp": 1719708304
                 }
             ]
         },
@@ -1372,6 +1404,18 @@
                     "partner": "ragnartheliterate",
                     "post_id": "1df0uph",
                     "timestamp": 1719580559
+                },
+                {
+                    "comment_id": "lao9353",
+                    "partner": "savsaurusrex",
+                    "post_id": "1djicv3",
+                    "timestamp": 1719691281
+                },
+                {
+                    "comment_id": "lawwg33",
+                    "partner": "silentquacker",
+                    "post_id": "1dm7myh",
+                    "timestamp": 1719711393
                 }
             ]
         },
@@ -1406,6 +1450,12 @@
                     "partner": "rebatwa2",
                     "post_id": "1bt47im",
                     "timestamp": 1713590339
+                },
+                {
+                    "comment_id": "lao9353",
+                    "partner": "rebatwa2",
+                    "post_id": "1djicv3",
+                    "timestamp": 1719691281
                 }
             ]
         },
@@ -1574,6 +1624,12 @@
                     "partner": "swizzle213",
                     "post_id": "1dmn8u1",
                     "timestamp": 1719529899
+                },
+                {
+                    "comment_id": "lat0sp2",
+                    "partner": "silentquacker",
+                    "post_id": "1dmn8u1",
+                    "timestamp": 1719675582
                 }
             ]
         },
@@ -1594,6 +1650,24 @@
                     "partner": "furiouslybating",
                     "post_id": "1dnlb4l",
                     "timestamp": 1719621401
+                },
+                {
+                    "comment_id": "lat0sp2",
+                    "partner": "secret_agent89",
+                    "post_id": "1dmn8u1",
+                    "timestamp": 1719675582
+                },
+                {
+                    "comment_id": "lav1vlr",
+                    "partner": "ragnartheliterate",
+                    "post_id": "1dm7myh",
+                    "timestamp": 1719708304
+                },
+                {
+                    "comment_id": "lawwg33",
+                    "partner": "rebatwa2",
+                    "post_id": "1dm7myh",
+                    "timestamp": 1719711393
                 }
             ]
         },
@@ -1766,6 +1840,16 @@
                     "partner": "eziomarsden",
                     "post_id": "1dano2g",
                     "timestamp": 1719270049
+                }
+            ]
+        },
+        "thelorcanaduck": {
+            "transactions": [
+                {
+                    "comment_id": "lawy5vm",
+                    "partner": "gattacain",
+                    "post_id": "1dn4jk3",
+                    "timestamp": 1719712256
                 }
             ]
         },

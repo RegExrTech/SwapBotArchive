@@ -3736,6 +3736,16 @@
                 }
             ]
         },
+        "astraea_00": {
+            "transactions": [
+                {
+                    "comment_id": "lb20pkq",
+                    "partner": "naturalbreadfruit100",
+                    "post_id": "1dksxup",
+                    "timestamp": 1719802582
+                }
+            ]
+        },
         "atol5": {
             "transactions": [
                 {
@@ -7789,6 +7799,16 @@
         "bright-diamond": {
             "legacy_count": 2,
             "transactions": []
+        },
+        "britaadam": {
+            "transactions": [
+                {
+                    "comment_id": "law8vh7",
+                    "partner": "walk_fancy",
+                    "post_id": "1dguo7a",
+                    "timestamp": 1719702411
+                }
+            ]
         },
         "brock1363": {
             "legacy_count": 1,
@@ -32343,6 +32363,12 @@
                     "partner": "admiralphuckit",
                     "post_id": "1d8dvjf",
                     "timestamp": 1718827260
+                },
+                {
+                    "comment_id": "lb20pkq",
+                    "partner": "astraea_00",
+                    "post_id": "1dksxup",
+                    "timestamp": 1719802582
                 }
             ]
         },
@@ -50106,6 +50132,12 @@
                     "partner": "onlygoodjuju",
                     "post_id": "1dcb2bq",
                     "timestamp": 1719413192
+                },
+                {
+                    "comment_id": "law8vh7",
+                    "partner": "britaadam",
+                    "post_id": "1dguo7a",
+                    "timestamp": 1719702411
                 }
             ]
         },

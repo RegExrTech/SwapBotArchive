@@ -27888,6 +27888,12 @@
                     "partner": "whywhywhyisthis",
                     "post_id": "wdr8is",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "lawcfan",
+                    "partner": "gtuansdiamm",
+                    "post_id": "1djrzg3",
+                    "timestamp": 1719701052
                 }
             ]
         },
@@ -40343,6 +40349,16 @@
                     "partner": "vegan-trash",
                     "post_id": "npl7u5",
                     "timestamp": 0
+                }
+            ]
+        },
+        "gtuansdiamm": {
+            "transactions": [
+                {
+                    "comment_id": "lawcfan",
+                    "partner": "dimpleschan",
+                    "post_id": "1djrzg3",
+                    "timestamp": 1719701052
                 }
             ]
         },
@@ -73170,6 +73186,12 @@
                     "partner": "kicsta",
                     "post_id": "16u2ygi",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "laukndq",
+                    "partner": "ultra101",
+                    "post_id": "1dnuy16",
+                    "timestamp": 1719677091
                 }
             ]
         },
@@ -96945,6 +96967,12 @@
                     "partner": "cooltaj",
                     "post_id": "1alymkp",
                     "timestamp": 1707706900
+                },
+                {
+                    "comment_id": "law8dof",
+                    "partner": "topchemical",
+                    "post_id": "1doglw7",
+                    "timestamp": 1719708663
                 }
             ]
         },
@@ -102048,6 +102076,12 @@
                     "partner": "fcweigl",
                     "post_id": "16jkap5",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "law8dof",
+                    "partner": "teddyespo",
+                    "post_id": "1doglw7",
+                    "timestamp": 1719708663
                 }
             ]
         },
@@ -104778,6 +104812,12 @@
                     "partner": "rwil23",
                     "post_id": "17gl423",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "laukndq",
+                    "partner": "non-polar",
+                    "post_id": "1dnuy16",
+                    "timestamp": 1719677091
                 }
             ]
         },
