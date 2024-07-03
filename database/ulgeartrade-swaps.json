@@ -4928,6 +4928,16 @@
                 }
             ]
         },
+        "donkeyrifle": {
+            "transactions": [
+                {
+                    "comment_id": "law3yp4",
+                    "partner": "joshuvela",
+                    "post_id": "1dpfz2x",
+                    "timestamp": 1719907272
+                }
+            ]
+        },
         "dordar": {
             "transactions": [
                 {
@@ -8358,6 +8368,16 @@
                     "partner": "monster_explorer",
                     "post_id": "17qpq7f",
                     "timestamp": 0
+                }
+            ]
+        },
+        "joshuvela": {
+            "transactions": [
+                {
+                    "comment_id": "law3yp4",
+                    "partner": "donkeyrifle",
+                    "post_id": "1dpfz2x",
+                    "timestamp": 1719907272
                 }
             ]
         },
@@ -15091,6 +15111,12 @@
                     "partner": "silverlysilence",
                     "post_id": "1ahd97n",
                     "timestamp": 1707765510
+                },
+                {
+                    "comment_id": "lb93fry",
+                    "partner": "whitey1225",
+                    "post_id": "1dq0uhh",
+                    "timestamp": 1719918845
                 }
             ]
         },
@@ -15329,6 +15355,12 @@
                     "partner": "1119king",
                     "post_id": "1d3svsa",
                     "timestamp": 1719535475
+                },
+                {
+                    "comment_id": "lbd8sph",
+                    "partner": "v1triol",
+                    "post_id": "1dq6sp7",
+                    "timestamp": 1719965058
                 }
             ]
         },
@@ -15841,6 +15873,12 @@
                     "partner": "thedreamerjournals",
                     "post_id": "19225vu",
                     "timestamp": 1705780888
+                },
+                {
+                    "comment_id": "lbd8sph",
+                    "partner": "toodles__72",
+                    "post_id": "1dq6sp7",
+                    "timestamp": 1719965058
                 }
             ]
         },
@@ -16141,6 +16179,16 @@
                     "partner": "craigbumgarner",
                     "post_id": "191eotp",
                     "timestamp": 1704916832
+                }
+            ]
+        },
+        "whitey1225": {
+            "transactions": [
+                {
+                    "comment_id": "lb93fry",
+                    "partner": "tiggerhuh",
+                    "post_id": "1dq0uhh",
+                    "timestamp": 1719918845
                 }
             ]
         },

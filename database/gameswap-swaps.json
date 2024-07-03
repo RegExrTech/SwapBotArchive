@@ -17953,6 +17953,12 @@
                     "partner": "chewdizzle12",
                     "post_id": "1css4by",
                     "timestamp": 1718117325
+                },
+                {
+                    "comment_id": "lb8o87m",
+                    "partner": "strongarmkid",
+                    "post_id": "1do8ndh",
+                    "timestamp": 1719926171
                 }
             ]
         },
@@ -18167,6 +18173,16 @@
                     "partner": "rjh9898",
                     "post_id": "16wnb9g",
                     "timestamp": 0
+                }
+            ]
+        },
+        "strongarmkid": {
+            "transactions": [
+                {
+                    "comment_id": "lb8o87m",
+                    "partner": "spide2",
+                    "post_id": "1do8ndh",
+                    "timestamp": 1719926171
                 }
             ]
         },
