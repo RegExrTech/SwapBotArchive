@@ -17161,6 +17161,12 @@
                     "partner": "enterthefinn",
                     "post_id": "1dlw1a7",
                     "timestamp": 1719432167
+                },
+                {
+                    "comment_id": "lbibbbn",
+                    "partner": "joeytactical",
+                    "post_id": "1dnqfwc",
+                    "timestamp": 1720069564
                 }
             ]
         },
@@ -17254,6 +17260,12 @@
                     "partner": "crashinghavoc",
                     "post_id": "16njos2",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "lbjlt4c",
+                    "partner": "happy_lego_guy",
+                    "post_id": "1drsgpb",
+                    "timestamp": 1720062698
                 }
             ]
         },
@@ -20277,6 +20289,12 @@
                     "partner": "bhk3",
                     "post_id": "1dd4hw1",
                     "timestamp": 1718772137
+                },
+                {
+                    "comment_id": "lbjlt4c",
+                    "partner": "fluid_motion",
+                    "post_id": "1drsgpb",
+                    "timestamp": 1720062698
                 }
             ]
         },
@@ -24966,6 +24984,16 @@
         "joesnj": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "joeytactical": {
+            "transactions": [
+                {
+                    "comment_id": "lbibbbn",
+                    "partner": "flatwormbig9148",
+                    "post_id": "1dnqfwc",
+                    "timestamp": 1720069564
+                }
+            ]
         },
         "joeytitans": {
             "legacy_count": 1,
