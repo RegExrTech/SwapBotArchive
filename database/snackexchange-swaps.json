@@ -24141,6 +24141,16 @@
             "legacy_count": 1,
             "transactions": []
         },
+        "liog2step": {
+            "transactions": [
+                {
+                    "comment_id": "lbhar3d",
+                    "partner": "stifledanimosity",
+                    "post_id": "1dkr1rb",
+                    "timestamp": 1720144867
+                }
+            ]
+        },
         "lionghost": {
             "legacy_count": 1,
             "transactions": []
@@ -40468,6 +40478,16 @@
         "stickysnacks": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "stifledanimosity": {
+            "transactions": [
+                {
+                    "comment_id": "lbhar3d",
+                    "partner": "liog2step",
+                    "post_id": "1dkr1rb",
+                    "timestamp": 1720144867
+                }
+            ]
         },
         "still_stunned": {
             "legacy_count": 1,
