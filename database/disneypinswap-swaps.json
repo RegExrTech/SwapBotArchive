@@ -7185,6 +7185,12 @@
                     "partner": "bendythenightfury",
                     "post_id": "1d93z73",
                     "timestamp": 1718480769
+                },
+                {
+                    "comment_id": "lbzazo8",
+                    "partner": "izzmew",
+                    "post_id": "1dh1b1v",
+                    "timestamp": 1720316940
                 }
             ]
         },
@@ -13180,6 +13186,12 @@
                     "partner": "sausageguard",
                     "post_id": "1dh1b1v",
                     "timestamp": 1719799011
+                },
+                {
+                    "comment_id": "lbzazo8",
+                    "partner": "disneyfanatic1982",
+                    "post_id": "1dh1b1v",
+                    "timestamp": 1720316940
                 }
             ]
         },
@@ -16603,6 +16615,12 @@
                     "partner": "umnothnku",
                     "post_id": "1d3txca",
                     "timestamp": 1718929354
+                },
+                {
+                    "comment_id": "lbywo48",
+                    "partner": "panda_32510",
+                    "post_id": "1djxpm4",
+                    "timestamp": 1720311242
                 }
             ]
         },
@@ -19054,6 +19072,12 @@
                     "partner": "blazingredfire13",
                     "post_id": "13kpj50",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "lblxm82",
+                    "partner": "xprofessionalcrybaby",
+                    "post_id": "1dll0zm",
+                    "timestamp": 1720296462
                 }
             ]
         },
@@ -22325,6 +22349,12 @@
                     "partner": "askinnysnorlax",
                     "post_id": "1dmy20f",
                     "timestamp": 1719956747
+                },
+                {
+                    "comment_id": "lbywo48",
+                    "partner": "loreleibailey",
+                    "post_id": "1djxpm4",
+                    "timestamp": 1720311242
                 }
             ]
         },
@@ -35253,6 +35283,16 @@
         "xbreathexgx": {
             "legacy_count": 4,
             "transactions": []
+        },
+        "xprofessionalcrybaby": {
+            "transactions": [
+                {
+                    "comment_id": "lblxm82",
+                    "partner": "mfn_00",
+                    "post_id": "1dll0zm",
+                    "timestamp": 1720296462
+                }
+            ]
         },
         "xratedxray": {
             "transactions": [

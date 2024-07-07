@@ -3020,6 +3020,12 @@
                     "partner": "cashtheredditor",
                     "post_id": "11598um",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "lbwqjew",
+                    "partner": "fire-fuh-tor",
+                    "post_id": "1dncx10",
+                    "timestamp": 1720288205
                 }
             ]
         },
@@ -4417,6 +4423,12 @@
                     "partner": "airsoft_chay",
                     "post_id": "1dii2zy",
                     "timestamp": 1720026571
+                },
+                {
+                    "comment_id": "lbuirnu",
+                    "partner": "kerberoswraith",
+                    "post_id": "1dse5v1",
+                    "timestamp": 1720268015
                 }
             ]
         },
@@ -26871,6 +26883,22 @@
             "legacy_count": 1,
             "transactions": []
         },
+        "fire-fuh-tor": {
+            "transactions": [
+                {
+                    "comment_id": "lbwqjew",
+                    "partner": "alecrm98",
+                    "post_id": "1dncx10",
+                    "timestamp": 1720288205
+                },
+                {
+                    "comment_id": "lbyz5ju",
+                    "partner": "jusblaze42o",
+                    "post_id": "1dsygw0",
+                    "timestamp": 1720311584
+                }
+            ]
+        },
         "firebr3ak": {
             "transactions": [
                 {
@@ -38266,6 +38294,12 @@
                     "partner": "timebomb575",
                     "post_id": "1dm5v4a",
                     "timestamp": 1719701715
+                },
+                {
+                    "comment_id": "lbyz5ju",
+                    "partner": "fire-fuh-tor",
+                    "post_id": "1dsygw0",
+                    "timestamp": 1720311584
                 }
             ]
         },
@@ -39216,6 +39250,12 @@
                     "partner": "wollybob",
                     "post_id": "1dmwyza",
                     "timestamp": 1719442583
+                },
+                {
+                    "comment_id": "lbuirnu",
+                    "partner": "anongenesofsinope",
+                    "post_id": "1dse5v1",
+                    "timestamp": 1720268015
                 }
             ]
         },
