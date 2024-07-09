@@ -32,6 +32,22 @@
             "legacy_count": 2,
             "transactions": []
         },
+        "animeguru": {
+            "transactions": [
+                {
+                    "comment_id": "lc8gei9",
+                    "partner": "winkawak",
+                    "post_id": "1du56lr",
+                    "timestamp": 1720465498
+                },
+                {
+                    "comment_id": "lc8fzpp",
+                    "partner": "jayaspargus",
+                    "post_id": "1dt27gq",
+                    "timestamp": 1720467847
+                }
+            ]
+        },
         "apukong": {
             "legacy_count": 4,
             "transactions": [
@@ -280,6 +296,12 @@
                     "partner": "ragnartheliterate",
                     "post_id": "1dhxed0",
                     "timestamp": 1719626919
+                },
+                {
+                    "comment_id": "lc383aa",
+                    "partner": "pkmntcgtradeguy",
+                    "post_id": "1dp2gsn",
+                    "timestamp": 1720447780
                 }
             ]
         },
@@ -687,6 +709,12 @@
                     "partner": "ragonaut",
                     "post_id": "1dt27gq",
                     "timestamp": 1720379907
+                },
+                {
+                    "comment_id": "lc8fzpp",
+                    "partner": "animeguru",
+                    "post_id": "1dt27gq",
+                    "timestamp": 1720467847
                 }
             ]
         },
@@ -1081,6 +1109,12 @@
                     "partner": "ragnartheliterate",
                     "post_id": "1dp2gsn",
                     "timestamp": 1719859862
+                },
+                {
+                    "comment_id": "lc383aa",
+                    "partner": "chewdizzle12",
+                    "post_id": "1dp2gsn",
+                    "timestamp": 1720447780
                 }
             ]
         },
@@ -1176,6 +1210,12 @@
                     "partner": "scrub40ktactics",
                     "post_id": "1bzigx6",
                     "timestamp": 1715997647
+                },
+                {
+                    "comment_id": "lc5c1uc",
+                    "partner": "thegnomie",
+                    "post_id": "1dqncc7",
+                    "timestamp": 1720512044
                 }
             ]
         },
@@ -1905,6 +1945,16 @@
                 }
             ]
         },
+        "thegnomie": {
+            "transactions": [
+                {
+                    "comment_id": "lc5c1uc",
+                    "partner": "pokemonpenguin",
+                    "post_id": "1dqncc7",
+                    "timestamp": 1720512044
+                }
+            ]
+        },
         "thelorcanaduck": {
             "transactions": [
                 {
@@ -2003,6 +2053,12 @@
                     "partner": "ragnartheliterate",
                     "post_id": "1dm2whx",
                     "timestamp": 1719962325
+                },
+                {
+                    "comment_id": "lc8gei9",
+                    "partner": "animeguru",
+                    "post_id": "1du56lr",
+                    "timestamp": 1720465498
                 }
             ]
         },
