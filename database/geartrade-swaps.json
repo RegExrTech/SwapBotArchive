@@ -9583,6 +9583,12 @@
                     "partner": "live_work9665",
                     "post_id": "1dvntug",
                     "timestamp": 1720494507
+                },
+                {
+                    "comment_id": "lbgmgk2",
+                    "partner": "shim12",
+                    "post_id": "1dpxm88",
+                    "timestamp": 1720576935
                 }
             ]
         },
@@ -14637,6 +14643,12 @@
                     "partner": "ima_robot",
                     "post_id": "1d9ru9r",
                     "timestamp": 1719368948
+                },
+                {
+                    "comment_id": "lc9wm4s",
+                    "partner": "old_competition_6047",
+                    "post_id": "1droc8y",
+                    "timestamp": 1720533327
                 }
             ]
         },
@@ -16059,6 +16071,12 @@
                     "partner": "2goldfish",
                     "post_id": "1droc8y",
                     "timestamp": 1720493182
+                },
+                {
+                    "comment_id": "lc9wm4s",
+                    "partner": "mysteriousactuary0",
+                    "post_id": "1droc8y",
+                    "timestamp": 1720533327
                 }
             ]
         },
@@ -19293,6 +19311,16 @@
                     "partner": "slapshot2500",
                     "post_id": "1au79oc",
                     "timestamp": 1709431259
+                }
+            ]
+        },
+        "shim12": {
+            "transactions": [
+                {
+                    "comment_id": "lbgmgk2",
+                    "partner": "groutteeth",
+                    "post_id": "1dpxm88",
+                    "timestamp": 1720576935
                 }
             ]
         },
@@ -23377,6 +23405,12 @@
                     "partner": "canadianx_",
                     "post_id": "17rljnq",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "lcew9s8",
+                    "partner": "zoradomaintaken",
+                    "post_id": "1drm0gh",
+                    "timestamp": 1720559648
                 }
             ]
         },
@@ -24693,6 +24727,12 @@
                     "partner": "ohdogg79",
                     "post_id": "1d3ukdf",
                     "timestamp": 1717228877
+                },
+                {
+                    "comment_id": "lcew9s8",
+                    "partner": "wbpasadena",
+                    "post_id": "1drm0gh",
+                    "timestamp": 1720559648
                 }
             ]
         }

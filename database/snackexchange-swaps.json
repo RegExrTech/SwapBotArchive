@@ -6964,6 +6964,12 @@
                     "partner": "minimumelk",
                     "post_id": "11znkbm",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "lcbr4i2",
+                    "partner": "milkdromradar",
+                    "post_id": "1dyy0td",
+                    "timestamp": 1720538633
                 }
             ]
         },
@@ -10994,6 +11000,16 @@
                     "partner": "naj_h",
                     "post_id": "tzjiod",
                     "timestamp": 0
+                }
+            ]
+        },
+        "difficult-tart-6834": {
+            "transactions": [
+                {
+                    "comment_id": "lcd8wa7",
+                    "partner": "udons8811",
+                    "post_id": "1dz55yt",
+                    "timestamp": 1720542602
                 }
             ]
         },
@@ -27221,6 +27237,16 @@
         "milantha": {
             "legacy_count": 1,
             "transactions": []
+        },
+        "milkdromradar": {
+            "transactions": [
+                {
+                    "comment_id": "lcbr4i2",
+                    "partner": "catismasterrace",
+                    "post_id": "1dyy0td",
+                    "timestamp": 1720538633
+                }
+            ]
         },
         "milkshake841": {
             "legacy_count": 1,
@@ -43812,6 +43838,12 @@
                     "partner": "moanafan_1990",
                     "post_id": "14g51wu",
                     "timestamp": 0
+                },
+                {
+                    "comment_id": "lcd8wa7",
+                    "partner": "difficult-tart-6834",
+                    "post_id": "1dz55yt",
+                    "timestamp": 1720542602
                 }
             ]
         },
