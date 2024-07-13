@@ -349,7 +349,7 @@ def handle_comment(comment, bot_username, sub, reddit, is_new_comment, sub_confi
 		return True
 	# r/edefinition keeps the bot around as a pet. Have some fun with them here.
 	if str(parent_sub).lower() == "edefinition":
-		print("ALERT! r/edefinition post: redd.it/" + str(parent_post))
+		print("ALERT! r/edefinition tag for u/" + bot_username + ": redd.it/" + str(parent_post))
 		handle_edefinition(comment)
 		requests.post(request_url + "/remove-comment/", {'sub_name': sub_config.subreddit_name, 'comment_id': comment.id, 'platform': PLATFORM})
 		return True
@@ -680,6 +680,7 @@ def inform_credit_already_given(comment):
 def inform_partner_interaction_too_recent(comment, author1, author2):
 	reply_text = "Sorry, but you and your partner, u/" + author1 + ", have confirmed a transaction together too recently. As such, I cannot count this transaction. Remember that you are only allowed ONE confirmation **per transaction**, *not* per item. Even if the transaction included multiple items from multiple posts, you only get one confirmation per transaction."
 	reply(comment, reply_text)
+	logger.log(reply_text + "\n\n[" + author1 + "](https://www.reddit.com/u/" + author1 + ")" + "\n\n[" + author2 + "](https://www.reddit.com/u/" + author2 + ")")
 
 def inform_comment_archived(comment, sub_config):
 	comment_text = get_comment_text(comment)
